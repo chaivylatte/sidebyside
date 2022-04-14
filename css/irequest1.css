@@ -20,7 +20,7 @@ irequest1headwr {
   padding: 30px;
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
 }
-irequestheadsur {
+irequest1headsur {
   flex-grow: 1;
   display: flex;
   gap: 10px;
