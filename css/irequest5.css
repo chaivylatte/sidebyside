@@ -1,0 +1,196 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+irequest5 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  background: rgba(var(--bgelev1));
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  overflow: hidden;
+}
+irequest5headwr {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest5headsur {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-start;
+}
+irequest5lyr {
+  font: 400 30px var(--font2);
+  display: inline-block;
+  text-decoration: underline rgba(var(--bgelev1));
+}
+irequest5abt {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center flex-start;
+  align-items: center;
+}
+irequest5abt span {
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+irequest5icon {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+irequest5icon i {
+  font-size: 40px;
+  color: var(--fontaccent1);
+  line-height: 1;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+irequest5below {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  padding: 50px;
+}
+irequest5 .writing {
+  grid-column: 1 / -1;
+  display: block;
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 20px;
+  text-align: justify;
+  height: 200px;
+}
+irequest5 .writing overflow {
+  max-height: 100%;
+}
+irequest5 .writing p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+irequest5 .writing p:first-child {
+  margin-top: 0;
+}
+irequest5 .writing b, irequest5 .writing i, irequest5 .writing u, irequest5 .writing a {
+  font-size: 17px;
+}
+irequest5 .writing b {
+  color: var(--fontaccent1);
+}
+irequest5 .writing i {
+  color: var(--fontaccent4);
+}
+irequest5 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+irequest5 .writing a {
+  text-decoration: underline;
+  color: var(--fontaccent3);
+}
+irequest5char {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(var(--bgelev2));
+}
+irequest5charhwr {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest5char:nth-child(odd) irequest5charhwr {
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest5char:nth-child(even) irequest5charhwr {
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest5charhwr span {
+  font: 400 17px var(--font2);
+  line-height: 1;
+  color: var(--fontaccent4);
+  text-decoration: underline rgba(var(--bgelev1));
+}
+irequest5char:nth-child(odd) irequest5charhwr span {
+  color: var(--fontaccent4);
+}
+irequest5char:nth-child(even) irequest5charhwr span {
+  color: var(--fontaccent1);
+}
+irequest5charbelow {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  padding: 25px;
+}
+irequest5chargif {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+irequest5chargif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+irequest5char .writing {
+  background: rgba(var(--bgelev1));
+  height: 100px;
+  padding: 15px;
+}
+irequest5charabt {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+}
+irequest5charabt span {
+  flex-grow: 1;
+  text-align: center;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+irequest5bott {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
