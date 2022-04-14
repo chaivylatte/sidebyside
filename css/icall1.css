@@ -1,0 +1,140 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+icall1 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev3));
+  width: 400px;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+}
+icall1 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+}
+icall1 topper .fa-solid {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall1 topper i:first-child {
+  color: var(--fontaccent1);
+  background: rgba(var(--bgelev2));
+}
+icall1 topper i:last-child {
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+icall1 recspace {
+  order: 2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+icall1 gif {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 36% 64% 42% 58% / 30% 38% 62% 70%;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  box-shadow: 0 0 20px 0 hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)), .5);
+}
+icall1 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall1 recipient {
+  font: 400 25px var(--font2);
+  text-decoration: underline rgba(var(--bgelev1));
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+icall1 .actions {
+  order: 3;
+  background: rgba(var(--bgelev1));
+  border-radius: 30px 30px 0 0;
+  padding: 40px;
+  text-align: justify;
+}
+icall1 .actions p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 15px;
+}
+icall1 .actions p:first-child {
+  margin-top: 0;
+}
+icall1 .actions b, icall1 .actions i {
+  font-size: 17px;
+}
+icall1 .actions b {
+  color: var(--fontaccent1);
+}
+icall1 .actions i {
+  color: var(--fontaccent4);
+}
+icall1 .actions u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+icall1 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+icall1 bottbar {
+  order: 4;
+  background: rgba(var(--bgelev1));
+  padding: 30px;
+  padding-top: 0;
+}
+icall1 sendbar {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  background: rgba(var(--bgelev2));
+  font-size: 15px;
+  line-height: 1.2;
+}
+icall1 sendbar span {
+  padding: 0 12px;
+}
+icall1 sendbar span:before {
+  display: block;
+  content: "end call";
+  text-align: center;
+  font: 400 15px var(--font2);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+icall1 sendbar i {
+  display: block;
+  flex: none;
+}
+icall1 sendbar i:first-child {
+  border-right: 1px solid var(--fontaccent1);
+  padding-right: 12px;
+}
+icall1 sendbar i:last-child {
+  color: var(--fontaccent4);
+}

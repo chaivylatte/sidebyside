@@ -1,0 +1,156 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+itext1 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev3));
+  width: 400px;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+}
+itext1 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+}
+itext1 topper .fa-solid {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext1 topper i:first-child {
+  color: var(--fontaccent1);
+  background: rgba(var(--bgelev2));
+}
+itext1 topper i:last-child {
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+itext1 recspace {
+  order: 2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+itext1 gif {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 36% 64% 42% 58% / 30% 38% 62% 70%;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  box-shadow: 0 0 20px 0 hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)), .5);
+}
+itext1 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext1 recipient {
+  font: 400 25px var(--font2);
+  text-decoration: underline rgba(var(--bgelev1));
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+itext1 note {
+  font: 400 14px var(--font2);
+  text-align: center;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+itext1 .messages {
+  order: 3;
+  background: rgba(var(--bgelev1));
+  border-radius: 30px 30px 0 0;
+  padding: 40px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext1 .messages p {
+  margin: 0;
+  display: block;
+  align-self: flex-end;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 15px 15px 0 15px;
+  padding: 15px;
+  text-align: justify;
+}
+itext1 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext1 .messages b, itext1 .messages i {
+  background: rgba(var(--bgelev1));
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+itext1 .messages b {
+  color: var(--fontaccent1);
+}
+itext1 .messages i {
+  color: var(--fontaccent4);
+}
+itext1 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+itext1 .messages a {
+  text-decoration: underline var(--fontaccent3);
+}
+itext1 bottbar {
+  order: 4;
+  background: rgba(var(--bgelev1));
+  padding: 30px;
+  padding-top: 0;
+}
+itext1 sendbar {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  background: rgba(var(--bgelev2));
+  font-size: 15px;
+  line-height: 1.2;
+}
+itext1 sendbar span {
+  flex-grow: 1;
+  padding: 0 12px;
+}
+itext1 sendbar span:before {
+  display: block;
+  content: "type something...";
+  flex-grow: 1;
+  text-align: left;
+}
+itext1 sendbar i {
+  display: block;
+  flex: none;
+}
+itext1 sendbar i:first-child {
+  border-right: 1px solid var(--fontaccent1);
+  padding-right: 12px;
+}
+itext1 sendbar i:last-child {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
