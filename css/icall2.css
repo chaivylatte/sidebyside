@@ -1,0 +1,153 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+icall2 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 450px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 30px;
+}
+icall2 topper {
+  order: 1;
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 13px;
+}
+icall2 topper i {
+  flex: none;
+}
+icall2 topper i:first-of-type {
+  order: 1;
+}
+icall2 topper i:last-of-type {
+  order: 3;
+}
+icall2 recipient {
+  order: 2;
+  text-align: center;
+  font: 400 18px var(--font2);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+icall2 gifwr {
+  order: 2;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  padding: 30px;
+}
+icall2 gif {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+icall2 gif img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall2 gif i[class*="fa"] {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  background: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight3) + var(--darken)));
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: rgba(var(--bgelev1));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall2 somestuff {
+  width: 100%;
+  order: 3;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+}
+icall2 somestuff span:before {
+  content: "now connected";
+  color: rgba(var(--fontdim));
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+icall2 someicons {
+  display: flex;
+  gap: 10px;
+  place-content: center center;
+  align-items: center;
+}
+icall2 someicons i[class*="fa"] {
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken)));
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: rgba(var(--bgelev1));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall2 .actions {
+  margin-top: 30px;
+  order: 4;
+  padding: 25px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: inherit;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+icall2 .actionsin {
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(var(--bgelev1));
+}
+icall2 .actions p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 5px;
+}
+icall2 .actions p:first-of-type {
+  margin-top: 0;
+}
+icall2 .actions b, icall2 .actions i {
+  font-size: 17px;
+}
+icall2 .actions b {
+  color: var(--fontaccent1);
+}
+icall2 .actions i {
+  color: var(--fontaccent4);
+}
+icall2 .actions u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+icall2 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
