@@ -8,7 +8,7 @@ form { display:inline; }
 :root, html[data-theme="light"] { --border: 208, 208, 208; --font: 95, 95, 95; --fontdim: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --shadow: 119, 119, 119; --darken: 0%; --blendmode: normal; }
 html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --bgpure: 19, 19, 19; --bgelev1: 45, 45, 45; --bgelev2: 40, 40, 40; --bgelev3: 35, 35, 35; --bgelev4: 30, 30, 30; --bgelev5: 25, 25, 25; --bgelev6: 20, 20, 20; --shadow: 0, 0, 0; --darken: -10%; --blendmode: difference; }
 
-body { position: relative; font-family: 'filson-soft', sans-serif; font-size: 13px; font-weight: 500; line-height: 1; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) linear-gradient(to bottom right, var(--pastelgradient1)); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: filson-soft; --font2: fugaz one; --lightness1: 90%; --lightness2: 65%; --pastelpercent: -26%; --normalpercent: -18%; --sidebarwidth: 70px; }
+body { position: relative; font-family: 'filson-soft', sans-serif; font-size: 13px; font-weight: 500; line-height: 1; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)); background-size: cover; background-position: center; background-attachment: fixed; --font1: filson-soft; --font2: fugaz one; --lightness1: 90%; --lightness2: 65%; --pastelpercent: -26%; --normalpercent: -18%; --sidebarwidth: 70px; }
 
 *[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
 ::selection { background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken))); color: inherit; text-shadow: none; }
@@ -23,8 +23,12 @@ body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-hei
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url("https://use.typekit.net/jhi5swa.css");
 
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+@import url("https://use.typekit.net/qpg2hts.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-.postactual { display: block; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); font-size: 14px; line-height: 130%; text-align: left; }
+.postactual { display: block; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; font-size: 14px; line-height: 130%; text-align: left; }
 
 #theme-toggle {
   position: fixed;
@@ -83,7 +87,7 @@ a:hover {
 .members, .group-3, .allowtagcolors .mgroup-3 { --mghue1: 215; --mgsat1: 69%; --mglight1: 0%; --mghue2: 45; --mgsat2: 69%; --mglight2: 0%; --mghue3: 357; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hello kitty"; --mgbanner: url(https://img.nickpic.host/u2BSIA.jpg); }
 .guests, .group-2 { --groupname: "guests"; }
 
-.staff, .group-4, .allowtagcolors .mgroup-4, .topicwr.announcement { --mghue1: 342; --mgsat1: 80%; --mglight1: 0%; --mghue2: 189; --mgsat2: 60%; --mglight2: 0%; --mghue3: 41; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "little twin stars"; --mgbanner: url(https://img.nickpic.host/u23rzY.jpg); }
+.staff, .group-4, .allowtagcolors .mgroup-4, .topicwr.announcement { --mghue1: 185; --mgsat1: 55%; --mglight1: 0%; --mghue2: 273; --mgsat2: 43%; --mglight2: 0%; --mghue3: 21; --mgsat3: 70%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "rainbow sherbet"; --mgbanner: url(https://img.nickpic.host/A6D02z.png); }
 
 /****************************************
    Standard Groups
