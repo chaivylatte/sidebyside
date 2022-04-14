@@ -1,0 +1,182 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+icall3 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  width: 400px;
+  min-height: 300px;
+  padding: 25px;
+  border-radius: 25px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall3 bigcircle {
+  display: block;
+  width: 500px;
+  height: 500px;
+  background: rgba(var(--bgelev1));
+  position: absolute;
+  bottom: -300px;
+  left: calc(50% - 250px);
+  border-radius: 50%;
+  opacity: .75;
+  z-index: -1;
+}
+icall3 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 12px;
+}
+icall3 topl, icall3 topr {
+  display: flex;
+  gap: 6px;
+  place-content: center space-between;
+  align-items: center;
+}
+icall3 i:not([class*="fa-battery"]) {
+  color: rgba(var(--fontdim));
+}
+icall3 i[class*="fa-battery"] {
+  --fa-secondary-opacity: 1.0;
+  --fa-secondary-color: rgba(var(--fontdim));
+  --fa-primary-color: var(--fontaccent4);
+}
+icall3 gifwr {
+  order: 2;
+  background: rgba(var(--bgelev1));
+  border-radius: 50px 15px 15px 50px;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+}
+icall3 gif {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)));
+  padding: 5px;
+}
+icall3 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall3 gif img:not(:only-child) {
+  display: none;
+}
+icall3 gif i[class*="fa"] {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: var(--fontaccent2);
+}
+icall3 gifbl {
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+icall3 recipient {
+  font: 400 15px var(--font2);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+icall3 span {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(var(--fontdim));
+}
+icall3 span::before {
+  content: "is currently online";
+}
+icall3 .actions {
+  order: 3;
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  border-radius: 20px;
+}
+icall3 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+icall3 .actions p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 10px;
+}
+icall3 .actions p:first-of-type {
+  margin-top: 0;
+}
+icall3 .actions b, icall3 .actions i {
+  font-size: 17px;
+}
+icall3 .actions b {
+  color: var(--fontaccent1);
+}
+icall3 .actions i {
+  color: var(--fontaccent4);
+}
+icall3 .actions u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+icall3 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+icall3 bottbar {
+  order: 4;
+  background: rgba(var(--bgelev1));
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  color: rgba(var(--fontdim));
+  font-size: 20px;
+}
+icall3 bottbar i {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  opacity: .75;
+}
+icall3 bottbar i.lildot {
+  color: rgba(var(--font));
+  opacity: 1;
+}
+icall3 bottbar i.lildot:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--fontaccent2);
+}
