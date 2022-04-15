@@ -54,6 +54,9 @@ ithread1 .writing {
   text-align: justify;
   padding: 0 30px;
 }
+ithread1 .writing overflow {
+  max-height: 20em;
+}
 ithread1 .writing b, ithread1 .writing i {
   font-size: 17px;
 }
