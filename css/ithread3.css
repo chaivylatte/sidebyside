@@ -80,7 +80,7 @@ ithread3 .writing {
   text-align: justify;
 }
 ithread3 .writing overflow {
-  max-height: 20em;
+  max-height: 30em;
 }
 ithread3 .writing p {
   margin: 0;
