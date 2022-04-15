@@ -1,0 +1,161 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+idev1 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+idev1 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev1 headwr {
+  font: 400 30px var(--font2);
+  text-decoration: underline rgba(var(--bgelev1));
+}
+idev1 headwr i {
+  font-size: 20px;
+  color: rgba(var(--bgelev1));
+}
+idev1 bottbar {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev1 .devstuff {
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 40px;
+  text-align: justify;
+}
+idev1 .devstuff h1, idev1 .devstuff h2, idev1 .devstuff h3, idev1 .devstuff h4, idev1 .devstuff h5, idev1 .devstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  color: var(--fontaccent1);
+}
+idev1 .devstuff p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+idev1 .devstuff p:first-child {
+  margin-top: 0;
+}
+idev1 .devstuff b, idev1 .devstuff i, idev1 .devstuff u, idev1 .devstuff a {
+  font-size: 17px;
+}
+idev1 .devstuff b {
+  color: var(--fontaccent1);
+}
+idev1 .devstuff i {
+  color: var(--fontaccent4);
+}
+idev1 .devstuff u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+idev1 .devstuff a {
+  text-decoration: underline;
+  color: var(--fontaccent3);
+}
+idev1 .devstuff del {
+  text-decoration: line-through var(--fontaccent1);
+}
+idev1 .devstuff mark {
+  color: rgba(var(--font));
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev1 .devstuff blockquote {
+  background: rgba(var(--bgelev3));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+idev1 .devstuff q {
+  font-size: 40px;
+  line-height: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(var(--bgelev4));
+  padding-bottom: 15px;
+}
+idev1 .devstuff cite {
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 100%;
+}
+idev1 .devstuff cite:before {
+  content: "-- ";
+}
+idev1 .devstuff ol, idev1 .devstuff ul {
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 10px;
+  list-style-position: inside;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+idev1 .devstuff ol {
+  list-style-type: none;
+}
+idev1 .devstuff li {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+}
+idev1 .devstuff li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+}
+idev1 .devstuff[class*=images] {
+  display: grid;
+  grid-gap: 15px;
+  align-items: stretch;
+}
+idev1 .devstuff.images-1 {
+  grid-template-columns: 1fr;
+}
+idev1 .devstuff.images-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+idev1 .devstuff.images-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+idev1 .devstuff.images-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+idev1 .devstuff[class*=images] img {
+  display: block;
+  width: 100%;
+  border: 10px solid rgba(var(--bgelev2));
+  border-radius: 15px;
+}
