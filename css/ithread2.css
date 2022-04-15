@@ -1,0 +1,98 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+ithread2 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread2 gif {
+  display: block;
+  width: 400px;
+  height: auto;
+  border-radius: 30px 30px 0 0;
+}
+ithread2 gif img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: inherit;
+}
+ithread2 thestuff {
+  margin-top: -30px;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread2 tagspace {
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+}
+ithread2 tagspace i[class*="fa-"] {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
+ithread2 tagname {
+  font: 400 20px var(--font2);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-align: right;
+  text-decoration: 2px underline rgba(var(--font));
+}
+ithread2 .writing {
+  text-align: justify;
+  padding: 50px;
+}
+ithread2 .writing p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 15px;
+}
+ithread2 .writing p:first-letter {
+  font: 400 15px var(--font2);
+  color: var(--fontaccent4);
+}
+ithread2 .writing b, ithread2 .writing i {
+  font-size: 17px;
+}
+ithread2 .writing b {
+  color: var(--fontaccent1);
+}
+ithread2 .writing i {
+  color: var(--fontaccent4);
+}
+ithread2 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+ithread2 .writing a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+ithread2 line {
+  display: block;
+  width: calc(100% - 60px);
+  height: 8px;
+  margin: 0 30px 30px;
+  border-radius: 4px;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
