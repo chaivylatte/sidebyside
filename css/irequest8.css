@@ -1,0 +1,163 @@
+@import url("https://use.typekit.net/qpg2hts.css");
+
+irequest8 {
+  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
+  font: 400 14px var(--font1);
+  line-height: 1.5;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  border: 1px solid rgba(var(--bgelev1));
+}
+irequest8 topper {
+  order: 1;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+irequest8 topper span {
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  text-decoration: underline var(--fontaccent4);
+}
+irequest8 .writing {
+  order: 2;
+  background: rgba(var(--bgelev2));
+  border: 1px solid rgba(var(--bgelev1));
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+irequest8 .writingin {
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 15px;
+  text-align: justify;
+}
+irequest8 .writing overflow {
+  max-height: 20em;
+}
+irequest8 .writing p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+irequest8 .writing p:first-child {
+  margin-top: 0;
+}
+irequest8 .writing b, irequest8 .writing i, irequest8 .writing u, irequest8 .writing a {
+  font-size: 17px;
+}
+irequest8 .writing b {
+  color: var(--fontaccent1);
+}
+irequest8 .writing i {
+  color: var(--fontaccent4);
+}
+irequest8 .writing u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+irequest8 .writing a {
+  text-decoration: underline;
+  color: var(--fontaccent3);
+}
+irequest8 reqtitle {
+  order: 4;
+  margin-top: 20px;
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font: 400 40px var(--font3);
+  line-height: 1;
+}
+irequest8 reqtitle span {
+  text-decoration: underline rgba(var(--font));
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+irequest8 characterspace {
+  order: 3;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+}
+irequest8 character {
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 10px;
+}
+irequest8 character gif {
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  padding: 8px;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest8 character gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 2px solid rgba(var(--bgelev1));
+}
+irequest8 character rightsur {
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  text-align: center;
+}
+irequest8 character name {
+  text-align: center;
+  font: 400 20px var(--font3);
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+}
+irequest8 character name span {
+  text-decoration: underline rgba(var(--font));
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+irequest8 character charabt {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+}
+irequest8 character charabt span {
+  flex-grow: 1;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  text-decoration: underline var(--fontaccent4);
+}

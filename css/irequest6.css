@@ -5,17 +5,113 @@ irequest6 {
   font: 400 14px var(--font1);
   line-height: 1.5;
   background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
-  display: block;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  padding: 30px;
   border-radius: 20px;
   width: 100%;
-  max-width: 700px;
+  max-width: 550px;
   margin: auto;
   border: 1px solid rgba(var(--bgelev1));
 }
-irequest6 inner {
-  display: block;
+irequest6 topper {
+  order: 1;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+irequest6 topper span {
+  flex-grow: 1;
   background: rgba(var(--bgelev1));
-  padding: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  text-decoration: underline var(--fontaccent4);
+}
+irequest6 .writing {
+  order: 2;
+  background: rgba(var(--bgelev2));
+  border: 1px solid rgba(var(--bgelev1));
+  padding: 30px;
+  border-radius: 30px;
+}
+irequest6 .writingin {
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 15px;
+  text-align: justify;
+}
+irequest6 .writing overflow {
+  max-height: 20em;
+}
+irequest6 .writing p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+irequest6 .writing p:first-child {
+  margin-top: 0;
+}
+irequest6 .writing b, irequest6 .writing i, irequest6 .writing u, irequest6 .writing a {
+  font-size: 17px;
+}
+irequest6 .writing b {
+  color: var(--fontaccent1);
+}
+irequest6 .writing i {
+  color: var(--fontaccent4);
+}
+irequest6 .writing u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+irequest6 .writing a {
+  text-decoration: underline;
+  color: var(--fontaccent3);
+}
+irequest6 gifsur {
+  margin-top: 20px;
+  background: rgba(var(--bgelev1));
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+irequest6 gif {
+  width: 100%;
+  height: auto;
+  background: rgba(var(--bgelev1)) linear-gradient(to top, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 15px;
+  border-radius: 15px;
+}
+irequest6 gif img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
   border-radius: inherit;
+}
+irequest6 reqtitle {
+  order: 3;
+  margin-top: 20px;
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font: 400 40px var(--font3);
+  line-height: 1;
+}
+irequest6 reqtitle span {
+  text-decoration: underline rgba(var(--font));
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
 }
