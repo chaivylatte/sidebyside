@@ -159,3 +159,6 @@ idev1 .devstuff[class*=images] img {
   border: 10px solid rgba(var(--bgelev2));
   border-radius: 15px;
 }
+idev1 .devstuff iframe {
+  border-radius: 20px;
+}
