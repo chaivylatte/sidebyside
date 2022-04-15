@@ -23,6 +23,7 @@ irequest5headwr {
 irequest5headsur {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
   gap: 10px;
   place-content: center center;
   align-items: flex-start;
