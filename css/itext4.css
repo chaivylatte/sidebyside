@@ -1,0 +1,134 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+itext4 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 25px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext4 topper {
+  order: 1;
+  width: 100%;
+  padding: 70px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  border-radius: inherit;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext4 gif {
+  display: block;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+itext4 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 8px solid rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext4 gif i {
+  font-size: 116px;
+  line-height: 1;
+  color: rgba(var(--bgelev1));
+  filter: drop-shadow(0 0 10px rgba(var(--shadow), .15));
+}
+itext4 middle {
+  order: 2;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-start;
+  text-align: left;
+}
+itext4 middle span {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+}
+itext4 middle span::before {
+  content: "now connected to:";
+}
+itext4 recipient {
+  font: 400 20px var(--font2);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--font));
+}
+itext4 note {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+}
+itext4 .messages {
+  order: 3;
+  padding: 40px;
+  padding-top: 0;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext4 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext4 .messages p {
+  display: block;
+  margin: 0;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 15px;
+  align-self: flex-end;
+  text-align: justify;
+}
+itext4 .messages p:first-of-type {
+  border-radius: 15px 0 15px 15px;
+}
+itext4 .messages b, itext4 .messages i {
+  font-size: 17px;
+}
+itext4 .messages b {
+  color: var(--fontaccent1);
+}
+itext4 .messages i {
+  color: var(--fontaccent4);
+}
+itext4 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+itext4 .messages a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+itext4 bottbar {
+  order: 4;
+  background: rgba(var(--bgelev2));
+  height: 30px;
+  border-radius: inherit;
+  position: relative;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}

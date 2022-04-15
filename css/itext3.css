@@ -136,6 +136,7 @@ itext3 .messages p {
   padding: 20px;
   border-radius: 0 20px 20px 20px;
   background: rgba(var(--bgelev1));
+  text-align: justify;
 }
 itext3 .messages b, itext3 .messages i {
   font-size: 17px;

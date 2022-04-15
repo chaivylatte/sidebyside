@@ -136,6 +136,7 @@ itext2 .messages p {
   align-self: flex-end;
   padding: 15px;
   border-radius: 15px 15px 0 15px;
+  text-align: justify;
 }
 itext2 .messages b, itext2 .messages i {
   font-size: 17px;
