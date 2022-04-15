@@ -1,0 +1,122 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+ithread3 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  width: 550px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread3 theleft {
+  background: rgba(var(--bgelev1));
+  padding: 50px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  border-radius: inherit;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+ithread3 theright {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center space-between;
+  align-items: center;
+}
+ithread3 theright gif {
+  flex: none;
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread3 theright gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+ithread3 line {
+  flex-grow: 1;
+  width: 1px;
+  height: 100%;
+  background: rgba(var(--bgelev1));
+}
+ithread3 i {
+  color: rgba(var(--bgelev1));
+  font-size: 20px;
+  line-height: 1;
+}
+ithread3 lline {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+ithread3 lline:first-of-type {
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+ithread3 lline:last-of-type {
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+ithread3 .writing {
+  display: block;
+  padding: 20px;
+  text-align: justify;
+}
+ithread3 .writing overflow {
+  max-height: 20em;
+}
+ithread3 .writing p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 15px;
+}
+ithread3 .writing p:first-letter {
+  font: 400 15px var(--font2);
+  color: var(--fontaccent4);
+}
+ithread3 .writing b, ithread2 .writing i {
+  font-size: 17px;
+}
+ithread3 .writing b {
+  color: var(--fontaccent1);
+}
+ithread3 .writing i {
+  color: var(--fontaccent4);
+}
+ithread3 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+ithread3 .writing a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+ithread3 tagspace {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(var(--bgelev2));
+  font: 400 20px var(--font2);
+}
+ithread3 tagspace span {
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
