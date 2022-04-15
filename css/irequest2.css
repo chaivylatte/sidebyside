@@ -8,6 +8,7 @@ irequest2 {
   display: block;
   background: rgba(var(--bgelev1));
   width: 100%;
+  max-width: 600px;
   border-radius: 20px;
   margin: auto;
   box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
