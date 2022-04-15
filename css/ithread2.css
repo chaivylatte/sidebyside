@@ -21,6 +21,7 @@ ithread2 gif {
   width: 400px;
   height: auto;
   border-radius: 30px 30px 0 0;
+  margin-bottom: -30px;
 }
 ithread2 gif img {
   width: 100%;
@@ -29,12 +30,10 @@ ithread2 gif img {
   border-radius: inherit;
 }
 ithread2 thestuff {
-  margin-top: -30px;
   width: 100%;
   background: rgba(var(--bgelev1));
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
 }
 ithread2 tagspace {
   display: flex;
@@ -61,6 +60,9 @@ ithread2 tagname {
 ithread2 .writing {
   text-align: justify;
   padding: 50px;
+}
+ithread2 .writing overflow {
+  max-height: 20em;
 }
 ithread2 .writing p {
   margin: 0;
