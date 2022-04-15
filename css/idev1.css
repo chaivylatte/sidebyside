@@ -26,7 +26,7 @@ idev1 headwr {
   font: 400 30px var(--font2);
   text-decoration: underline rgba(var(--bgelev1));
 }
-idev1 headwr i {
+idev1 topper i {
   font-size: 20px;
   color: rgba(var(--bgelev1));
 }
