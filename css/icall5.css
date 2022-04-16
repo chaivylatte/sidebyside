@@ -32,7 +32,11 @@ icall5 recipient {
   text-decoration: underline rgba(var(--font));
 }
 icall5 gif {
-  display: block;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 20px;
+  color: var(--fontaccent1);
   width: 60px;
   height: 60px;
   border-radius: 50%;
