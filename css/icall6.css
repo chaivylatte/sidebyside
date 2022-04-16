@@ -1,0 +1,152 @@
+@import url("https://use.typekit.net/qpg2hts.css");
+
+icall6 {
+  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
+  font: 400 14px var(--font1);
+  line-height: 1.5;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  padding: 30px;
+  border-radius: 20px;
+  width: 450px;
+  margin: auto;
+  border: 1px solid rgba(var(--bgelev1));
+}
+icall6 topper {
+  order: 1;
+  display: flex;
+  gap: 8px;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 12px;
+}
+icall6 topper span {
+  flex-grow: 1;
+  font-size: 11px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(var(--fontdim));
+}
+icall6 gifwr {
+  order: 2;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  padding: 50px;
+}
+icall6 gif {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  background: rgba(var(--bgelev1));
+  padding: 7px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  font-size: 55px;
+  color: var(--fontaccent1);
+}
+icall6 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall6 recipient {
+  order: 3;
+  align-self: flex-start;
+  display: flex;
+  place-content: center flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall6 recipient i {
+  font-size: 13px;
+}
+icall6 recipient span {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
+icall6 bottbar {
+  order: 5;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  gap: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 12px;
+  color: rgba(var(--fontdim));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+icall6 bottbar span {
+  background: rgba(var(--bgelev2));
+  border-radius: inherit;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  place-content: center space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+icall6 bottbar span::before {
+  content: "end call";
+}
+icall6 bottbar span i {
+  line-height: 1;
+  font-size: 15px;
+  color: var(--fontaccent1);
+}
+icall6 .actions {
+  order: 4;
+  margin: 30px;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 15px;
+  text-align: justify;
+}
+icall6 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+icall6 .actions p:first-child {
+  margin-top: 0;
+}
+icall6 .actions b, icall6 .actions i {
+  font-size: 17px;
+}
+icall6 .actions b {
+  color: var(--fontaccent1);
+}
+icall6 .actions i {
+  color: var(--fontaccent4);
+}
+icall6 .actions u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+icall6 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+icall6 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}

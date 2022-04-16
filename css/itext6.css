@@ -1,0 +1,163 @@
+@import url("https://use.typekit.net/qpg2hts.css");
+
+itext6 {
+  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
+  font: 400 14px var(--font1);
+  line-height: 1.5;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  padding: 30px;
+  border-radius: 20px;
+  width: 450px;
+  margin: auto;
+  border: 1px solid rgba(var(--bgelev1));
+}
+itext6 topper {
+  order: 1;
+  display: flex;
+  gap: 8px;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 12px;
+}
+itext6 topper span {
+  flex-grow: 1;
+  font-size: 11px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(var(--fontdim));
+}
+itext6 gifwr {
+  order: 2;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  padding: 50px;
+}
+itext6 gif {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  background: rgba(var(--bgelev1));
+  padding: 7px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  font-size: 55px;
+  color: var(--fontaccent1);
+}
+itext6 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext6 recipient {
+  order: 3;
+  align-self: flex-start;
+  display: flex;
+  place-content: center flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext6 recipient i {
+  font-size: 13px;
+}
+itext6 recipient span {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
+itext6 bottbar {
+  order: 5;
+  display: flex;
+  gap: 10px;
+  place-content: center flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 12px;
+  color: rgba(var(--fontdim));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext6 bottbar span {
+  flex-grow: 1;
+  background: rgba(var(--bgelev2));
+  border-radius: inherit;
+  padding: 10px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+itext6 bottbar span::before {
+  content: "type something!";
+}
+itext6 bottbar span i {
+  line-height: 1;
+  font-size: 15px;
+  color: var(--fontaccent1);
+}
+itext6 note {
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itext6 .messages {
+  order: 4;
+  padding: 40px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext6 .messages p {
+  margin: 0;
+  align-self: flex-end;
+  text-align: justify;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 15px;
+}
+itext6 .messages p:last-child {
+  border-radius: 15px 15px 0 15px;
+}
+itext6 .messages b, itext6 .messages i {
+  font-size: 17px;
+}
+itext6 .messages b {
+  color: var(--fontaccent1);
+}
+itext6 .messages i {
+  color: var(--fontaccent4);
+}
+itext6 .messages u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+itext6 .messages a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+itext6 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
