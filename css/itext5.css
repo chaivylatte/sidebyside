@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+itext5 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 25px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+itext5 bottbar {
+  order: 3;
+  background: rgba(var(--bgelev3));
+  padding: 20px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+itext5 recipient {
+  font: 400 18px var(--font2);
+  text-align: left;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--font));
+}
+itext5 gif {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+itext5 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 3px solid rgba(var(--bgelev1));
+}
+itext5 topper {
+  order: 1;
+  padding: 20px;
+  padding-bottom: 0;
+}
+itext5 line {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+itext5 note {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(var(--fontdim));
+}
+itext5 .messages {
+  order: 2;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+itext5 .messages p {
+  position: relative;
+  margin: 0;
+  align-self: flex-end;
+  text-align: justify;
+  background: var(--messagebg);
+  padding: 15px;
+  border-radius: 15px;
+}
+itext5 .messages p:last-child:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  width: 25%;
+  height: 11px;
+  border-radius: 11px;
+  background: var(--messagebg);
+}
+itext5 .messages p:last-child:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+  background: var(--messagebg);
+}
+itext5 .messages p:nth-of-type(1n) {
+  --messagebg: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  --messageaccent: var(--fontaccent1);
+}
+itext5 .messages p:nth-of-type(2n) {
+  --messagebg: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
+  --messageaccent: var(--fontaccent2);
+}
+itext5 .messages p:nth-of-type(3n) {
+  --messagebg: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+  --messageaccent: var(--fontaccent3);
+}
+itext5 .messages b, itext5 .messages i {
+  font-size: 17px;
+}
+itext5 .messages b {
+  color: var(--messageaccent);
+}
+itext5 .messages i {
+  color: var(--messageaccent);
+}
+itext5 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--messageaccent);
+}
+itext5 .messages a {
+  color: var(--messageaccent);
+  text-decoration: underline;
+}
+itext5 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}

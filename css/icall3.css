@@ -117,6 +117,7 @@ icall3 .actions {
   background: rgba(var(--bgelev1));
   padding: 20px;
   border-radius: 20px;
+  text-align: justify;
 }
 icall3 .actions img {
   display: block;

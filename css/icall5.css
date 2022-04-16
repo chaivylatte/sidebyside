@@ -1,0 +1,97 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+icall5 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 25px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+icall5 bottbar {
+  order: 3;
+  background: rgba(var(--bgelev3));
+  padding: 20px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+icall5 recipient {
+  font: 400 18px var(--font2);
+  text-align: left;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--font));
+}
+icall5 gif {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+icall5 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 3px solid rgba(var(--bgelev1));
+}
+icall5 topper {
+  order: 1;
+  padding: 20px;
+  padding-bottom: 0;
+}
+icall5 line {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+icall5 note {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(var(--fontdim));
+}
+icall5 .actions {
+  order: 2;
+  background: rgba(var(--bgelev2));
+  margin: 30px;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 15px;
+}
+icall5 .actions p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 10px;
+}
+icall5 .actions p:first-child {
+  margin-top: 0;
+}
+icall5 .actions b, icall5 .actions i {
+  font-size: 17px;
+}
+icall5 .actions b {
+  color: var(--fontaccent1);
+}
+icall5 .actions i {
+  color: var(--fontaccent4);
+}
+icall5 .actions u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+icall5 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}

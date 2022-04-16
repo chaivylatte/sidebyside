@@ -113,6 +113,7 @@ icall2 .actions {
   margin-top: 30px;
   order: 4;
   padding: 25px;
+  text-align: justify;
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
   border-radius: inherit;
   display: flex;
