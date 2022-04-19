@@ -1,0 +1,173 @@
+@import url("https://use.typekit.net/qpg2hts.css");
+
+idev3 {
+  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
+  font: 400 14px var(--font1);
+  line-height: 1.5;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 30px;
+  border-radius: 20px;
+  width: 600px;
+  margin: auto;
+  border: 1px solid rgba(var(--bgelev1));
+  display: block;
+}
+idev3 inner {
+  display: block;
+  background: rgba(var(--bgelev1));
+  border-radius: inherit;
+}
+idev3 topper {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  padding: 25px;
+  line-height: 1;
+}
+idev3 topper name {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+  font: 400 30px var(--font3);
+}
+idev3 lyr {
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+idev3 inn {
+  display: block;
+  background: rgba(var(--bgelev2));
+  padding: 30px;
+  border-radius: inherit;
+}
+idev3 .devstuff {
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  text-align: justify;
+  border-radius: inherit;
+}
+idev3 .devstuff h1, idev3 .devstuff h2, idev3 .devstuff h3, idev3 .devstuff h4, idev3 .devstuff h5, idev3 .devstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font3);
+  line-height: 100%;
+  color: var(--fontaccent1);
+}
+idev3 .devstuff p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+idev3 .devstuff p:first-child {
+  margin-top: 0;
+}
+idev3 .devstuff b, idev3 .devstuff i, idev3 .devstuff u, idev3 .devstuff a {
+  font-size: 17px;
+}
+idev3 .devstuff b {
+  color: var(--fontaccent1);
+}
+idev3 .devstuff i {
+  color: var(--fontaccent4);
+}
+idev3 .devstuff u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+idev3 .devstuff a {
+  text-decoration: underline;
+  color: var(--fontaccent2);
+}
+idev3 .devstuff del {
+  text-decoration: line-through var(--fontaccent1);
+}
+idev3 .devstuff mark {
+  color: rgba(var(--font));
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev3 .devstuff blockquote {
+  background: rgba(var(--bgelev3));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+idev3 .devstuff q {
+  font-size: 40px;
+  line-height: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(var(--bgelev4));
+  padding-bottom: 15px;
+}
+idev3 .devstuff cite {
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 100%;
+}
+idev3 .devstuff cite:before {
+  content: "-- ";
+}
+idev3 .devstuff ol, idev3 .devstuff ul {
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 10px;
+  list-style-position: inside;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+idev3 .devstuff ol {
+  list-style-type: none;
+}
+idev3 .devstuff li {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+}
+idev3 .devstuff li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+}
+idev3 .devstuff[class*=images] {
+  display: grid;
+  grid-gap: 15px;
+  align-items: stretch;
+  background: none;
+  padding: 0;
+}
+idev3 .devstuff.images-1 {
+  grid-template-columns: 1fr;
+}
+idev3 .devstuff.images-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+idev3 .devstuff.images-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+idev3 .devstuff.images-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+idev3 .devstuff[class*=images] img {
+  display: block;
+  width: 100%;
+  border: 10px solid rgba(var(--bgelev1));
+  border-radius: 15px;
+}
+idev3 .devstuff iframe {
+  border-radius: 20px;
+}
