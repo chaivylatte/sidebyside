@@ -1,0 +1,168 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+isideline1 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 600px;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+isideline1 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  font: 400 30px var(--font2);
+  line-height: 1;
+}
+isideline1 topper:last-of-type {
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+isideline1 topper i[class*=fa] {
+  background: rgba(var(--bgelev1));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+isideline1 topper i[class*=fa]:first-of-type {
+  color: var(--fontaccent1);
+}
+isideline1 topper i[class*=fa]:last-of-type {
+  color: var(--fontaccent4);
+}
+isideline1 infospace {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 50px;
+}
+isideline1 icon {
+  flex: none;
+  width: 130px;
+  height: 130px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 50%;
+  padding: 10px;
+}
+isideline1 icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 5px solid rgba(var(--bgelev1));
+}
+isideline1 rightinfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  place-content: center center;
+  align-items: center;
+}
+isideline1 name {
+  font: 400 28px var(--font2);
+  line-height: 1.5;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
+isideline1 fakelinks {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+}
+isideline1 fakelinks i[class*=fa] {
+  flex-grow: 1;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: rgba(var(--fontdim));
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+isideline1 fakelinks i[class*=fa]:hover {
+  color: rgba(var(--font));
+}
+isideline1 .writing {
+  width: 100%;
+  display: block;
+  text-align: justify;
+}
+isideline1 .writing overflow {
+  max-height: 100px;
+}
+isideline1 .writing p {
+  margin: 0;
+  margin-top: 15px;
+}
+isideline1 .writing p:first-of-type {
+  margin-top: 0;
+}
+isideline1 .writing b, isideline1 .writing i {
+  font-size: 17px;
+}
+isideline1 .writing b {
+  color: var(--fontaccent1);
+}
+isideline1 .writing i {
+  color: var(--fontaccent4);
+}
+isideline1 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+isideline1 .writing a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+isideline1 photospace {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 50px;
+  padding-top: 0;
+  grid-gap: 15px;
+}
+isideline1 photospace img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+isideline1 slpost {
+  display: block;
+  margin: 0 50px 50px;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 20px;
+  padding: 50px;
+}
+isideline1 slpost img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 10px solid rgba(var(--bgelev1));
+}
+isideline1.post infospace {
+  flex-wrap: nowrap;
+}
+isideline1.post .writing {
+  width: auto;
+}
