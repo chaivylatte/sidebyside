@@ -1,0 +1,300 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+iwildside1 {
+  --font1: laca; --font2: jeanne-moderno-geometrique;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 600px;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+iwildside1 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  font: 400 30px var(--font2);
+  line-height: 1;
+}
+iwildside1 topper:last-of-type {
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+iwildside1 topper i[class*=fa] {
+  background: rgba(var(--bgelev1));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+iwildside1 topper i[class*=fa]:first-of-type {
+  color: var(--fontaccent1);
+}
+iwildside1 topper i[class*=fa]:last-of-type {
+  color: var(--fontaccent4);
+}
+iwildside1 middle {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 50px;
+  padding: 50px;
+  background: rgba(var(--bgelev1));
+}
+iwildside1 picspace {
+  display: block;
+  background: rgba(var(--bgelev1)) linear-gradient(to top, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 20px;
+  border-radius: 20px;
+  aspect-ratio: 7 / 10;
+}
+iwildside1 picspace img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 10px solid rgba(var(--bgelev1));
+}
+iwildside1 interactions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center space-evenly;
+  align-items: center;
+}
+iwildside1 interactions i[class*=fa] {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  color: rgba(var(--fontdim));
+}
+iwildside1 profilespace {
+  grid-column: 1 / -1;
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 20px;
+}
+iwildside1 nameage {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 30px;
+  color: rgba(var(--fontdim));
+  font-weight: 800;
+}
+iwildside1 name {
+  font: 400 40px var(--font2);
+  letter-spacing: 0.25px;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
+iwildside1 age::before {
+  content: ",";
+}
+iwildside1 .writing {
+  display: block;
+}
+iwildside1 .writing overflow {
+  max-height: 150px;
+}
+iwildside1 .writing p {
+  margin: 0;
+  margin-top: 15px;
+}
+iwildside1 .writing b, iwildside1 .writing i {
+  font-size: 17px;
+}
+iwildside1 .writing b {
+  color: var(--fontaccent1);
+}
+iwildside1 .writing i {
+  color: var(--fontaccent4);
+}
+iwildside1 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+iwildside1 .writing a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+iwildside1 pnoc {
+  grid-column: 1 / -1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+iwildside1 pnoc span {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+iwildside1 pnoc span:nth-child(1) {
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
+iwildside1 pnoc span:nth-child(2) {
+  background: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
+}
+iwildside1 pnoc span:nth-child(3) {
+  background: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+}
+iwildside1 pnoc span:nth-child(1) i {
+  color: var(--fontaccent1);
+}
+iwildside1 pnoc span:nth-child(2) i {
+  color: var(--fontaccent2);
+}
+iwildside1 pnoc span:nth-child(3) i {
+  color: var(--fontaccent3);
+}
+iwildside1.interaction middle {
+  grid-template-columns: 10px 1fr;
+}
+iwildside1.interaction int {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  font-size: 40px;
+  color: rgba(var(--fontdim));
+}
+iwildside1.interaction int::before {
+  font: var(--fa-font-solid);
+}
+iwildside1.interaction.swipe-left int::before {
+  content: "\58";
+}
+iwildside1.interaction.swipe-right int::before {
+  content: "\f004";
+}
+iwildside1.interaction.swipe-superlike int::before {
+  content: "\f005";
+}
+iwildside1.interaction.swipe-match int::before {
+  content: "\e31b";
+}
+iwildside1 rightstuff {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  text-align: center;
+}
+iwildside1 a.name {
+  font: 400 40px var(--font2);
+  letter-spacing: 0.25px;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+}
+iwildside1 event {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+iwildside1.interaction.swipe-left event::before {
+  content: "just swiped left on you...";
+}
+iwildside1.interaction.swipe-right event::before {
+  content: "just swiped right on you!";
+}
+iwildside1.interaction.swipe-superlike event::before {
+  content: "just superliked you!";
+}
+iwildside1.interaction.swipe-match event::before {
+  content: "just matched with you!";
+}
+iwildside1 a.newconvolink {
+  grid-column: 1 / -1;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+iwildside1 a.newconvolink::before {
+  content: "click here to start a conversation with them!";
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+iwildside1 a.newconvolink:hover::before {
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+iwildside1.interaction.swipe-left a.newconvolink {
+  display: none;
+}
+iwildside1 .messages {
+  padding: 50px;
+  background: rgba(var(--bgelev1));
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-end;
+}
+iwildside1 .messages p {
+  margin: 0;
+  align-self: flex-end;
+  text-align: justify;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 15px;
+}
+iwildside1 .messages p:last-child {
+  border-radius: 15px 15px 0 15px;
+}
+iwildside1 .messages b, iwildside1 .messages i {
+  font-size: 17px;
+}
+iwildside1 .messages b {
+  color: var(--fontaccent1);
+}
+iwildside1 .messages i {
+  color: var(--fontaccent4);
+}
+iwildside1 .messages u {
+  font: 400 15px var(--font3);
+  text-decoration: underline var(--fontaccent2);
+}
+iwildside1 .messages a {
+  color: var(--fontaccent3);
+  text-decoration: underline;
+}
+iwildside1 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}

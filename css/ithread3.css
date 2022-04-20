@@ -91,7 +91,7 @@ ithread3 .writing p:first-letter {
   font: 400 15px var(--font2);
   color: var(--fontaccent4);
 }
-ithread3 .writing b, ithread2 .writing i {
+ithread3 .writing b, ithread3 .writing i {
   font-size: 17px;
 }
 ithread3 .writing b {

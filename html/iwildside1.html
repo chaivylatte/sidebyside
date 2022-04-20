@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/iwildside1.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="pompompurin">pompompurin</option><option value="badtzmaru">badtz maru</option><option value="keroppi">keroppi</option><option value="cinnamoroll">cinnamoroll</option><option value="aggretsuko">aggretsuko</option><option value="kuromi">kuromi</option><option value="mymelody">my melody</option><option value="gudetama">gudetama</option><option value="hummingmint">hummingmint</option><option value="ichigoman">ichigoman</option><option value="wishmewell">wish me well</option><option value="opal">opal</option><option value="rin">rin</option><option value="topaz">topaz</option><option value="peridot">peridot</option><option value="masyumaro">masyumaro</option><option value="chococat">chococat</option><option value="hangyodon">hangyodon</option><option value="paupipo">paupipo</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+<iwildside1><topper><i class="fa-solid fa-caret-left"></i><span>wild side</span><i class="fa-solid fa-gem"></i></topper><div class="messages">
+
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+<p><img src="https://via.placeholder.com/600x200">
+
+</div><topper></topper></iwildside1>
+
+<iwildside1 class="interaction swipe-right"><topper><i class="fa-solid fa-caret-left"></i><span>wild side</span><i class="fa-solid fa-gem"></i></topper><middle><int></int><rightstuff>
+
+<a href="linktoyourtinderprofilehere" class="name">yerin</a>
+
+<event></event></rightstuff><a href="?act=Post&CODE=00&f=52" class="newconvolink"></a></middle><topper></topper></iwildside1>
+
+<iwildside1><topper><i class="fa-solid fa-caret-left"></i><span>wild side</span><i class="fa-solid fa-gem"></i></topper><middle><picspace>
+
+<img src="https://64.media.tumblr.com/d26f63e6921290012083a78f4c93d23c/0c049e2bcbc0550e-6b/s1280x1920/085a7103a8a6ab1864236a28857c26f53df3e8d2.jpg">
+
+</picspace><interactions><i class="fa-solid fa-rotate-right"></i><i class="fa-solid fa-x"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-bolt"></i></interactions><profilespace><nameage><name>
+
+yerin</name><age>
+25
+
+</age></nameage><div class="writing"><overflow>
+
+<p>tinder bio goes here it can be whatever you would like! here is some <b>bold</b>, some <i>italics</i>, some <u>underline</u>, and a <a href="#">link</a> if you would like to use any of those!
+<p>a second paragraph! it looks the same as the first.
+
+</overflow></div></profilespace><pnoc><span><i class="fa-solid fa-splotch"></i>
+
+she/her
+
+</span><span><i class="fa-solid fa-briefcase"></i>
+
+french fry girl @ mcdonald's
+
+</span>
+
+</ OPTIONAL SPOTIFY SECTION - YOU CAN DELETE>
+<span><i class="fa-solid fa-music"></i>
+
+so sexy by right said fred
+
+</span>
+</ OPTIONAL SPOTIFY SECTION - YOU CAN DELETE>
+
+</pnoc></middle><topper></topper></iwildside1>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>
