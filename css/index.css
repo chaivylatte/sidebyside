@@ -82,333 +82,272 @@ a:hover {
 .membergrouphereinalllowercase,
 .retired, .group-1, .allowtagcolors .mgroup-1,
 .inactive, .group-6, .allowtagcolors .mgroup-6,
-.banned, .group-5, .allowtagcolors .mgroup-5 { --mghue1: 0; --mgsat1: 0%; --mglight1: 0%; --mghue2: 0; --mgsat2: 0%; --mglight2: -10%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://img.nickpic.host/u2BSIA.jpg); }
-
+.banned, .group-5, .allowtagcolors .mgroup-5 {
+ --mghue1: 0; --mgsat1: 0%; --mglight1: 0%;
+ --mghue2: 0; --mgsat2: 0%; --mglight2: -10%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://i.postimg.cc/HxWC4nmP/banner-inactive.png); }
 .retired, .group-1, .allowtagcolors .mgroup-1 { --groupname: "retired"; }
-.banned, .group-5, .allowtagcolors .mgroup-5 { --groupname: "banned"; }
 
-:root, .guests, .group-2, .allowtagcolors .mgroup-2,
+:root, .guests, .group-2, .allowtagcolors .mgroup-2 {
+ --mghue1: 33; --mgsat1: 89%; --mglight1: 0%;
+ --mghue2: 5; --mgsat2: 89%; --mglight2: 0%;
+ --mghue3: 189; --mgsat3: 89%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "guests"; --mgbanner: url(https://i.postimg.cc/ZqSmnjMm/banner-guest.png); }
+
 .members, .group-3, .allowtagcolors .mgroup-3 {
-  --sans:hoss-round, sans-serif;
-  --display:eldwin-script, sans-serif;
-  --mghue1: 272;
---mgsat1: 49%;
---mglight1: 2%;
---mghue2: 309;
---mgsat2: 49%;
---mglight2: 3%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
---groupname: "guest";
---mgbanner: url(https://img.nickpic.host/A6D9Bc.png); }
-.guests, .group-2 { --groupname: "guests"; }
+ --mghue1: 272; --mgsat1: 49%; --mglight1: 2%;
+ --mghue2: 309; --mgsat2: 49%; --mglight2: 2%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "unsorted"; --mgbanner: url(https://i.postimg.cc/BnDsJRNN/banner-unsorted.png); }
 
-.staff, .group-4, .allowtagcolors .mgroup-4, .topicwr.announcement {
-    --mghue1: 185;
-    --mgsat1: 55%;
-    --mglight1: 0%;
-    --mghue2: 273;
-    --mgsat2: 43%;
-    --mglight2: 0%;
-    --mghue3: 21;
-    --mgsat3: 70%;
-    --mglight3: 0%;
-    --mghue4: var(--mghue3);
-    --mgsat4: var(--mgsat3);
-    --mglight4: var(--mglight3);
-    --groupname: "rainbow sherbet";
-    --mgbanner: url(https://img.nickpic.host/A6D02z.png);
-}
-
+.staff, .group-4, .allowtagcolors .mgroup-4, .tshell.toptype-announcement.group- {
+ --mghue1: 185; --mgsat1: 80%; --mglight1: 0%;
+ --mghue2: 273; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: 21; --mgsat3: 79%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "staff"; --mgbanner: url(https://i.postimg.cc/SK6yfHMj/banner-staff.png); }
 
 /****************************************
-   New Regular Groups
+   Standard Groups
 *****************************************/
 
-chocolate, .chocolate, .group-7, .group-8, .allowtagcolors .mgroup-7, .allowtagcolors .mgroup-8 {
-  --mghue1: 20;
-    --mgsat1: 55%;
-    --mglight1: -3%;
-    --mghue2: 30;
-    --mgsat2: 89%;
-    --mglight2: -5%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "chocolate";
-  --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg);
-}
+redvelvet, .redvelvet, .group-17, .group-18, .allowtagcolors .mgroup-17, .allowtagcolors .mgroup-18 {
+ --mghue1: 7; --mgsat1: 90%; --mglight1: 0%;
+ --mghue2: 343; --mgsat2: 90%; --mglight2: -5%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "red velvet"; --mgbanner: url(https://i.postimg.cc/bvt8LrZz/banner-redvelvet.png); }
 
+chocolate, .chocolate, .group-7, .group-8, .allowtagcolors .mgroup-7, .allowtagcolors .mgroup-8 {
+ --mghue1: 20; --mgsat1: 56%; --mglight1: -3%;
+ --mghue2: 30; --mgsat2: 90%; --mglight2: -5%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "chocolate"; --mgbanner: url(https://i.postimg.cc/7YY758RH/banner-chocolate.png); }
 
 vanilla, .vanilla, .group-9, .group-10, .allowtagcolors .mgroup-9, .allowtagcolors .mgroup-10 {
-  --mghue1: 16;
-  --mgsat1: 100%;
-  --mglight1: 0%;
-  --mghue2: 46;
-  --mgsat2: 100%;
-  --mglight2: 0%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "vanilla";
-  --mgbanner: url(https://img.nickpic.host/u2BRjO.jpg);
-}
+ --mghue1: 16; --mgsat1: 85%; --mglight1: 0%;
+ --mghue2: 46; --mgsat2: 85%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "vanilla"; --mgbanner: url(https://i.postimg.cc/y65jCNxq/banner-vanilla.png); }
+
+coconut, .coconut, .group-37, .group-38, .allowtagcolors .mgroup-37, .allowtagcolors .mgroup-38 {
+ --mghue1: 54; --mgsat1: 60%; --mglight1: 0%;
+ --mghue2: 76; --mgsat2: 60%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "coconut"; --mgbanner: url(https://i.postimg.cc/FR4km2cQ/banner-coconut.png); }
+
+keylimepie, .keylimepie, .group-39, .group-40, .allowtagcolors .mgroup-39, .allowtagcolors .mgroup-40 {
+ --mghue1: 95; --mgsat1: 60%; --mglight1: 0%;
+ --mghue2: 125; --mgsat2: 60%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "key lime pie"; --mgbanner: url(https://i.postimg.cc/Dw3TCnKF/banner-keylimepie.png); }
+
+matcha, .matcha, .group-41, .group-42, .allowtagcolors .mgroup-41, .allowtagcolors .mgroup-42 {
+ --mghue1: 135; --mgsat1: 60%; --mglight1: 0%;
+ --mghue2: 168; --mgsat2: 75%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "matcha"; --mgbanner: url(https://i.postimg.cc/Kz1G6fpy/banner-matcha.png); }
 
 mint, .mint, .group-11, .group-12, .allowtagcolors .mgroup-11, .allowtagcolors .mgroup-12 {
-      --mghue1: 177;
-    --mgsat1: 65%;
-    --mglight1: -3%;
-    --mghue2: 208;
-    --mgsat2: 57%;
-    --mglight2: -3%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "mint";
-  --mgbanner: url(https://img.nickpic.host/u2BRjO.jpg);
-}
+ --mghue1: 177; --mgsat1: 75%; --mglight1: 0%;
+ --mghue2: 208; --mgsat2: 67%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "mint"; --mgbanner: url(https://i.postimg.cc/N0zYkTsC/banner-mint.png); }
 
-strawberry, .strawberry, .group-13, .group-14, .allowtagcolors .mgroup-13, .allowtagcolors .mgroup-14 {
-  --mghue1: 341;
-  --mgsat1: 85%;
-  --mglight1: -4%;
-  --mghue2: 225;
-  --mgsat2: 51%;
-  --mglight2: -3%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "strawberry";
-  --mgbanner: url(https://img.nickpic.host/u2BRjO.jpg);
-}
+bluemoon, .bluemoon, .group-43, .group-44, .allowtagcolors .mgroup-43, .allowtagcolors .mgroup-44 {
+ --mghue1: 215; --mgsat1: 70%; --mglight1: 0%;
+ --mghue2: 245; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue moon"; --mgbanner: url(https://i.postimg.cc/6qhdDB1S/banner-bluemoon.png); }
 
+taropudding, .taropudding, .group-45, .group-46, .allowtagcolors .mgroup-45, .allowtagcolors .mgroup-46 {
+ --mghue1: 255; --mgsat1: 69%; --mglight1: 0%;
+ --mghue2: 295; --mgsat2: 70%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "taro pudding"; --mgbanner: url(https://i.postimg.cc/zBG78bTN/banner-taropudding.png); }
+
+pannacotta, .pannacotta, .group-47, .group-48, .allowtagcolors .mgroup-47, .allowtagcolors .mgroup-48 {
+ --mghue1: 295; --mgsat1: 69%; --mglight1: 0%;
+ --mghue2: 315; --mgsat2: 75%; --mglight2: -5%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "panna cotta"; --mgbanner: url(https://i.postimg.cc/HLRDygzf/banner-pannacotta.png); }
+
+strawberry, .strawberry, .group-49, .group-50, .allowtagcolors .mgroup-49, .allowtagcolors .mgroup-50 {
+ --mghue1: 320; --mgsat1: 75%; --mglight1: 0%;
+ --mghue2: 340; --mgsat2: 75%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "strawberry"; --mgbanner: url(https://i.postimg.cc/Hx6Sy4Tj/banner-strawberry.png); }
+
+/****************************************
+   Premium Groups
+*****************************************/
+
+neapolitan, .neapolitan, .group-13, .group-14, .allowtagcolors .mgroup-13, .allowtagcolors .mgroup-14 {
+ --mghue1: 341; --mgsat1: 95%; --mglight1: -2%;
+ --mghue2: 225; --mgsat2: 81%; --mglight2: -2%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "neapolitan"; --mgbanner: url(https://i.postimg.cc/1tdtX2Vt/banner-neapolitan.png); }
 
 cherry, .cherry, .group-15, .group-16, .allowtagcolors .mgroup-15, .allowtagcolors .mgroup-16 {
-    --mghue1: 333;
-    --mgsat1: 83%;
-    --mglight1: -2%;
-    --mghue2: 33;
-    --mgsat2: 94%;
-    --mglight2: -1%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "cherry";
-  --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg);
-}
-
-redvelvet, .redvelvet, .group-17, .group-18, .allowtagcolors .mgroup-17, .allowtagcolors .mgroup-18 {
-  --mghue1: 7;
-  --mgsat1: 69%;
-  --mglight1: -2%;
-  --mghue2: 343;
-  --mgsat2: 69%;
-  --mglight2: -2%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "red velvet";
-  --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg);
-}
+ --mghue1: 333; --mgsat1: 88%; --mglight1: 0%;
+ --mghue2: 33; --mgsat2: 94%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cherry"; --mgbanner: url(https://i.postimg.cc/Y2Nf4xq3/banner-cherry.png); }
 
 pistachio, .pistachio, .group-19, .group-20, .allowtagcolors .mgroup-19, .allowtagcolors .mgroup-20 {
---mghue1: 32;
-    --mgsat1: 75%;
-    --mglight1: -2%;
-    --mghue2: 172;
-    --mgsat2: 62%;
-    --mglight2: -1%;
- --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "pistachio";
-  --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg);
-}
-
-
-/**** PREMIUM GROUPS *****/
+ --mghue1: 32; --mgsat1: 80%; --mglight1: 0%;
+ --mghue2: 172; --mgsat2: 67%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pistachio"; --mgbanner: url(https://i.postimg.cc/c4HpXCzV/banner-pistachio.png); }
 
 honeylavender, .honeylavender, .group-21, .group-22, .allowtagcolors .mgroup-21, .allowtagcolors .mgroup-22 {
-  --mghue1: 33;
-  --mgsat1: 61%;
-  --mglight1: 0%;
-  --mghue2: 263;
-  --mgsat2: 65%;
-  --mglight2: 0%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "honey lavender";
-  --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg);
-}
-
+ --mghue1: 33; --mgsat1: 80%; --mglight1: 0%;
+ --mghue2: 263; --mgsat2: 65%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "honey lavender"; --mgbanner: url(https://i.postimg.cc/d1jk04mZ/banner-honeylavender.png); }
 
 bubblegum, .bubblegum, .group-23, .group-24, .allowtagcolors .mgroup-23, .allowtagcolors .mgroup-24 {
-  --mghue1: 165;
-  --mgsat1: 59%;
-  --mglight1: 0%;
-  --mghue2: 308;
-  --mgsat2: 59%;
-  --mglight2: 0%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "bubblegum";
-  --mgbanner: url(https://img.nickpic.host/u2xXLX.jpg);
-}
+ --mghue1: 165; --mgsat1: 70%; --mglight1: 0%;
+ --mghue2: 322; --mgsat2: 70%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "bubblegum"; --mgbanner: url(https://i.postimg.cc/YS4zhKhG/banner-bubblegum.png); }
 
 cottoncandy, .cottoncandy, .group-25, .group-26, .allowtagcolors .mgroup-25, .allowtagcolors .mgroup-26 {
-  --mghue1: 280;
-  --mgsat1: 59%;
-  --mglight1: 0%;
-  --mghue2: 209;
-  --mgsat2: 59%;
-  --mglight2: 0%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "cotton candy";
-  --mgbanner: url(https://img.nickpic.host/u2xXLX.jpg);
-}
+ --mghue1: 280; --mgsat1: 71%; --mglight1: 0%;
+ --mghue2: 209; --mgsat2: 71%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cotton candy"; --mgbanner: url(https://i.postimg.cc/Z5vWNTxS/banner-cottoncandy.png); }
 
 creamsicle, .creamsicle, .group-27, .group-28, .allowtagcolors .mgroup-27, .allowtagcolors .mgroup-28 {
-  --mghue1: 16;
-  --mgsat1: 62%;
-  --mglight1: 0%;
-  --mghue2: 207;
-  --mgsat2: 65%;
-  --mglight2: 0%;
-  --mghue3: var(--mghue1);
-  --mgsat3: var(--mgsat1);
-  --mglight3: var(--mglight1);
-  --mghue4: var(--mghue2);
-  --mgsat4: var(--mgsat2);
-  --mglight4: var(--mglight2);
-  --groupname: "creamsicle";
-  --mgbanner: url(https://img.nickpic.host/u2xXLX.jpg);
+ --mghue1: 16; --mgsat1: 82%; --mglight1: 0%;
+ --mghue2: 207; --mgsat2: 85%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "creamsicle"; --mgbanner: url(https://i.postimg.cc/0NgbdLVJ/banner-creamsicle.png); }
+
+marshmallow, .marshmallow, .group-51, .group-52, .allowtagcolors .mgroup-51, .allowtagcolors .mgroup-52 {
+ --mghue1: 340; --mgsat1: 90%; --mglight1: 0%;
+ --mghue2: 180; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "marshmallow"; --mgbanner: url(https://i.postimg.cc/zB7vN38n/banner-marshmallow.png); }
+
+peanutbuttercup, .peanutbuttercup, .group-53, .group-54, .allowtagcolors .mgroup-53, .allowtagcolors .mgroup-54 {
+ --mghue1: 203; --mgsat1: 100%; --mglight1: 5%;
+ --mghue2: 36; --mgsat2: 98%; --mglight2: -5%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "peanut butter cup"; --mgbanner: url(https://i.postimg.cc/L8GNk8dB/banner-peanutbuttercup.png); }
+
+watermelon, .watermelon, .group-55, .group-56, .allowtagcolors .mgroup-55, .allowtagcolors .mgroup-56 {
+ --mghue1: 69; --mgsat1: 59%; --mglight1: -5%;
+ --mghue2: 342; --mgsat2: 100%; --mglight2: 5%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "watermelon"; --mgbanner: url(https://i.postimg.cc/LX5trdM6/banner-watermelon.png);}
+
+blueraspberry, .blueraspberry, .group-67, .group-68, .allowtagcolors .mgroup-67, .allowtagcolors .mgroup-68 {
+ --mghue1: 173; --mgsat1: 75%; --mglight1: -10%;
+ --mghue2: 266; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue raspberry"; --mgbanner: url(https://i.postimg.cc/KY6h8Y9p/blueraspberry.png); }
+
+jellydonut, .jellydonut, .group-69, .group-70, .allowtagcolors .mgroup-69, .allowtagcolors .mgroup-70 {
+ --mghue1: 3; --mgsat1: 95%; --mglight1: 2%;
+ --mghue2: 172; --mgsat2: 88%; --mglight2: -3%;
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "jelly donut"; --mgbanner: url(https://i.postimg.cc/GpYv6M68/jellydonut.png); }
+
+/****************************************
+   Deluxe Groups
+*****************************************/
+
+bobatea, .bobatea, .group-57, .group-58, .allowtagcolors .mgroup-57, .allowtagcolors .mgroup-58 {
+ --mghue1: 43; --mgsat1: 84%; --mglight1: 5%;
+ --mghue2: 325; --mgsat2: 81%; --mglight2: 0%;
+ --mghue3: 236; --mgsat3: 77%; --mglight3: -5%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "boba tea"; --mgbanner: url(https://i.postimg.cc/xj4jGnwD/bobatea.png);
 }
+
+
+buttercake, .buttercake, .group-59, .group-60, .allowtagcolors .mgroup-59, .allowtagcolors .mgroup-60 {
+ --mghue1: 348; --mgsat1: 79%; --mglight1: 0%;
+ --mghue2: 175; --mgsat2: 76%; --mglight2: 0%;
+ --mghue3: 250; --mgsat3: 79%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butter cake"; --mgbanner: url(https://i.postimg.cc/L8dH7v4x/buttercake.png);
+}
+
+
+caramellatte, .caramellatte, .group-61, .group-62, .allowtagcolors .mgroup-61, .allowtagcolors .mgroup-62 {
+ --mghue1: 54; --mgsat1: 62%; --mglight1: 0%;
+ --mghue2: 196; --mgsat2: 80%; --mglight2: -6%;
+ --mghue3: 6; --mgsat3: 81%; --mglight3: -10%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "caramel latte"; --mgbanner: url(https://i.postimg.cc/Ls2m4X1f/caramellatte.png);
+}
+
+
+raspberrysorbet, .raspberrysorbet, .group-63, .group-64, .allowtagcolors .mgroup-63, .allowtagcolors .mgroup-64 {
+ --mghue1: 320; --mgsat1: 70%; --mglight1: 0%;
+ --mghue2: 197; --mgsat2: 70%; --mglight2: 0%;
+ --mghue3: 106; --mgsat3: 55%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "raspberry sorbet"; --mgbanner: url(https://i.postimg.cc/PrvX20HL/raspberrysorbet.png); 
+}
+
+
+butterscotch, .butterscotch, .group-65, .group-66, .allowtagcolors .mgroup-65, .allowtagcolors .mgroup-66 {
+ --mghue1: 141; --mgsat1: 54%; --mglight1: 0%;
+ --mghue2: 357; --mgsat2: 93%; --mglight2: 0%;
+ --mghue3: 39; --mgsat3: 98%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butterscotch"; --mgbanner: url(https://i.postimg.cc/zGnJ1WV8/butterscotch.png);
+}
+
+pinacolada, .pinacolada, .group-71, .group-72, .allowtagcolors .mgroup-71, .allowtagcolors .mgroup-72 {
+ --mghue1: 59; --mgsat1: 72%; --mglight1: 0%;
+ --mghue2: 217; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: 181; --mgsat3: 78%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "pina colada"; --mgbanner: url(https://i.postimg.cc/9QTnBjCs/pinacolada.png);
+}
+
+honeycomb, .honeycomb, .group-73, .group-74, .allowtagcolors .mgroup-73, .allowtagcolors .mgroup-74 {
+ --mghue1: 41; --mgsat1: 80%; --mglight1: -5%;
+ --mghue2: 0; --mgsat2: 80%; --mglight2: 0%;
+ --mghue3: 228; --mgsat3: 71%; --mglight3: -10%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "honeycomb"; --mgbanner: url(https://i.postimg.cc/2jdWfcTh/honeycomb.png);
+}
+
+laffytaffy, .laffytaffy, .group-75, .group-76, .allowtagcolors .mgroup-75, .allowtagcolors .mgroup-76 {
+ --mghue1: 171; --mgsat1: 73%; --mglight1: 0%;
+ --mghue2: 0; --mgsat2: 85%; --mglight2: 0%;
+ --mghue3: 281; --mgsat3: 89%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "laffy taffy"; --mgbanner: url(https://i.postimg.cc/0N4cS8BT/laffytaffy.png);
+}
+
 
 /****************************************
    Exclusive Groups
 *****************************************/
 blackberryrose, .blackberryrose, .group-29, .group-30, .allowtagcolors .mgroup-29, .allowtagcolors .mgroup-30 {
-  --mghue1: 318;
-  --mgsat1: 79%;
-  --mglight1: -3%;
-  --mghue2: 23;
-  --mgsat2: 52%;
-  --mglight2: 0%;
-  --mghue3: 244;
-  --mgsat3: 69%;
-  --mglight3: 2%;
-  --mghue4: var(--mghue3);
-  --mgsat4: var(--mgsat3);
-  --mglight4: var(--mglight3);
-  --groupname: "blackberry rose";
-  --mgbanner: url(https://images.unsplash.com/photo-1515192337774-033dac0ed561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
-}
+ --mghue1: 318; --mgsat1: 89%; --mglight1: -3%;
+ --mghue2: 23; --mgsat2: 62%; --mglight2: 0%;
+ --mghue3: 244; --mgsat3: 79%; --mglight3: 2%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blackberry rose"; --mgbanner: url(https://i.postimg.cc/k4KNvQN7/banner-blackberryrose.png); }
 
 birthdaycake, .birthdaycake, .group-31, .group-32, .allowtagcolors .mgroup-31, .allowtagcolors .mgroup-32 {
-  --mghue1: 36;
-  --mgsat1: 60%;
-  --mglight1: 2%;
-  --mghue2: 212;
-  --mgsat2: 60%;
-  --mglight2: 2%;
-  --mghue3: 354;
-  --mgsat3: 60%;
-  --mglight3: 2%;
-  --mghue4: var(--mghue3);
-  --mgsat4: var(--mgsat3);
-  --mglight4: var(--mglight3);
-  --groupname: "birthday cake";
-  --mgbanner: url(https://images.unsplash.com/photo-1515192337774-033dac0ed561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
-}
+ --mghue1: 36; --mgsat1: 70%; --mglight1: 0%;
+ --mghue2: 212; --mgsat2: 70%; --mglight2: 0%;
+ --mghue3: 354; --mgsat3: 70%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "birthday cake"; --mgbanner: url(https://i.postimg.cc/L88TFZSV/banner-birthdaycake.png); }
 
 amarenacherry, .amarenacherry, .group-33, .group-34, .allowtagcolors .mgroup-33, .allowtagcolors .mgroup-34 {
-  --mghue1: 130;
-  --mgsat1: 60%;
-  --mglight1: 0%;
-  --mghue2: 263;
-  --mgsat2: 50%;
-  --mglight2: 0%;
-  --mghue3: 48;
-  --mgsat3: 80%;
-  --mglight3: 1%;
-  --mghue4: var(--mghue3);
-  --mgsat4: var(--mgsat3);
-  --mglight4: var(--mglight3);
-  --groupname: "amarena cherry";
-  --mgbanner: url(https://img.nickpic.host/u2BO9j.jpg); }
+ --mghue1: 130; --mgsat1: 65%; --mglight1: 0%;
+ --mghue2: 263; --mgsat2: 60%; --mglight2: 0%;
+ --mghue3: 48; --mgsat3: 58%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "amarena cherry"; --mgbanner: url(https://i.postimg.cc/3wPCGSvL/banner-amarenacherry.png); }
 
 blueberrychip, .blueberrychip, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagcolors .mgroup-36 {
-  --mghue1: 188;
-  --mgsat1: 65%;
-  --mglight1: 3%;
-  --mghue2: 28;
-  --mgsat2: 45%;
-  --mglight2: 2%;
-  --mghue3: 224;
-  --mgsat3: 70%;
-  --mglight3: 1%;
-  --mghue4: var(--mghue3);
-  --mgsat4: var(--mgsat3);
-  --mglight4: var(--mglight3);
-  --groupname: "blueberry chip";
-  --mgbanner: url(https://img.nickpic.host/u2BC6n.jpg);
-}
+ --mghue1: 188; --mgsat1: 75%; --mglight1: 0%;
+ --mghue2: 28; --mgsat2: 55%; --mglight2: 2%;
+ --mghue3: 224; --mgsat3: 80%; --mglight3: 0%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blueberry chip"; --mgbanner: url(https://i.postimg.cc/GmgjLhhn/banner-blueberrychip.png); }
+
+rainbowsherbet, .rainbowsherbet, .group-77, .group-78, .allowtagcolors .mgroup-77, .allowtagcolors .mgroup-78 {
+ --mghue1: 350; --mgsat1: 77%; --mglight1: 3%;
+ --mghue2: 40; --mgsat2: 81%; --mglight2: 0%;
+ --mghue3: 180; --mgsat3: 80%; --mglight3: -2%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "rainbow sherbet"; --mgbanner: url(https://i.postimg.cc/j2G3PR3g/rainbowsherbet.png); }
+
+sweetcream, .sweetcream, .group-79, .group-80, .allowtagcolors .mgroup-79, .allowtagcolors .mgroup-80 {
+ --mghue1: 197; --mgsat1: 100%; --mglight1: 2%;
+ --mghue2: 337; --mgsat2: 100%; --mglight2: 2%;
+ --mghue3: 16; --mgsat3: 100%; --mglight3: 2%;
+ --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "sweet cream"; --mgbanner: url(https://i.postimg.cc/2yCGRT9w/sweetcream-3.png); }
 
 
-
-
-* {
+* { 
 --fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
 }
-
-.group-1, .group-2, .group-3, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28,
+.group-1, .group-3, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28,.group-37,.group-38,.group-39,.group-40,.group-41,.group-42,.group-43,.group-44,.group-45,.group-46,.group-47,.group-48,.group-49,.group-50,.group-51,.group-52,.group-53,.group-54,.group-55,.group-56, .group-67, .group-68, .group-69, .group-70,
 .membergrouphereinalllowercase,
-.guests, .members, .retired, .inactive, .vanilla, .chocolate, .cherry, .strawberry, .redvelvet, .mint, .pistachio, .honeylavender, .bubblegum, .cottoncandy, .creamsicle {
+.retired, .members, .inactive, .redvelvet, .vanilla, .chocolate, .coconut, .keylimepie, .matcha, .mint, .bluemoon, .taropudding, .pannacotta, .neapolitan, .cherry, .strawberry, .pistachio, .honeylavender, .bubblegum, .cottoncandy, .creamsicle, .marshmallow, .peanutbuttercup, .watermelon, .blueraspberry, .jellydonut  { 
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
---fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + calc(var(--darken))));
+--pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken)));
+--fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); 
 }
-.group-4, .group-29, .group-30, .group-31, .group-32, .group-33, .group-34, .group-35, .group-36,
-.topicwr.announcement,
-.staff, .blackberryrose, .birthdaycake, .amarenacherry, .blueberrychip {
+.group-2, .group-4, .group-29, .group-30, .group-31, .group-32, .group-33, .group-34, .group-35, .group-36, .group-57, .group-58, .group-59, .group-60, .group-61, .group-62, .group-63, .group-64, .group-65, .group-66, .group-71, .group-72, .group-73, .group-74, .group-75, .group-76, .group-77, .group-78, .group-79, .group-80,
+.tshell.toptype-announcement.group-,
+.guests, .staff, .blackberryrose, .birthdaycake, .amarenacherry, .blueberrychip, .bobatea, .buttercake, .caramellatte, .raspberrysorbet, .butterscotch, .pinacolada, .honeycomb, .laffytaffy, .rainbowsherbet, .sweetcream {
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+--pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight3) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
 }
 
