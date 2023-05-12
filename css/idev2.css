@@ -202,7 +202,7 @@ idev2 charname {
   background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
 }
 idev2 charname a {
-  inherit;
+  color: inherit;
 }
 idev2 charrel {
   font: 800 11px var(--font1);
