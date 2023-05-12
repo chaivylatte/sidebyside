@@ -166,3 +166,52 @@ idev2 headwr {
   writing-mode: vertical-lr;
   font: 400 20px var(--font2);
 }
+idev2 devcharacter {
+  display: flex;
+  flex-direction: row-reverse;
+  place-content: center space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  margin-bottom: 10px;
+}
+idev2 devcharacter:last-child {
+  margin-bottom: 0;
+}
+idev2 devcharacter img {
+  display: block;
+  flex: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid rgba(var(--bgelev1));
+}
+idev2 devcharacter charinf {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+}
+idev2 charname {
+  font: 900 20px var(--font1);
+  line-height: 1;
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+idev2 charname a {
+  inherit;
+}
+idev2 charrel {
+  font: 800 11px var(--font1);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 0%;
+  padding-top: 10px;
+}
