@@ -1,0 +1,146 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+icall7 {
+  font: 500 16px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 8px;
+  padding: 35px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+icall7 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  color: var(--fontaccent1);
+}
+icall7 recspace {
+  order: 2;
+  display: flex;
+  gap: 20px;
+  place-content: center flex-start;
+  align-items: center;
+}
+icall7 recspace gif {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  background: rgba(var(--bgelev3));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--fontaccent1);
+}
+icall7 recspace img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall7 recipient {
+  font: 900 18px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+  text-align: left;
+}
+icall7 bottbar {
+  order: 4;
+  border-radius: 6px;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font: 800 18px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+icall7 bottbar:before {
+  content: "end call";
+  color: rgba(var(--fontdimmer));
+}
+icall7 bottbar i {
+  color: var(--fontaccent1);
+  font-size: 14px;
+}
+icall7 .actions {
+  position: relative;
+  order: 3;
+}
+icall7 .actions:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: var(--fontaccent1);
+}
+icall7 .actions p {
+  position: relative;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  padding-left: 20px;
+  margin-left: 5px;
+  align-self: flex-start;
+  text-align: justify;
+}
+icall7 .actions p:before {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--fontaccent1);
+  background: rgba(var(--bgelev1));
+}
+icall7 .actions p:first-child {
+  margin-top: 0px;
+}
+icall7 .actions b, icall7 .actions i {
+  font-size: 17px;
+}
+icall7 .actions b {
+  color: var(--fontaccent1);
+}
+icall7 .actions i {
+  color: var(--fontaccent1);
+}
+icall7 .actions u {
+  font: 600 15px var(--font1);
+  text-decoration: underline var(--fontaccent1);
+}
+icall7 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+icall7 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+icall7 .actions note {
+  text-align: right;
+  align-self: flex-end;
+  font: 800 10px var(--font1);
+  text-transform: uppercase;
+  color: var(--fontaccent1);
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}

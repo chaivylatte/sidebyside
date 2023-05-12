@@ -1,0 +1,144 @@
+@import url("https://use.typekit.net/ewz4vjp.css");
+
+itext7 {
+  font: 500 16px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 400px;
+  border-radius: 8px;
+  padding: 35px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+itext7 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  color: var(--fontaccent1);
+}
+itext7 recspace {
+  order: 2;
+  display: flex;
+  gap: 20px;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext7 recspace gif {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  background: rgba(var(--bgelev3));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--fontaccent1);
+}
+itext7 recspace img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext7 recipient {
+  font: 900 18px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+  text-align: left;
+}
+itext7 bottbar {
+  order: 4;
+  border-radius: 6px;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+itext7 bottbar:before {
+  content: "type something...";
+  color: rgba(var(--fontdimmer));
+}
+itext7 bottbar i {
+  color: var(--fontaccent1);
+  font-size: 14px;
+}
+itext7 .messages {
+  position: relative;
+  order: 3;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext7 .messages:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: var(--fontaccent1);
+}
+itext7 .messages p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-left: 5px;
+  align-self: flex-start;
+  text-align: justify;
+}
+itext7 .messages p:before {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--fontaccent1);
+  background: rgba(var(--bgelev1));
+}
+itext7 .messages b, itext7 .messages i {
+  font-size: 17px;
+}
+itext7 .messages b {
+  color: var(--fontaccent1);
+}
+itext7 .messages i {
+  color: var(--fontaccent1);
+}
+itext7 .messages u {
+  font: 600 15px var(--font1);
+  text-decoration: underline var(--fontaccent1);
+}
+itext7 .messages a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+itext7 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+itext7 .messages note {
+  text-align: right;
+  align-self: flex-end;
+  font: 800 10px var(--font1);
+  text-transform: uppercase;
+  color: var(--fontaccent1);
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
