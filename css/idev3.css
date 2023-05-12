@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/qpg2hts.css");
 
 idev3 {
+  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
   font: 400 14px var(--font1);
   line-height: 1.5;
   background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
