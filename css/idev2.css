@@ -186,7 +186,7 @@ idev2 devcharacter img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 5px solid rgba(var(--bgelev1));
+  border: 5px solid rgba(var(--bgelev2));
 }
 idev2 devcharacter charinf {
   flex-grow: 1;
