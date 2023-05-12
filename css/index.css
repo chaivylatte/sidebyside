@@ -8,7 +8,12 @@ form { display:inline; }
 :root, html[data-theme="light"] { --border: 208, 208, 208; --font: 95, 95, 95; --fontdim: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --shadow: 119, 119, 119; --darken: 0%; --blendmode: normal; }
 html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --bgpure: 19, 19, 19; --bgelev1: 45, 45, 45; --bgelev2: 40, 40, 40; --bgelev3: 35, 35, 35; --bgelev4: 30, 30, 30; --bgelev5: 25, 25, 25; --bgelev6: 20, 20, 20; --shadow: 0, 0, 0; --darken: -10%; --blendmode: difference; }
 
-body { position: relative; font-family: 'filson-soft', sans-serif; font-size: 13px; font-weight: 500; line-height: 1; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)); background-size: cover; background-position: center; background-attachment: fixed; --font1: filson-soft; --font2: fugaz one; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; --pastelpercent: -26%; --normalpercent: -18%; --sidebarwidth: 70px; }
+
+body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: laca; --font2: jeanne-moderno-geometrique; --font3: laca-text; --pastelpercent: -31%; --normalpercent: -23%; --lightness1: 85%; --lightness2: 60%; --lightness3: 72%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s;
+   --sans:var(--font1);
+   --display:var(--font2);
+   --sans1: fenwick, sans-serif;
+   --outline: coquette, sans-serif; }
 
 *[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
 ::selection { background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken))); color: inherit; text-shadow: none; }

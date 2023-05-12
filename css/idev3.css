@@ -1,7 +1,6 @@
-@import url("https://use.typekit.net/qpg2hts.css");
+@import url("https://use.typekit.net/ewz4vjp.css");
 
 idev3 {
-  --font1: hoss-round; --font2: eldwin-script; --font3: confiteria-script;
   font: 400 14px var(--font1);
   line-height: 1.5;
   background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
@@ -27,7 +26,7 @@ idev3 topper {
 idev3 topper name {
   background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
   text-decoration: underline rgba(var(--fontdim));
-  font: 400 30px var(--font3);
+  font: 400 30px var(--font2);
 }
 idev3 lyr {
   background: rgba(var(--bgelev2));
@@ -53,7 +52,7 @@ idev3 .devstuff h1, idev3 .devstuff h2, idev3 .devstuff h3, idev3 .devstuff h4, 
   margin: 0;
   margin-bottom: 10px;
   font-weight: 400;
-  font-family: var(--font3);
+  font-family: var(--font2);
   line-height: 100%;
   color: var(--fontaccent1);
 }
@@ -75,7 +74,7 @@ idev3 .devstuff i {
   color: var(--fontaccent4);
 }
 idev3 .devstuff u {
-  font: 400 15px var(--font3);
+  font: 400 15px var(--font2);
   text-decoration: underline var(--fontaccent2);
 }
 idev3 .devstuff a {
