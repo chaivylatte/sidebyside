@@ -61,6 +61,9 @@ ithread5 .writing {
   border-radius: 5px;
   text-align: justify;
 }
+ithread5 .writing overflow {
+  height: 250px;
+}
 ithread5 .writing p {
   margin: 0;
   margin-top: 15px;
