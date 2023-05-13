@@ -1,0 +1,141 @@
+icall8 {
+  display: block;
+  font: 500 13px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient2));
+  width: 450px;
+  border-radius: 5px;
+  padding: 0;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+icall8 inside {
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1));
+  display: grid;
+  grid-template-columns: 131px auto;
+  border-radius: 0 0 0 5px;
+}
+icall8 recspace {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  order: 2;
+  padding: 20px;
+}
+icall8 recspace:before {
+  content: "voice call connected to";
+  font: 500 17px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+icall8 recipient {
+  display: block;
+  font: 400 28px var(--font2);
+  align-self: flex-end;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: 0 100%;
+  padding-bottom: 10px;
+}
+icall8 .actions {
+  margin: 25px;
+  padding-top: 0;
+  order: 3;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 5px;
+  text-align: justify;
+}
+icall8 .actions note { 
+  align-self: center;
+  font: 800 10px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+icall8 .actions p {
+  margin: 0;
+  margin-top: 10px;
+  text-indent: 5px;
+}
+icall8 .actions p:first-child {
+  margin-top: 0;
+}
+icall8 .actions b, icall8 .actions i {
+  background: rgba(var(--bgelev1));
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+icall8 .actions b {
+  color: var(--fontaccent1);
+}
+icall8 .actions i {
+  color: var(--fontaccent4);
+}
+icall8 .actions u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+icall8 .actions a {
+  text-decoration: underline var(--fontaccent3);
+}
+icall8 .actions p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+icall8 leftside {
+  grid-row: span 2;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center flex-start;
+  align-items: center;
+  border-right: 1px solid rgba(var(--bgelev1));
+  padding: 20px;
+}
+icall8 gif {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 30px;
+  color: var(--fontaccent2);
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  background: rgba(var(--bgelev1));
+}
+icall8 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall8 iconsbox {
+  width: 90px;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+}
+icall8 iconsbox i[class*="fa"] {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+}

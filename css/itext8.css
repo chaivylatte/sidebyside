@@ -1,0 +1,141 @@
+itext8 {
+  display: block;
+  font: 500 13px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient2));
+  width: 450px;
+  border-radius: 5px;
+  padding: 0;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+itext8 inside {
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1));
+  display: grid;
+  grid-template-columns: 131px auto;
+  border-radius: 0 0 0 5px;
+}
+itext8 recspace {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  order: 2;
+  padding: 20px;
+}
+itext8 recspace:before {
+  content: "unread message from";
+  font: 500 17px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itext8 recipient {
+  display: block;
+  font: 400 28px var(--font2);
+  align-self: flex-end;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: 0 100%;
+  padding-bottom: 10px;
+}
+itext8 .messages {
+  padding: 25px;
+  padding-top: 0;
+  order: 3;
+  display: flex;
+  flex-direction: column; 
+  place-content: flex-start flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: justify;
+}
+itext8 .messages note { 
+  align-self: center;
+  font: 800 10px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+itext8 .messages p {
+  margin: 0;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 0 5px 5px 5px;
+}
+itext8 .messages b, itext8 .messages i {
+  background: rgba(var(--bgelev1));
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+itext8 .messages b {
+  color: var(--fontaccent1);
+}
+itext8 .messages i {
+  color: var(--fontaccent4);
+}
+itext8 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+itext8 .messages a {
+  text-decoration: underline var(--fontaccent3);
+}
+itext8 .messages p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext8 leftside {
+  grid-row: span 2;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center flex-start;
+  align-items: center;
+  border-right: 1px solid rgba(var(--bgelev1));
+  padding: 20px;
+}
+itext8 gif {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 30px;
+  color: var(--fontaccent2);
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  background: rgba(var(--bgelev1));
+}
+itext8 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext8 iconsbox {
+  width: 90px;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+}
+itext8 iconsbox i[class*="fa"] {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+}
