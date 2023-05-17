@@ -69,7 +69,7 @@ irequest7 .writing i {
   color: var(--fontaccent4);
 }
 irequest7 .writing u {
-  font: 400 15px var(--font3);
+  font: 400 15px var(--font2);
   text-decoration: underline var(--fontaccent2);
 }
 irequest7 .writing a {
@@ -83,7 +83,7 @@ irequest7 reqtitle {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
-  font: 400 40px var(--font3);
+  font: 400 40px var(--font2);
   line-height: 1;
 }
 irequest7 reqtitle span {
@@ -131,7 +131,7 @@ irequest7 character rightsur {
 irequest7 character name {
   grid-column: 1 / -1;
   text-align: center;
-  font: 400 20px var(--font3);
+  font: 400 20px var(--font2);
   background: rgba(var(--bgelev2));
   padding: 10px;
   border-radius: 10px;

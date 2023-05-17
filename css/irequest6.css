@@ -68,7 +68,7 @@ irequest6 .writing i {
   color: var(--fontaccent4);
 }
 irequest6 .writing u {
-  font: 400 15px var(--font3);
+  font: 400 15px var(--font2);
   text-decoration: underline var(--fontaccent2);
 }
 irequest6 .writing a {
