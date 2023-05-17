@@ -1,7 +1,4 @@
-@import url("https://use.typekit.net/ewz4vjp.css");
-
 ithread1 {
-  --font1: laca; --font2: jeanne-moderno-geometrique;
   font: 500 15px var(--font1);
   line-height: 1.5;
   letter-spacing: 0.25px;
