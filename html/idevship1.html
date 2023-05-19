@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/idevship1.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yzg8yyi.css">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="redvelvet">red velvet</option><option value="chocolate">chocolate</option><option value="vanilla">vanilla</option><option value="coconut">coconut</option><option value="keylimepie">keylimepie</option><option value="matcha">matcha</option><option value="mint">mint</option><option value="bluemoon">blue moon</option><option value="taropudding">taro pudding</option><option value="panna cotta">panna cotta</option><option value="strawberry">strawberry</option><option value="pistachio">pistachio</option><option value="neapolitan">neapolitan</option><option value="cherry">cherry</option><option value="honeylavender">honey lavender</option><option value="bubblegum">bubblegum</option><option value="cottoncandy">cotton candy</option><option value="creamsicle">creamsicle</option><option value="marshmallow">marshmallow</option><option value="peanutbuttercup">peanut butter cup</option><option value="watermelon">watermelon</option><option value="blueraspberry">blue raspberry</option><option value="jellydonut">jelly donut</option><option value="bobatea">boba tea</option><option value="buttercake">butter cake</option><option value="caramellatte">caramel latte</option><option value="raspberrysorbet">raspberry sorbet</option><option value="butterscotch">butterscotch</option><option value="pinacolada">pina colada</option><option value="honeycomb">honeycomb</option><option value="laffytaffy">laffy taffy</option><option value="blackberryrose">blackberry rose</option><option value="birthdaycake">birthday cake</option><option value="amarenacherry">amarenacherry</option><option value="blueberrychip">blueberry chip</option><option value="rainbowsherbet">rainbow sherbet</option><option value="sweetcream">sweet cream</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<idevship1><topper><gifsur><gif><img src="https://64.media.tumblr.com/94a7c4db180b351b810228bc79a19184/c0e90028aae4f8aa-e7/s540x810/e5d1cf60aeecfbda15248a8f7848f8cf68404bef.gif"></gif></gifsur><headwr>name or whatever</headwr><gifsur><gif><img src="https://64.media.tumblr.com/d205d7dd1c1fde507ad69a660e485fbe/c0e90028aae4f8aa-eb/s540x810/f0abf926deefc4757dd7e901da768ebb9f9d26b4.gif"></gif></gifsur></topper><div class="devstuff shipspace2">
+
+<div class="shipdesc">
+
+<p>words, status, stuff about the ship. this is what it will look like in this template, and if you wanted to see what <b>bold</b>, <i>italic</i>, <u>underline</u>, <del>strike-through</del>, and <mark>highlighted</mark> text looks like. also a <a href"#">link</a> if you need it!
+<p>this paragraph looks exactly like the first one
+
+</div><div class="shipplaylist">
+
+<iframe src="https://open.spotify.com/embed/playlist/SPOTIFYPLAYLISTCODEGOESHERE" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+</div><shipthreads><overflow>
+
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+<a href="#">thread title goes here</a>
+
+</overflow></shipthreads>
+
+</div><bottbar></bottbar></idevship1>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>

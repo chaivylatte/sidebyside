@@ -1,0 +1,334 @@
+idevship1 {
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+idevship1 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idevship1 topper gifsur { 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+idevship1 topper gif { 
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+idevship1 topper gif img { 
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+idevship1 headwr {
+  font: 400 30px var(--font2);
+  text-decoration: underline rgba(var(--bgelev1));
+}
+idevship1 topper i {
+  font-size: 20px;
+  color: rgba(var(--bgelev1));
+}
+idevship1 bottbar {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idevship1 .devstuff {
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 40px;
+  text-align: justify;
+}
+idevship1 .devstuff h1, idevship1 .devstuff h2, idevship1 .devstuff h3, idevship1 .devstuff h4, idevship1 .devstuff h5, idevship1 .devstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  color: var(--fontaccent1);
+}
+idevship1 .devstuff p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+idevship1 .devstuff p:first-child {
+  margin-top: 0;
+}
+idevship1 .devstuff b, idevship1 .devstuff i, idevship1 .devstuff u, idevship1 .devstuff a {
+  font-size: 17px;
+}
+idevship1 .devstuff b {
+  color: var(--fontaccent1);
+}
+idevship1 .devstuff i {
+  color: var(--fontaccent4);
+}
+idevship1 .devstuff u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+idevship1 .devstuff a {
+  text-decoration: underline;
+  color: var(--fontaccent3);
+}
+idevship1 .devstuff del {
+  text-decoration: line-through var(--fontaccent1);
+}
+idevship1 .devstuff mark {
+  color: rgba(var(--font));
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idevship1 .devstuff blockquote {
+  background: rgba(var(--bgelev3));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+idevship1 .devstuff q {
+  font-size: 40px;
+  line-height: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(var(--bgelev4));
+  padding-bottom: 15px;
+}
+idevship1 .devstuff cite {
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 100%;
+}
+idevship1 .devstuff cite:before {
+  content: "-- ";
+}
+idevship1 .devstuff ol, idevship1 .devstuff ul {
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 10px;
+  list-style-position: inside;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+idevship1 .devstuff ol {
+  list-style-type: none;
+}
+idevship1 .devstuff li {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+}
+idevship1 .devstuff li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+}
+idevship1 .devstuff[class*=images] {
+  display: grid;
+  grid-gap: 15px;
+  align-items: stretch;
+}
+idevship1 .devstuff.images-1 {
+  grid-template-columns: 1fr;
+}
+idevship1 .devstuff.images-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+idevship1 .devstuff.images-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+idevship1 .devstuff.images-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+idevship1 .devstuff[class*=images] img {
+  display: block;
+  width: 100%;
+  border: 10px solid rgba(var(--bgelev2));
+  border-radius: 15px;
+}
+idevship1 .devstuff iframe {
+  border-radius: 20px;
+}
+idevship1 devcharacter {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  margin-bottom: 10px;
+}
+idevship1 devcharacter:last-child {
+  margin-bottom: 0;
+}
+idevship1 devcharacter img {
+  display: block;
+  flex: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 5px solid rgba(var(--bgelev1));
+}
+idevship1 devcharacter charinf {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+}
+idevship1 charname {
+  font: 400 18px var(--font2);
+  line-height: 1;
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+idevship1 charname a {
+  inherit;
+}
+idevship1 charrel {
+  font: 800 11px var(--font1);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 0%;
+  padding-top: 10px;
+}
+idevship1 .shipdesc {
+  grid-column: 1 / -1;
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 20px;
+}
+idevship1 .shipdesc overflow {
+  max-height: 100px;
+}
+idevship1 .shipspace1 {
+
+}
+idevship1 .shipspace1 shipthreads {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  margin-top: 25px;
+}
+idevship1 .shipspace1 shipthreads::before {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--fontaccent1);
+}
+idevship1 .shipspace1 shipthreads a {
+  position: relative;
+  width: calc(50% - 20px);
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fontaccent1);
+  background: rgba(var(--bgelev2));
+  padding: 8px;
+  border-radius: 5px;
+}
+idevship1 .shipspace1 shipthreads a:nth-child(odd) {
+  align-self: flex-start;
+  text-align: left;
+}
+idevship1 .shipspace1 shipthreads a:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -27px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--fontaccent1);
+  border-radius: 50%;
+  background: rgba(var(--bgelev1));
+}
+idevship1 .shipspace1 shipthreads a:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+idevship1 .shipspace1 shipthreads a:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -27px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--fontaccent1);
+  border-radius: 50%;
+  background: rgba(var(--bgelev1));
+}
+idevship1 .shipspace2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto 380px;
+}
+idevship1 .shipspace2 .shipplaylist {
+
+}
+idevship1 .shipspace2 shipthreads {
+  height: 380px;
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 20px;
+}
+idevship1 .shipspace2 shipthreads overflow {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start; 
+  align-items: center;
+}
+idevship1 .shipspace2 shipthreads a {
+  display: block;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fontaccent1);
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
