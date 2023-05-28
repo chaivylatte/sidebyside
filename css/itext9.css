@@ -68,6 +68,7 @@ itext9 recipient::before {
 itext9 .messages {
   order: 2;
   display: flex;
+  width: 100%;
   gap: 10px;
   flex-direction: column;
   border-top: 1px solid rgba(var(--border));

@@ -67,6 +67,7 @@ icall9 recipient::before {
 }
 icall9 .actions {
   order: 2;
+  width: 100%;
   border-top: 1px solid rgba(var(--border));
   background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1));
   padding: 30px;
