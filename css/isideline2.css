@@ -1,0 +1,259 @@
+isideline2 {
+  font: 500 13px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1));
+  width: 600px;
+  overflow: hidden;
+}
+isideline2 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev3));
+  border-bottom: 1px solid rgba(var(--border));
+  padding: 30px;
+  font: 500 30px var(--font2);
+}
+isideline2 topper i {
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: var(--fontaccent1); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
+isideline2 topper span { 
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat; 
+  background-size: 100% 5px; 
+  background-position: 0 100%; 
+  padding-bottom: 10px; 
+}
+isideline2 infospace {
+  display: flex;
+  gap: 20px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 40px;
+}
+isideline2 leftinfo {
+  order: 1;
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+}
+isideline2 namesur {
+  order: 1;
+  font: 400 16px var(--font2);
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat; 
+  background-size: 100% 2px; 
+  background-position: 0 100%; 
+  padding-bottom: 2px; 
+  text-align: left;
+}
+isideline2 fakecontrols {
+  order: 2;
+  display: flex;
+  gap: 5px;
+  place-content: center space-between;
+  align-items: center;
+}
+isideline2 fakecontrols span {
+  display: flex;
+  gap: 5px;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev2));
+  padding: 8px;
+  border-radius: 5px;
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+}
+isideline2 fakecontrols span:nth-child(1)::before {
+  content: "following";
+}
+isideline2 fakecontrols span:nth-child(2)::before {
+  content: "message";
+}
+isideline2 .biospace {
+  order: 3;
+  width: 100%;
+  text-align: justify;
+}
+isideline2 .biospace:empty {
+  display: none;
+}
+isideline2 .biospace p {
+  margin: 0;
+  margin-top: 8px;
+}
+isideline2 .biospace p:first-child {
+  margin-top: 0;
+}
+isideline2 .biospace b {
+  font: 700 14px var(--font1);
+  color: var(--fontaccent1);
+}
+isideline2 .biospace i {
+  font: 500 14px var(--font1);
+  color: var(--fontaccent4);
+}
+isideline2 .biospace u {
+  font: 400 13px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+isideline2 .biospace a {
+  text-decoration: underline var(--fontaccent3);
+}
+isideline2 .biospace p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+isideline2 icon {
+  order: 2;
+  flex: none;
+  display: block;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1)); 
+  padding: 6px;
+  align-self: flex-start;
+}
+isideline2 icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(var(--bgelev1));
+  border-radius: inherit;
+}
+isideline2 picspace {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  border-top: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); 
+  padding: 30px;
+}
+isideline2 picspace img {
+  display: block;
+  border: 5px solid rgba(var(--bgelev1));
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  -webkit-transition: .2s ease-in-out 0s; transition: .2s ease-in-out 0s;
+}
+isideline2 picspace img:hover {
+  transform: scale(1.2);
+}
+isideline2 postspace {
+  display: block;
+  padding: 40px;
+}
+isideline2 inner {
+  display: block;
+  border: 1px solid rgba(var(--border));
+  border-radius: 5px;
+  overflow: hidden;
+}
+isideline2 nameic {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-bottom: 1px solid rgba(var(--border));
+}
+isideline2 nameic icon {
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  border: 1px solid rgba(var(--bgelev1));
+}
+isideline2 nameic icon img {
+  border: 1px solid rgba(var(--bgelev1));
+}
+isideline2 postsur {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgba(var(--bgelev3));
+  padding: 50px;
+}
+isideline2 postsur picture {
+  width: 100%;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+}
+isideline2 postsur picture img {
+  display: block;
+  width: 100%;
+  border-radius: inherit;
+}
+isideline2 postsur song {
+  width: 100%;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+}
+isideline2 postsur song iframe {
+  display: block;
+  border-radius: 5px!important;
+}
+isideline2 .status {
+  width: 100%;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+  text-align: justify;
+}
+isideline2 .status p {
+  margin: 0;
+  margin-top: 8px;
+}
+isideline2 .status p:first-child {
+  margin-top: 0;
+}
+isideline2 .status b {
+  font: 700 14px var(--font1);
+  color: var(--fontaccent1);
+}
+isideline2 .status i {
+  font: 500 14px var(--font1);
+  color: var(--fontaccent4);
+}
+isideline2 .status u {
+  font: 400 13px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+isideline2 .status a {
+  text-decoration: underline var(--fontaccent3);
+}
+isideline2 .status p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+isideline2 bott {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); 
+}
