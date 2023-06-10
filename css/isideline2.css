@@ -186,7 +186,7 @@ isideline2 postsur {
   place-content: center flex-start;
   align-items: center;
   gap: 10px;
-  background: rgba(var(--bgelev3));
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1)); 
   padding: 50px;
 }
 isideline2 postsur picture {
@@ -195,7 +195,6 @@ isideline2 postsur picture {
   background: rgba(var(--bgelev1));
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid rgba(var(--border));
 }
 isideline2 postsur picture img {
   display: block;
@@ -208,7 +207,6 @@ isideline2 postsur song {
   background: rgba(var(--bgelev1));
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid rgba(var(--border));
 }
 isideline2 postsur song iframe {
   display: block;
@@ -220,7 +218,6 @@ isideline2 .status {
   background: rgba(var(--bgelev1));
   padding: 20px;
   border-radius: 5px;
-  border: 1px solid rgba(var(--border));
   text-align: justify;
 }
 isideline2 .status p {
