@@ -60,12 +60,19 @@ ithread8 gif {
   border-radius: 5px;
   padding: 4px;
   background: rgba(var(--bgelev1));
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 30px;
 }
 ithread8 gif img {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: inherit;
+}
+ithread8 gif i {
+  background-image: linear-gradient(to bottom, var(--pastelgradient2)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
 }
 ithread8 .writing {
   width: 100%;
@@ -100,6 +107,9 @@ ithread8 .writing u {
 ithread8 .writing a {
   color: var(--fontaccent1);
   text-decoration: underline rgba(var(--font));
+}
+ithread8 .writing overflow {
+  max-height: 300px;
 }
 ithread8 bott {
   display: block;
