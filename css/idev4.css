@@ -50,6 +50,102 @@ idev4 .devstuff {
   display: block;
   background: rgba(var(--bgelev1));
   padding: 50px;
+  text-align: justify;
+}
+idev4 .devstuff h1, idev4 .devstuff h2, idev4 .devstuff h3, idev4 .devstuff h4, idev4 .devstuff h5, idev4 .devstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  width: fit-content;
+}
+idev4 .devstuff p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+idev4 .devstuff p:first-child {
+  margin-top: 0;
+}
+idev4 .devstuff b, idev4 .devstuff i, idev4 .devstuff u, idev4 .devstuff a {
+  font-size: 17px;
+}
+idev4 .devstuff b {
+  color: var(--fontaccent1);
+}
+idev4 .devstuff i {
+  color: var(--fontaccent4);
+}
+idev4 .devstuff u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+idev4 .devstuff a {
+  text-decoration: underline;
+  color: var(--fontaccent2);
+}
+idev4 .devstuff del {
+  text-decoration: line-through var(--fontaccent1);
+}
+idev4 .devstuff mark {
+  color: rgba(var(--font));
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev4 .devstuff blockquote {
+  background: rgba(var(--bgelev3));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+idev4 .devstuff q {
+  font-size: 40px;
+  line-height: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(var(--bgelev4));
+  padding-bottom: 15px;
+}
+idev4 .devstuff cite {
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 100%;
+}
+idev4 .devstuff cite:before {
+  content: "-- ";
+}
+idev4 .devstuff ol, idev4 .devstuff ul {
+  background: rgba(var(--bgelev2));
+  padding: 20px;
+  border-radius: 10px;
+  list-style-position: inside;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+idev4 .devstuff ol {
+  list-style-type: none;
+}
+idev4 .devstuff li {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+}
+idev4 .devstuff li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
 }
 idev4 .devstuff[class*=images] {
   display: grid;
