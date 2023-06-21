@@ -2,7 +2,7 @@ idev4 {
   display: block;
   margin: auto;
   background: rgba(var(--bgelev1));
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(var(--border));
   font: 500 13px var(--font1);
   line-height: 1.5;
@@ -168,8 +168,63 @@ idev4 .devstuff.images-4 {
 idev4 .devstuff[class*=images] img {
   display: block;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 idev4 .devstuff iframe {
   border-radius: 8px;
+}
+idev4 devcharacter {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1px;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+  background: rgba(var(--border));
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+idev4 devcharacter:last-child {
+  margin-bottom: 0;
+}
+idev4 devgif {
+  display: block;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient1)); 
+}
+idev4 devgif img {
+  display: block;
+  flex: none;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(var(--bgelev1));
+  outline: 1px solid rgba(var(--border));
+  border-radius: 50%;
+}
+idev4 devcharacter charinf {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev3));
+  padding: 15px;
+}
+idev4 charname {
+  font: 400 18px var(--font2);
+  line-height: 1;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  border-bottom: 2px solid rgba(var(--bgelev1));
+  padding-bottom: 4px;
+}
+idev4 charname a {
+  color: inherit;
+}
+idev4 charrel {
+  font: 800 11px var(--font1);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
 }
