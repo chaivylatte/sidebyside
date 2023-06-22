@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/itext10.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yzg8yyi.css">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="redvelvet">red velvet</option><option value="chocolate">chocolate</option><option value="vanilla">vanilla</option><option value="coconut">coconut</option><option value="keylimepie">keylimepie</option><option value="matcha">matcha</option><option value="mint">mint</option><option value="bluemoon">blue moon</option><option value="taropudding">taro pudding</option><option value="panna cotta">panna cotta</option><option value="strawberry">strawberry</option><option value="pistachio">pistachio</option><option value="neapolitan">neapolitan</option><option value="cherry">cherry</option><option value="honeylavender">honey lavender</option><option value="bubblegum">bubblegum</option><option value="cottoncandy">cotton candy</option><option value="creamsicle">creamsicle</option><option value="marshmallow">marshmallow</option><option value="peanutbuttercup">peanut butter cup</option><option value="watermelon">watermelon</option><option value="blueraspberry">blue raspberry</option><option value="jellydonut">jelly donut</option><option value="bobatea">boba tea</option><option value="buttercake">butter cake</option><option value="caramellatte">caramel latte</option><option value="raspberrysorbet">raspberry sorbet</option><option value="butterscotch">butterscotch</option><option value="pinacolada">pina colada</option><option value="honeycomb">honeycomb</option><option value="laffytaffy">laffy taffy</option><option value="blackberryrose">blackberry rose</option><option value="birthdaycake">birthday cake</option><option value="amarenacherry">amarenacherry</option><option value="blueberrychip">blueberry chip</option><option value="rainbowsherbet">rainbow sherbet</option><option value="sweetcream">sweet cream</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<itext10><div class="messages">
+
+<note>message read</note>
+<note>@[name] added to chat</note>
+<note>feel free to delete these unneeded notes!</note>
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+<p><img src="https://via.placeholder.com/600x200">
+
+</div><topper><gif class="blob">
+	
+<img src="https://64.media.tumblr.com/72f748aa9f77275a91bfbe3f55ac6c7c/0cddf72097baf482-1b/s540x810/6cf3e73827d1b26a8803f1519d6066d47995a225.gif"><i class="fa-solid fa-comment-heart" style="display: none;"></i>
+
+</gif><recipient><span>
+	
+recipient here
+
+</span></recipient>
+
+</ BEGIN GROUP CHAT SECTION - DELETE BEGINNING HERE IF NEEDED >
+<gcsur>
+
+<gc>LS</gc>
+<gc>SH</gc>
+<gc>PJ</gc>
+<gc>RJ</gc>
+<gc><img src="https://64.media.tumblr.com/bfce19a9a6f2ed428c77087888a03fff/650a6e66d0c57273-5e/s250x400/abadab059648e66d10c9f1b5bac48bfa9e472a79.pnj"></gc>
+<gc><img src="https://64.media.tumblr.com/3f4775bc98e1f41853c132b1222baf15/ea110a09a10f4683-61/s1280x1920/8a1830722d1f15b12c18cf7bf322524bf5010f42.jpg"></gc>
+<gc><img src="https://64.media.tumblr.com/312d8c967371aec49ba113a9bfb790ea/725d8af39a523b5d-e3/s1280x1920/bc0299c28a787f60c33917ed1714b7dba2a30592.jpg"></gc>
+	
+</gcsur>
+</ END GROUP CHAT SECTION - DELETE ENDING HERE IF NEEDED >
+
+<toppertb><i class="fa-solid fa-arrow-left"></i><i class="fa-solid fa-comments"></i><i class="fa-solid fa-ellipsis-vertical"></i></toppertb></topper><bott><span></span><i class="fa-solid fa-microphone"></i><i class="fa-solid fa-arrow-up"></i></bott></itext10>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>
