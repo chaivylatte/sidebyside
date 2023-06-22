@@ -84,7 +84,7 @@ icall9 .actions p {
 icall9 .actions p:first-child {
   margin-top: 0;
 }
-icall9 .actions b, itext8 .actions i {
+icall9 .actions b, icall9 .actions i {
   background: rgba(var(--bgelev1));
   padding: 2px 5px;
   border-radius: 5px;
