@@ -185,7 +185,7 @@ itext10 gif.blob img {
   mask-repeat: no-repeat;
 }
 itext10 gif img[src].mgicon {
-  padding: 10px;
+  padding: 20px;
   border-radius: 0px;
 }
 itext10 gif.blob img[src].mgicon {
