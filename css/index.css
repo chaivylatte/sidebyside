@@ -403,5 +403,3 @@ gummybear, .gummybear, .group-95, .group-96, .allowtagcolors .mgroup-95, .allowt
 }
 
 .allowtagcolors a.user-tagged { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); }
-
-.mgicon { position: relative; display: block; width: 100%; height: 100%; background-size: cover; background-position: center; overflow: hidden; background: var(--mgicon); }
