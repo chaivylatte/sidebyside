@@ -71,6 +71,10 @@ ithread8 gif img {
   height: 100%;
   border-radius: inherit;
 }
+ithread8 gif img[src].mgicon {
+  padding: 8px;
+  border-radius: 0px;
+}
 ithread8 gif i {
   background-image: linear-gradient(to bottom, var(--pastelgradient2)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
 }

@@ -70,6 +70,10 @@ ithread6 gif img {
   width: 100%;
   height: 100%;
 }
+ithread6 gif img[src].mgicon {
+  padding: 10px;
+  border-radius: 0px;
+}
 ithread6 icon {
   font: 500 40px var(--font2);
   color: rgba(var(--fontdimmer));
