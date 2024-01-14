@@ -54,6 +54,10 @@ icall6 gif img {
   height: 100%;
   border-radius: inherit;
 }
+icall6 gif img[src].mgicon {
+  padding: 25px;
+  border-radius: 0px;
+}
 icall6 recipient {
   order: 3;
   align-self: flex-start;
