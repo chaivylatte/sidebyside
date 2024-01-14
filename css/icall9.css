@@ -48,6 +48,10 @@ icall9 gif img {
   height: 100%; 
   border-radius: inherit;
 }
+icall9 gif img[src].mgicon {
+  padding: 20px;
+  border-radius: 0px;
+}
 icall9 recipient {
   flex-grow: 1;
   display: flex;
