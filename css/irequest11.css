@@ -77,7 +77,7 @@ irequest11 inner {
 }
 irequest11 gif {
   position: sticky;
-  top: 120px;
+  top: 200px;
   flex: none;
   display: block;
   width: 150px;
