@@ -45,6 +45,11 @@ itext5 gif img {
   border-radius: inherit;
   border: 3px solid rgba(var(--bgelev1));
 }
+itext5 gif img[src].mgicon {
+  padding: 10px;
+  border-radius: 0px;
+  border: 0;
+}
 itext5 topper {
   order: 1;
   padding: 20px;
