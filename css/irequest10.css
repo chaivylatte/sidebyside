@@ -1,0 +1,139 @@
+irequest10 {
+  display: block;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 8px;
+  border: 1px solid rgba(var(--border));
+  font: 500 14px var(--font1);
+  line-height: 1.5;
+  overflow: hidden;
+  width: 450px;
+}
+irequest10 topper {
+  display: flex;
+  gap: 30px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(var(--bgelev3));
+}
+irequest10 topper:first-of-type {
+  border-bottom: 1px solid rgba(var(--border));
+}
+irequest10 topper:last-of-type {
+  border-top: 1px solid rgba(var(--border));
+  padding: 15px;
+}
+irequest10 topperleft {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-start;
+}
+irequest10 ttitle {
+  display: inline-block;
+  font: 500 30px var(--font2);
+  text-transform: lowercase;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat; 
+  background-size: auto 5px; 
+  background-position: 0 100%; 
+  padding-bottom: 5px; 
+}
+irequest10 subtitle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  place-content: center flex-start;
+  align-items: center;
+  font: 700 10px var(--font1);
+  letter-spacing: .25px;
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+irequest10 ttitle:empty, irequest10 subtitle:empty {
+  display: none;
+}
+irequest10 subtitle span {
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 5px;
+}
+irequest10 topper img[src].mgicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+}
+irequest10 inner {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 80px 80px 50px;
+}
+irequest10 gif {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+irequest10 gif.rectangle {
+  width: 100%;
+  border-radius: 5px;
+}
+irequest10 gif.square {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+irequest10 gif.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+irequest10 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  max-height: inherit;
+  border-radius: inherit;
+}
+irequest10 .writing {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+irequest10 .writing overflow {
+  max-height: 320px;
+}
+irequest10 .writing p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+irequest10 .writing p:first-child {
+  margin-top: 0;
+}
+irequest10 .writing b, irequest10 .writing i, irequest10 .writing u, irequest10 .writing a {
+  font-size: 17px;
+}
+irequest10 .writing b {
+  color: var(--fontaccent1);
+}
+irequest10 .writing i {
+  color: var(--fontaccent4);
+}
+irequest10 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+irequest10 .writing a {
+  text-decoration: underline;
+  color: var(--fontaccent2);
+}

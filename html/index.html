@@ -22,7 +22,7 @@ const theme = localStorage.getItem('theme');
 <link href="../css/thinghere.css" rel="stylesheet">
 
 </head>
-<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchanger"></div>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
 <div id="mgchanger" class="postwr group-4"><div class="postactual">
 
 
@@ -33,7 +33,7 @@ const theme = localStorage.getItem('theme');
 <script src="../js/daynight.js"></script>
 <script> 
 	$(function(){
-		$("#mgchanger").load("../js/mgchangerhtml.html"); 
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
 	});
 	</script> 
 </html>
