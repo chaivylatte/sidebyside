@@ -103,8 +103,9 @@ irequest11 gif img {
   border-radius: inherit;
 }
 irequest11 .writing {
+  flex-grow: 1;
   display: block;
-  width: calc(100% - 150px - 35px);
+  width: 100%;
   text-align: justify;
 }
 irequest11 .writing overflow {
