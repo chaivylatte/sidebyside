@@ -119,6 +119,10 @@ icall8 gif img {
   height: 100%;
   border-radius: inherit;
 }
+icall8 gif img[src].mgicon {
+  padding: 20px;
+  border-radius: 0px;
+}
 icall8 iconsbox {
   width: 90px;
   height: 70px;
