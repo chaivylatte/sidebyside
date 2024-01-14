@@ -184,6 +184,19 @@ icall10 gif.blob img {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+icall10 gif img[src].mgicon {
+  padding: 20px;
+  border-radius: 0px;
+}
+icall10 gif.blob img[src].mgicon {
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border-radius: 0;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
 icall10 recipient {
   display: flex;
   gap: 5px;
