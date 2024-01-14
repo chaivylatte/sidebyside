@@ -40,6 +40,10 @@ ithread4 gif img {
   height: 100%;
   border-radius: inherit;
 }
+ithread4 gif img[src].mgicon {
+  padding: 25px;
+  border-radius: 0px;
+}
 ithread4 lyr1 {
   font: 400 19px var(--font2);
   background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
