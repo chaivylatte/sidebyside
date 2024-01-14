@@ -108,6 +108,7 @@ ithread6 .writing b {
   padding: 4px;
   border-radius: 2px;
   font-weight: 600;
+  color: rgba(68, 68, 68);
 }
 ithread6 .writing i {
   color: var(--fontaccent1);
