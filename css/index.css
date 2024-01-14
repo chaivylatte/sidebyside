@@ -9,7 +9,7 @@ form { display:inline; }
 
 html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --darken: -20%; --blendmode: exclusion; --bgimage: url(https://cdn.discordapp.com/attachments/866822297586892812/987840899486740520/bgdark.jpg); }
 
-body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: graphie; --font2: ohno-blazeface; --font3: graphie; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s; }
+body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: graphie; --font2: ohno-blazeface; --font3: graphie; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s; --sans: var(--font1); --display: var(--font2); }
 
 *[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
 ::selection { background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken))); color: inherit; text-shadow: none; }
@@ -17,18 +17,14 @@ body img { object-fit: cover!important; object-position: center!important; }
 overflow { display: block; width: 100%; max-height: 100%; height: auto; padding-right: 10px; overflow: auto; }
 b { font-weight: 700; }
 
-body img[src*="twemoji.maxcdn"] { width: 100%; height: 100%;  max-width: 1em!important; max-height: 1em!important; display: inline!important; vertical-align: middle; border-radius: 0!important; }
+body img[src*="twemoji"] { width: 100%; height: 100%;  max-width: 1em!important; max-height: 1em!important; display: inline!important; vertical-align: middle; border-radius: 0!important; }
 body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-height: 23px; display: inline; vertical-align: middle; border-radius: 0!important; }
 
+.mcp-0, .acp-0, .m-2 { display: none!important; } .g-2 { display: flex!important; }
+::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(var(--bgelev1)); border-radius: 16px; box-sizing: border-box; }
+::-webkit-scrollbar-thumb { background-image: linear-gradient(to top, var(--fontgradient)); border-radius: 16px; box-sizing: border-box; }
+#s-m-t-tooltip { z-index: 999999999999999999!important; margin: 5px; padding: 8px; border-radius: 5px; font: 700 11px var(--font1); font-style: italic; letter-spacing: 0.25px; line-height: 100%; text-transform: lowercase; background: rgba(var(--bgelev1)); box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); }
 
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-@import url("https://use.typekit.net/jhi5swa.css");
-
-@import url("https://use.typekit.net/ewz4vjp.css");
-
-@import url("https://use.typekit.net/qpg2hts.css");
-
-@import url("https://use.typekit.net/yzg8yyi.css");
 .postactual { display: block; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; font-size: 14px; line-height: 130%; text-align: left; }
 
 #theme-toggle {
@@ -62,11 +58,9 @@ body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-hei
   letter-spacing: 0;
 }
 
-::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(var(--bgelev1)); border-radius: 16px; box-sizing: border-box; }
-::-webkit-scrollbar-thumb { background-image: linear-gradient(to top, var(--fontgradient)); border-radius: 16px; box-sizing: border-box; }
-#s-m-t-tooltip { z-index: 999999999999999999!important; margin: 20px 10px 5px 5px; padding: 8px; border-radius: 5px; font-style: italic; font-weight: 700; font-size: 12px; line-height: 100%; text-transform: lowercase; background: rgba(var(--bgelev1)); box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); }
-
 img[src].mgicon { width: 100%; height: 100%; content: var(--mgicon); }
+
+@import url("https://use.typekit.net/yzg8yyi.css");
 
 a:link, a:visited, a:active {
  text-decoration: none;
