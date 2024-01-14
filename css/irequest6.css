@@ -105,7 +105,7 @@ irequest6 reqtitle {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
-  font: 400 40px var(--font3);
+  font: 400 40px var(--font2);
   line-height: 1;
 }
 irequest6 reqtitle span {
