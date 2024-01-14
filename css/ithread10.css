@@ -1,0 +1,133 @@
+ithread10 {
+  position: relative;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  margin: auto;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread10 topper {
+  position: relative;
+  display: flex;
+  place-content: center flex-end;
+  align-items: center;
+  width: 100%;
+  min-height: 150px;
+  padding: 40px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+ithread10 topper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+  background: rgba(var(--bgelev1));
+  -webkit-mask: url("data:image/svg+xml,<svg viewBox='0 0 1440 320' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'><path d='M0,0L34.3,0C68.6,0,137,0,206,32C274.3,64,343,128,411,144C480,160,549,128,617,122.7C685.7,117,754,139,823,133.3C891.4,128,960,96,1029,74.7C1097.1,53,1166,43,1234,58.7C1302.9,75,1371,117,1406,138.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z'></path></svg>");-webkit-mask-repeat: no-repeat;-webkit-mask-position: bottom;-webkit-mask-size: cover;
+}
+ithread10 gif {
+  position: relative;
+  z-index: 2;
+  display: block;
+  background: rgba(var(--bgelev1));
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread10 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+ithread10 gif img[src].mgicon {
+  padding: 20px;
+  border-radius: 0px;
+}
+ithread10 inner {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  padding: 0 100px 70px;
+}
+ithread10 .writing {
+  position: relative;
+  padding: 10px 50px;
+  padding-right: 0;
+  text-align: justify;
+}
+ithread10 .writing::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+ithread10 .writing p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 20px;
+}
+ithread10 .writing p:first-child {
+  margin-top: 0;
+}
+ithread10 .writing b {
+  font: 600 15px var(--font1);
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+}
+ithread10 .writing i {
+  color: var(--fontaccent1);
+  font: 500 16px var(--font1);
+  font-style: italic;
+}
+ithread10 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent1);
+}
+ithread10 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline rgba(var(--font));
+}
+ithread10 .writing overflow {
+  max-height: 350px;
+}
+ithread10 tagspace {
+  display: block;
+  margin-top: 50px;
+  text-align: right;
+  font: 700 13px var(--font1);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+ithread10 tagspace span {
+  width: auto;
+  display: inline-block;
+  background-image: linear-gradient(to left, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  padding-bottom: 10px;
+  color: rgba(var(--fontdimmer));
+}
+ithread10 tagspace span:hover {
+  color: rgba(var(--font));
+}
