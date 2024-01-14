@@ -108,7 +108,7 @@ ithread10 .writing a {
   text-decoration: underline rgba(var(--font));
 }
 ithread10 .writing overflow {
-  max-height: 350px;
+  max-height: 400px;
 }
 ithread10 tagspace {
   display: block;
