@@ -60,6 +60,7 @@ itext8 .messages note {
   font: 800 10px var(--font1);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: rgba(68, 68, 68);
 }
 itext8 .messages p {
   margin: 0;

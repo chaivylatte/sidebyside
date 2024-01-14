@@ -111,7 +111,7 @@ itext3 span::before {
 }
 itext3 note {
   font: 400 12px var(--font2);
-  color: rgba(var(--fontdim));
+  color: rgba(95, 95, 95);
 }
 itext3 .messages {
   order: 3;

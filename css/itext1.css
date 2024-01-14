@@ -89,6 +89,7 @@ itext1 .messages p {
   border-radius: 15px 15px 0 15px;
   padding: 15px;
   text-align: justify;
+  color: rgba(68, 68, 68);
 }
 itext1 .messages img {
   display: block;

@@ -108,7 +108,7 @@ itext2 someicons i[class*="fa"] {
 }
 itext2 note {
   font: 400 15px var(--font2);
-  color: rgba(var(--fontdim));
+  color: rgba(95, 95, 95);
 }
 itext2 .messages {
   margin-top: 30px;

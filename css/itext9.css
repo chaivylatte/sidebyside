@@ -81,6 +81,7 @@ itext9 .messages note {
   color: rgba(var(--fontdim));
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: rgba(68, 68, 68);
 }
 itext9 .messages p {
   margin: 0;

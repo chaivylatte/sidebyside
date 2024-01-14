@@ -81,6 +81,7 @@ itext5 .messages p {
   background: var(--messagebg);
   padding: 15px;
   border-radius: 15px;
+  color: rgba(68, 68, 68);
 }
 itext5 .messages p:last-child:after {
   content: "";

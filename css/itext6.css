@@ -114,7 +114,7 @@ itext6 note {
   font-weight: 700;
   font-size: 10px;
   text-transform: uppercase;
-  color: rgba(var(--fontdim));
+  color: rgba(95, 95, 95);
 }
 itext6 .messages {
   order: 4;
