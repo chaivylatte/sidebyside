@@ -239,6 +239,7 @@ itext10 .messages p {
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); 
   padding: 10px;
   border-radius: 5px;
+  color: rgba(68, 68, 68);
 }
 itext10 .messages b, itext10 .messages i {
   background: rgba(var(--bgelev1));

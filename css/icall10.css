@@ -223,6 +223,7 @@ icall10 .actions b {
   background-size: 100% 2px;
   background-position: 0 100%;
   padding-bottom: 2px;
+  color: rgba(68, 68, 68);
 }
 icall10 .actions i {
   color: var(--fontaccent1);
