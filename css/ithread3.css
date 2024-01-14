@@ -48,6 +48,10 @@ ithread3 theright gif img {
   height: 100%;
   border-radius: inherit;
 }
+ithread3 theright gif img[src].mgicon {
+  padding: 10px;
+  border-radius: 0px;
+}
 ithread3 line {
   flex-grow: 1;
   width: 1px;
