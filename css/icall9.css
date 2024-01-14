@@ -48,7 +48,9 @@ icall9 gif img {
   height: 100%; 
   border-radius: inherit;
 }
-icall9 gif img[src].mgicon {
+icall9 topper img[src].mgicon {
+  width: 85px;
+  height: 85px;
   padding: 20px;
   border-radius: 0px;
 }
