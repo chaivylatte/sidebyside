@@ -33,7 +33,7 @@ irequest10 topperleft {
 }
 irequest10 ttitle {
   display: inline-block;
-  font: 500 30px var(--font2);
+  font: 500 25px var(--font2);
   text-transform: lowercase;
   background-image: linear-gradient(to right, var(--pastelgradient2));
   background-repeat: no-repeat; 
@@ -62,8 +62,8 @@ irequest10 subtitle span {
   border-radius: 5px;
 }
 irequest10 topper img[src].mgicon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 0px;
 }
 irequest10 inner {
