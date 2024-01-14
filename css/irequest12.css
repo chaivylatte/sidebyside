@@ -1,0 +1,191 @@
+irequest12 {
+  display: block;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 8px;
+  border: 1px solid rgba(var(--border));
+  font: 500 14px var(--font1);
+  line-height: 1.5;
+  width: 650px;
+}
+irequest12 topper {
+  display: flex;
+  gap: 30px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+  background: rgba(var(--bgelev3));
+}
+irequest12 topper:first-of-type {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid rgba(var(--border));
+}
+irequest12 topper:last-of-type {
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid rgba(var(--border));
+  padding: 15px;
+}
+irequest12 topperleft {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-start;
+}
+irequest12 ttitle {
+  display: inline-block;
+  font: 500 25px var(--font2);
+  text-transform: lowercase;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat; 
+  background-size: auto 5px; 
+  background-position: 0 100%; 
+  padding-bottom: 5px; 
+}
+irequest12 subtitle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  place-content: center flex-start;
+  align-items: center;
+  font: 700 10px var(--font1);
+  letter-spacing: .25px;
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+irequest12 ttitle:empty, irequest12 subtitle:empty {
+  display: none;
+}
+irequest12 subtitle span {
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 5px;
+}
+irequest12 topper img[src].mgicon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+}
+irequest12 inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 50px;
+}
+irequest12 .writing {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+irequest12 .writing overflow {
+  max-height: 150px;
+}
+irequest12 .writing p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+irequest12 .writing p:first-child {
+  margin-top: 0;
+}
+irequest12 .writing b, irequest12 .writing i, irequest12 .writing u, irequest12 .writing a {
+  font-size: 17px;
+}
+irequest12 .writing b {
+  color: var(--fontaccent1);
+}
+irequest12 .writing i {
+  color: var(--fontaccent4);
+}
+irequest12 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent2);
+}
+irequest12 .writing a {
+  text-decoration: underline;
+  color: var(--fontaccent2);
+}
+irequest12 .writing + irequest12char {
+  margin-top: 20px;
+}
+irequest12char {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+  overflow: hidden;
+  padding: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+irequest12char gif {
+  flex: none;
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+irequest12char gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 2px solid rgba(var(--bgelev1));
+}
+irequest12char gif img[src].mgicon {
+  padding: 8px;
+  border-radius: 0px;
+  border: none;
+}
+irequest12char rightspace {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-end;
+}
+irequest12char charname {
+  font: 700 15px var(--font1);
+  text-transform: uppercase;
+  color: rgba(68, 68, 68);
+  background-image: linear-gradient(to right, var(--fontgradient));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 5px;
+}
+irequest12char charstuff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  place-content: center flex-end;
+  align-items: center;
+}
+irequest12char charstuff:empty {
+  display: none;
+}
+irequest12char charstuff span {
+  display: inline-block;
+  background: rgba(var(--bgelev1));
+  padding: 3px 5px;
+  border-radius: 3px;
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: .25px;
+}
+irequest12char .writing {
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(var(--bgelev1));
+}
+irequest12char .writing overflow {
+  max-height: 100px;
+}
