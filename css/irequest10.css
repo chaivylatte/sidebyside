@@ -73,7 +73,7 @@ irequest10 inner {
   place-content: center center;
   align-items: center;
   background: rgba(var(--bgelev1));
-  padding: 80px 80px 50px;
+  padding: 80px;
 }
 irequest10 gif {
   display: block;
