@@ -1,6 +1,7 @@
 /****************************************
  Body Background & Text Style
 *****************************************/
+@import url("https://use.typekit.net/yzg8yyi.css");
 html, body { margin: 0; padding: 0; box-sizing: border-box; }
 * { box-sizing: border-box; -webkit-box-decoration-break: clone; }
 form { display:inline; }
@@ -59,8 +60,6 @@ body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-hei
 }
 
 img[src].mgicon { width: 100%; height: 100%; content: var(--mgicon); }
-
-@import url("https://use.typekit.net/yzg8yyi.css");
 
 a:link, a:visited, a:active {
  text-decoration: none;
