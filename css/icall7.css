@@ -42,6 +42,10 @@ icall7 recspace gif {
   font-size: 25px;
   color: var(--fontaccent1);
 }
+icall7 gif img[src].mgicon {
+  padding: 12px;
+  border-radius: 0px;
+}
 icall7 recspace img {
   width: 100%;
   height: 100%;
