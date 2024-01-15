@@ -1,0 +1,149 @@
+ithread12 {
+  font: 400 13px var(--font1);
+  line-height: 2;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 380px;
+  border: 1px solid rgba(var(--border));
+  border-radius: 5px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  overflow: hidden;
+}
+ithread12::after {
+  content: "";
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+  background: rgba(var(--bgelev1), .5);
+  -webkit-mask: url("data:image/svg+xml,<svg viewBox='0 0 1440 320' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'><path d='M0,0L34.3,0C68.6,0,137,0,206,32C274.3,64,343,128,411,144C480,160,549,128,617,122.7C685.7,117,754,139,823,133.3C891.4,128,960,96,1029,74.7C1097.1,53,1166,43,1234,58.7C1302.9,75,1371,117,1406,138.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z'></path></svg>");-webkit-mask-repeat: no-repeat;-webkit-mask-position: bottom;-webkit-mask-size: cover;
+}
+ithread12::before {
+  content: "";
+  transform: rotate(180deg);
+  position: absolute;
+  top: -70px;
+  left: -25%;
+  display: block;
+  width: 150%;
+  height: 300px;
+  z-index: 0;
+  background: rgba(var(--bgelev1), .4);
+  -webkit-mask: url("data:image/svg+xml,<svg viewBox='0 0 1440 320' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'><path d='M0,64L40,101.3C80,139,160,213,240,208C320,203,400,117,480,117.3C560,117,640,203,720,208C800,213,880,139,960,96C1040,53,1120,43,1200,32C1280,21,1360,11,1400,5.3L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'></path></svg>");-webkit-mask-repeat: no-repeat;-webkit-mask-position: bottom;-webkit-mask-size: cover;
+}
+ithread12 inner {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+}
+ithread12 innertopper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  place-content: center center;
+  align-items: stretch;
+}
+ithread12 gifsur {
+  display: block;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(var(--bgelev1));
+  border: 1px solid rgba(var(--border));
+}
+ithread12 gifsur:has(img[src].mgicon) {
+  width: 55px;
+  height: 55px;
+}
+ithread12 gif {
+  flex: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+ithread12 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+ithread12 gif img[src].mgicon {
+  padding: 5px;
+  border-radius: 0px;
+}
+ithread12 tagspace {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-end;
+  border: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+ithread12 tagspace::before {
+  content: "tagged for";
+  font: 400 10px var(--font1);
+}
+ithread12 tagspace span {
+  font: 700 10px var(--font1);
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+ithread12 .writing {
+  background: rgba(var(--bgelev1));
+  border: 1px solid rgba(var(--border));
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+  padding: 25px;
+  text-align: justify;
+}
+ithread12 .writing p {
+  margin: 0;
+  margin-top: 10px;
+  text-indent: 15px;
+}
+ithread12 .writing p:first-child {
+  margin-top: 0;
+}
+ithread12 .writing p:first-letter {
+  font: 400 14px var(--font2);
+  color: var(--fontaccent1);
+  margin-right: 1px;
+}
+ithread12 .writing b {
+  font: 600 13px var(--font1);
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 3px;
+}
+ithread12 .writing i {
+  color: var(--fontaccent1);
+  font: 600 13px var(--font1);
+  font-style: italic;
+}
+ithread12 .writing u {
+  font: 400 13px var(--font2);
+  text-decoration: underline var(--fontaccent1);
+}
+ithread12 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline rgba(var(--font));
+}
+ithread12 .writing overflow {
+  max-height: 400px;
+}

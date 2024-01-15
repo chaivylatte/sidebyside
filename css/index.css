@@ -2,13 +2,14 @@
  Body Background & Text Style
 *****************************************/
 @import url("https://use.typekit.net/yzg8yyi.css");
-html, body { margin: 0; padding: 0; box-sizing: border-box; }
-* { box-sizing: border-box; -webkit-box-decoration-break: clone; }
+html, body { margin: 0; padding: 0; box-sizing: border-box; } 
+body { min-width: 1300px; }
+* { box-sizing: border-box; }
 form { display:inline; }
 
-:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --darken: 0%; --blendmode: darken; --bgimage: url(https://cdn.discordapp.com/attachments/866822297586892812/987841151702798346/bglight.jpg); }
+:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --pastelpercent2: 20%; --darken: 0%; --blendmode: darken; --bgimage: url(https://i.postimg.cc/T1jM08tv/bglight.jpg); }
 
-html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --darken: -20%; --blendmode: exclusion; --bgimage: url(https://cdn.discordapp.com/attachments/866822297586892812/987840899486740520/bgdark.jpg); }
+html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --pastelpercent2: 20%; --darken: -20%; --blendmode: exclusion; --bgimage: url(https://i.postimg.cc/2jnDrvr9/bgdark.jpg); }
 
 body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: graphie; --font2: ohno-blazeface; --font3: graphie; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s; --sans: var(--font1); --display: var(--font2); }
 
@@ -26,7 +27,7 @@ body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-hei
 ::-webkit-scrollbar-thumb { background-image: linear-gradient(to top, var(--fontgradient)); border-radius: 16px; box-sizing: border-box; }
 #s-m-t-tooltip { z-index: 999999999999999999!important; margin: 5px; padding: 8px; border-radius: 5px; font: 700 11px var(--font1); font-style: italic; letter-spacing: 0.25px; line-height: 100%; text-transform: lowercase; background: rgba(var(--bgelev1)); box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); }
 
-.postactual { display: block; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; font-size: 14px; line-height: 130%; text-align: left; }
+.postactual { display: block; width: 841px; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; font-size: 14px; line-height: 130%; text-align: left; }
 
 #theme-toggle {
   position: fixed;
@@ -197,7 +198,7 @@ cottoncandy, .cottoncandy, .group-25, .group-26, .allowtagcolors .mgroup-25, .al
 creamsicle, .creamsicle, .group-27, .group-28, .allowtagcolors .mgroup-27, .allowtagcolors .mgroup-28 {
  --mghue1: 16; --mgsat1: 82%; --mglight1: 0%;
  --mghue2: 207; --mgsat2: 85%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "creamsicle"; --mgbanner: url(https://i.postimg.cc/br8kGybG/creamsicle.png); --mgicon: url(https://i.postimg.cc/wvWrR1Lg/02-007-creamsicle.png); }
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "creamsicle"; --mgbanner: url(https://i.postimg.cc/br8kGybG/creamsicle.png); --mgicon: url(https://i.postimg.cc/RZQt48kx/02-007-creamsicle.png); }
 
 marshmallow, .marshmallow, .group-51, .group-52, .allowtagcolors .mgroup-51, .allowtagcolors .mgroup-52 {
  --mghue1: 340; --mgsat1: 90%; --mglight1: 0%;
@@ -217,7 +218,7 @@ watermelon, .watermelon, .group-55, .group-56, .allowtagcolors .mgroup-55, .allo
 blueraspberry, .blueraspberry, .group-67, .group-68, .allowtagcolors .mgroup-67, .allowtagcolors .mgroup-68 {
  --mghue1: 173; --mgsat1: 75%; --mglight1: -10%;
  --mghue2: 266; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue raspberry"; --mgbanner: url(https://i.postimg.cc/6p6cj087/blueraspberry.png); --mgicon: url(https://i.postimg.cc/NjhzXq99/02-011-blue-raspberry.png); }
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue raspberry"; --mgbanner: url(https://i.postimg.cc/6p6cj087/blueraspberry.png); --mgicon: url(https://i.postimg.cc/zfZxP9nm/02-011-blue-raspberry.png); }
 
 jellydonut, .jellydonut, .group-69, .group-70, .allowtagcolors .mgroup-69, .allowtagcolors .mgroup-70 {
  --mghue1: 3; --mgsat1: 95%; --mglight1: 2%;
@@ -227,7 +228,7 @@ jellydonut, .jellydonut, .group-69, .group-70, .allowtagcolors .mgroup-69, .allo
 cookiemonster, .cookiemonster, .group-81, .group-82, .allowtagcolors .mgroup-81, .allowtagcolors .mgroup-82 {
  --mghue1: 191; --mgsat1: 80%; --mglight1: 0%;
  --mghue2: 136; --mgsat2: 69%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cookie monster"; --mgbanner: url(https://i.postimg.cc/CKBjX6SK/cookiemonster.png); --mgicon: url(https://i.postimg.cc/R0ds2WPK/02-013-cookie-monster.png); }
+ --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cookie monster"; --mgbanner: url(https://i.postimg.cc/CKBjX6SK/cookiemonster.png); --mgicon: url(https://i.postimg.cc/yxyghpFz/02-013-cookie-monster.png); }
 
 pumpkinpie, .pumpkinpie, .group-83, .group-84, .allowtagcolors .mgroup-83, .allowtagcolors .mgroup-84 {
  --mghue1: 0; --mgsat1: 90%; --mglight1: -10%;
@@ -384,16 +385,18 @@ gummybear, .gummybear, .group-95, .group-96, .allowtagcolors .mgroup-95, .allowt
 }
 .group-1, .group-3, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28,.group-37,.group-38,.group-39,.group-40,.group-41,.group-42,.group-43,.group-44,.group-45,.group-46,.group-47,.group-48,.group-49,.group-50,.group-51,.group-52,.group-53,.group-54,.group-55,.group-56, .group-67, .group-68, .group-69, .group-70,
 .membergrouphereinalllowercase,
-.retired, .members, .inactive, .redvelvet, .vanilla, .chocolate, .coconut, .keylimepie, .matcha, .mint, .bluemoon, .taropudding, .pannacotta, .neapolitan, .cherry, .strawberry, .pistachio, .honeylavender, .bubblegum, .cottoncandy, .creamsicle, .marshmallow, .peanutbuttercup, .watermelon, .blueraspberry, .jellydonut  { 
+.retired, .members, .inactive, .redvelvet, .vanilla, .chocolate, .coconut, .keylimepie, .matcha, .mint, .bluemoon, .taropudding, .pannacotta, .neapolitan, .cherry, .strawberry, .pistachio, .honeylavender, .bubblegum, .cottoncandy, .creamsicle, .marshmallow, .peanutbuttercup, .watermelon, .blueraspberry, .jellydonut, .cookiemonster, .pumpkinpie  { 
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
 --pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken)));
+--pastelgradient3: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); 
 }
 .group-2, .group-4, .group-29, .group-30, .group-31, .group-32, .group-33, .group-34, .group-35, .group-36, .group-57, .group-58, .group-59, .group-60, .group-61, .group-62, .group-63, .group-64, .group-65, .group-66, .group-71, .group-72, .group-73, .group-74, .group-75, .group-76, .group-77, .group-78, .group-79, .group-80,
 .tshell.toptype-announcement.group-,
-.guests, .staff, .blackberryrose, .birthdaycake, .amarenacherry, .blueberrychip, .bobatea, .buttercake, .caramellatte, .raspberrysorbet, .butterscotch, .pinacolada, .honeycomb, .laffytaffy, .rainbowsherbet, .sweetcream {
+.guests, .staff, .blackberryrose, .birthdaycake, .amarenacherry, .blueberrychip, .bobatea, .buttercake, .caramellatte, .raspberrysorbet, .butterscotch, .pinacolada, .honeycomb, .laffytaffy, .frenchsilk, .boysonberry, .honeydew, .cookiedough, .rainbowsherbet, .sweetcream, .butterpecan, .gummybear {
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
 --pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight3) + var(--darken)));
+--pastelgradient3: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
 }
 
