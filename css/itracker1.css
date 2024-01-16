@@ -1,0 +1,176 @@
+itracker1 {
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: block;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itracker1 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+itracker1 headwr {
+  font: 400 30px var(--font2);
+  text-decoration: underline rgba(var(--bgelev1));
+}
+itracker1 topper i {
+  font-size: 20px;
+  color: rgba(var(--bgelev1));
+}
+itracker1 bottbar {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+itracker1 .trackerstuff {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background: rgba(var(--bgelev1));
+  padding: 40px;
+  text-align: justify;
+}
+itracker1 .fizztrackerwrap {
+  width: 100%;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 20px;
+}
+itracker1 .fizztrackerwrap fizzyheadwr {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font: 400 20px var(--font2);
+  margin-bottom: 15px;
+}
+itracker1 .fizztrackerwrap fizzyheadwr h1 {
+  margin: 0;
+  font: 400 25px var(--font2);
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  padding-bottom: 3px;
+}
+itracker1 .fizztrackerwrap fizzyheadwr i {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 rgba(var(--shadow), .15);
+}
+itracker1 .fizztrackerwrap fizzyheadwr.fizzythreads i::before {
+  color: var(--fontaccent4);
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f8e7";
+}
+itracker1 .fizztrackerwrap fizzyheadwr.fizzycomms i::before {
+  color: var(--fontaccent4);
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f10b";
+}
+itracker1 .fizzyelftrackersur {
+  display: block;
+  border-bottom: 0;
+}
+itracker1 .fizzyelftrackersur overflow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  place-content: center flex-start;
+  align-items: center;
+  max-height: 350px;
+}
+itracker1 .tracker-item {
+  display: block;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 15px;
+}
+itracker1 .tracker-item hr {
+  display: none;
+}
+itracker1 .tracker-item > b:first-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  place-content: center space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+itracker1 .tracker-item > b a {
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  font: 400 15px var(--font2);
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+}
+itracker1 .tracker-item > b a:hover {
+  color: rgba(var(--bgelev1));
+}
+itracker1 .tracker-item b i[class*="fa"]::before {
+  color: var(--fontaccent4);
+  font-size: 20px!important;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+itracker1 .tracker-item b .status.caughtup i[class*="fa"]::before {
+  color: rgba(var(--fontdimmer), .3);
+  content: "\f086";
+}
+itracker1 .tracker-item b .status.myturn i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  content: "\f086";
+}
+itracker1 .tracker-desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+}
+itracker1 .tracker-desc br {
+  display: none;
+}
+itracker1 .tracker-location::before, itracker1 .tracker-threaddesc::before {
+  color: var(--fontaccent1);
+}
+itracker1 .tracker-location::before {
+  content: "location: ";
+}
+itracker1 .tracker-threaddesc::before {
+  content: "desc: ";
+}
+itracker1 .tracker-item .tracker-lastpost {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  border-radius: 5px;
+  padding: 5px;
+}
