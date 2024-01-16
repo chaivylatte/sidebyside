@@ -1,4 +1,3 @@
-<script>
 function loadJsFile(filename, ifNotExists, callback ) {
     if (!ifNotExists)  {
         let fileref = document.createElement('script')
@@ -96,4 +95,3 @@ const trackerParams = {
 
     floodControl: 0,
 }
-</script>
