@@ -89,9 +89,9 @@ function RefreshParticipatedTracker (params, Is_Mobile) {
 
 const trackerParams = { 
     includeCategoryIds: ['5', '6', '7'],
-    ignoreForumIds: ['33', '34'],
+    ignoreForumIds: ['33', '51'],
   
-    altForumIds: ['49', '50', '102'],
+    altForumIds: ['49', '50', '102', '52'],
 
     floodControl: 0,
 }
