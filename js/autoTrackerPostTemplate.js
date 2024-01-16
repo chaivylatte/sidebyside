@@ -28,8 +28,8 @@ function createTrackerElements (params) {
     Open_Thread_Wrapper.append(`<fizzyheadwr class="fizzythreads"><h1>active threads</h1><i></i></fizzyheadwr>`).on('click', 'fizzyheadwr i', RefreshParticipatedTracker(params));
     Alt_Thread_Wrapper.append(`<fizzyheadwr class="fizzycomms"><h1>active comms</h1><i></i></fizzyheadwr>`);
 
-    $(Open_Thread_Wrapper).append($(`<div class="fizzyelftrackersur" id="track${nameid}"><overflow></overflow></div>`));
-    $(Alt_Thread_Wrapper).append($(`<div class="fizzyelftrackersur" id="alt${nameid}"><overflow></overflow></div>`));
+    $(Open_Thread_Wrapper).append($(`<div class="fizzyelftrackersur" id="track${nameid}"></div>`));
+    $(Alt_Thread_Wrapper).append($(`<div class="fizzyelftrackersur" id="alt${nameid}"></div>`));
 }
 
 function TrackParticipatedThreads(params = {}) {
