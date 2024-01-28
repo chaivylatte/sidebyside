@@ -273,7 +273,11 @@ idevship1 .shipspace1 shipthreads a {
   padding: 8px;
   border-radius: 5px;
 }
+idevship1 .shipspace1 shipthreads threadtitle {
+  width: 100%;
+}
 idevship1 .shipspace1 shipthreads threadblurb {
+  width: 100%;
   color: rgba(var(--fontdimmer));
   font-size: 10px;
 }
@@ -345,7 +349,11 @@ idevship1 .shipspace2 shipthreads a {
   border-radius: 5px;
   text-align: center;
 }
+idevship1 .shipspace2 shipthreads threadtitle {
+  width: 100%;
+}
 idevship1 .shipspace2 shipthreads threadblurb {
+  width: 100%;
   color: rgba(var(--fontdimmer));
   font-size: 10px;
 }
