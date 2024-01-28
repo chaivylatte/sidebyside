@@ -258,6 +258,11 @@ idevship1 .shipspace1 shipthreads::before {
   background: var(--fontaccent1);
 }
 idevship1 .shipspace1 shipthreads a {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
   position: relative;
   width: calc(50% - 20px);
   font: 700 11px var(--font1);
@@ -267,6 +272,10 @@ idevship1 .shipspace1 shipthreads a {
   background: rgba(var(--bgelev2));
   padding: 8px;
   border-radius: 5px;
+}
+idevship1 .shipspace1 shipthreads threadblurb {
+  color: rgba(var(--fontdimmer));
+  font-size: 10px;
 }
 idevship1 .shipspace1 shipthreads a:nth-child(odd) {
   align-self: flex-start;
@@ -321,7 +330,11 @@ idevship1 .shipspace2 shipthreads overflow {
   align-items: center;
 }
 idevship1 .shipspace2 shipthreads a {
-  display: block;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
   width: 100%;
   background: rgba(var(--bgelev1));
   font: 700 11px var(--font1);
@@ -331,4 +344,8 @@ idevship1 .shipspace2 shipthreads a {
   padding: 8px;
   border-radius: 5px;
   text-align: center;
+}
+idevship1 .shipspace2 shipthreads threadblurb {
+  color: rgba(var(--fontdimmer));
+  font-size: 10px;
 }
