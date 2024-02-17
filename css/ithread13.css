@@ -1,0 +1,123 @@
+ithread13 {
+  font: 400 15px var(--font1);
+  line-height: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  width: 400px;
+  padding: 50px;
+  border-radius: 8px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread13 bgmarshmallow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(var(--bgelev1), 0) 0%, rgba(var(--bgelev1), 1) 200px);
+}
+ithread13 topper {
+  position: relative;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+}
+ithread13 topicon {
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 13px;
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: var(--fontaccent4); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread13 tagspace {
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread13 tagspace span {
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+ithread13 .writing {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+ithread13 .writing p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 20px;
+}
+ithread13 .writing p:first-child {
+  margin-top: 0;
+}
+ithread13 .writing b {
+  font: 700 16px var(--font1);
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 5px;
+}
+ithread13 .writing i {
+  color: var(--fontaccent1);
+  font: 600 16px var(--font1);
+  font-style: italic;
+}
+ithread13 .writing u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent1);
+}
+ithread13 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline rgba(var(--font));
+}
+ithread13 .writing overflow {
+  max-height: 480px;
+}
+ithread13 gifspace {
+  position: relative;
+  border-top: 1px solid rgba(var(--bgelev4));
+  padding-top: 30px;
+}
+ithread13 gif {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+ithread13 gif:has(.mgicon) {
+  box-shadow: none;
+}
+ithread13 gif img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  border-radius: 10px;
+}
+ithread13 gif img[src].mgicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+}
