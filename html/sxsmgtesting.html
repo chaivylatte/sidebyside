@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/sxsmgtesting.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+<div class="membergroup-body">
+
+
+</ BEGIN MEMBERGROUP BLOCK >
+<div class="membergroup membergrouphereinalllowercase"><div class="membergrouptop"></div><div class="membergrouphead"><div class="membergroupname"><span></span></div><div class="membergroupicon"><img class="mgicon" src=""></div></div><div class="membergroupadjectives">
+
+<span>adjective</span>
+<span>adjective</span>
+<span>adjective</span>
+	
+</div><div class="membergroupaesthetics">
+
+aesthetics
+
+</div><div class="membergroupbottom"><div class="membergroupcolors"><mgcolorbox></mgcolorbox><mgcolorbox></mgcolorbox><mgcolorbox></mgcolorbox></div><div class="membergroupshex">
+
+<span>hex</span>
+<span>hex</span>
+<span>hex</span>
+
+</div></div></div>
+</ END MEMBERGROUP BLOCK >
+
+</div>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>

@@ -19,16 +19,15 @@ itext10 {
 }
 itext10 topper {
   order: 1;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 15px;
-  place-content: center space-between;
-  align-items: center;
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); 
   padding: 30px;
   border-bottom: 1px solid rgba(var(--border));
 }
 itext10 toppertb {
+  grid-column: 1 / -1;
   order: -1;
   width: 100%;
   display: flex;
@@ -42,6 +41,7 @@ itext10 toppertb i:first-child {
   flex-grow: 1;
 }
 itext10 gcsur {
+  grid-column: 1 / -1;
   width: 100%;
   display: flex;
   gap: 6px;
@@ -216,6 +216,7 @@ itext10 recipient::before {
 itext10 recipient span {
   font: 500 20px var(--font2);
   border-bottom: 2px solid rgba(var(--bgelev1));
+  text-align: right;
 }
 itext10 .messages {
   order: 2;
