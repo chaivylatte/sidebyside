@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/itext11.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<itext11><rightside><rightsidein><div class="messages">
+
+<note>message read</note>
+<note>@[name] added to chat</note>
+<note>feel free to delete these unneeded notes!</note>
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+<p><img src="https://via.placeholder.com/600x200">
+
+</div><recipient><span>
+
+recipient here
+
+</span></recipient>
+
+</ BEGIN GROUP CHAT SECTION - DELETE BEGINNING HERE IF NEEDED >
+<gcsur>
+
+<gc>FL</gc>
+<gc>FL</gc>
+<gc>FL</gc>
+<gc><img src="https://64.media.tumblr.com/46848b36d9c7a027b0653e19fb72aee8/d490fa5c9c08ad67-43/s640x960/8c3ea8951ff864074e985005774d4611e016b7d9.jpg"></gc>
+	
+</gcsur>
+</ END GROUP CHAT SECTION - DELETE ENDING HERE IF NEEDED >
+
+</rightsidein><bottbar><span></span><i class="fa-duotone fa-paper-plane-top"></i></bottbar></rightside><leftside><gif>
+
+<img class="" src="https://64.media.tumblr.com/f6c7b0a6a505a718ca2be919d520f2c3/d9e29c7e7b664031-b5/s540x810/cfc430ca3c3d5909ee091430b62d47c77defced9.gif">
+
+</gif><whaticon><i class="fa-duotone fa-comments"></i></whaticon></leftside></itext11>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>

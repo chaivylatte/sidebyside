@@ -1,0 +1,242 @@
+itext11 {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  background: rgba(var(--bgelev1));
+  width: 420px;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  border: 1px solid rgba(var(--border));
+}
+itext11 leftside {
+  position: relative;
+  order: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center space-between;
+  align-items: center;
+  width: 120px;
+  height: calc(100% + 1px);
+  padding: 25px;
+  border-radius: 0 0 50px 0;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient3));
+  border-right: 1px solid rgba(var(--border));
+  border-bottom: 1px solid rgba(var(--border));
+}
+itext11 leftside gif {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .35);
+}
+itext11 leftside gif:has(.mgicon) {
+  box-shadow: none;
+}
+itext11 leftside gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext11 leftside gif img[src].mgicon {
+  padding: 15px;
+  border-radius: 0px;
+}
+itext11 leftside whaticon {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  background: rgba(var(--bgelev1));
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .35);
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: var(--fontaccent1); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
+itext11 rightside {
+  order: 2;
+}
+itext11 rightsidein {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 30px;
+}
+itext11 recipient {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  place-content: center center;
+  align-items: flex-start;
+}
+itext11 recipient::before {
+  display: block;
+  content: "new message from";
+  font: 700 10px var(--font1);
+  color: rgba(var(--fontdimmer));
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+itext11 recipient span {
+  font: 600 16px var(--font1);
+  letter-spacing: 0.25px;
+}
+itext11 gcsur {
+  order: 2;
+  width: 100%;
+}
+itext11 gcsur {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+}
+itext11 gc {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 5px;
+  background: rgba(var(--bgelev2));
+  font: 800 11px var(--font1);
+  text-transform: uppercase;
+}
+itext11 gc:nth-child(1) {
+  color: var(--fontaccent1);
+}
+itext11 gc:nth-child(2) {
+  color: var(--fontaccent2);
+}
+itext11 gc:nth-child(3) {
+  color: var(--fontaccent3);
+}
+itext11 gc:nth-child(4) {
+  color: var(--fontaccent2);
+}
+itext11 gc:nth-child(5) {
+  color: var(--fontaccent1);
+}
+itext11 gc:nth-child(6) {
+  color: var(--fontaccent2);
+}
+itext11 gc:nth-child(7) {
+  color: var(--fontaccent3);
+}
+itext11 gc:nth-child(8) {
+  color: var(--fontaccent2);
+}
+itext11 gc:nth-child(9) {
+  color: var(--fontaccent1);
+}
+itext11 gc:nth-child(10) {
+  color: var(--fontaccent2);
+}
+itext11 gc img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext11 .messages {
+  order: 3;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-start;
+  text-align: justify;
+}
+itext11 .messages note { 
+  align-self: center;
+  font: 700 10px var(--font1);
+  color: rgba(var(--fontdim));
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+itext11 .messages p {
+  margin: 0;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); 
+  padding: 10px;
+  border-radius: 7px;
+  color: rgba(68, 68, 68);
+}
+itext11 .messages p:first-of-type {
+  border-top-left-radius: 0;
+}
+itext11 .messages b, itext11 .messages i {
+  background: rgba(var(--bgelev1));
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+itext11 .messages b {
+  color: var(--fontaccent1);
+}
+itext11 .messages i {
+  color: var(--fontaccent1);
+}
+itext11 .messages u {
+  font: 400 14px var(--font2);
+  text-decoration: underline var(--fontaccent4);
+}
+itext11 .messages a {
+  text-decoration: underline var(--fontaccent1);
+}
+itext11 .messages p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext11 bottbar {
+  order: 4;
+  position: relative;
+  left: -120px;
+  width: calc(100% + 120px);
+  padding: 15px;
+  padding-left: 140px;
+  background: rgba(var(--bgelev3));
+  border-top: 1px solid rgba(var(--border));
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 15px;
+  z-index: -1;
+}
+itext11 bottbar span {
+  flex-grow: 1;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+}
+itext11 bottbar span::before {
+  content: "type message here...";
+  line-height: 1!important;
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itext11 bottbar i {
+  font-size: 20px;
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: var(--fontaccent1); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
