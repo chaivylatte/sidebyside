@@ -224,6 +224,7 @@ icall12 bottbar span {
   padding: 10px;
   border-radius: 8px;
   text-align: right;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
 }
 icall12 bottbar span i {
   color: var(--fontaccent2);
