@@ -84,8 +84,72 @@ itext12 recipient span {
   font: 600 16px var(--font1);
   text-transform: uppercase;
 }
-itext12 .messages {
+itext12 gcsur {
   order: 3;
+  width: 100%;
+  z-index: 3;
+  border-top: 1px solid rgba(var(--bgelev4));
+  padding: 15px;
+}
+itext12 gcsur {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+}
+itext12 gc {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev2));
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+}
+itext12 gc:nth-child(1) {
+  color: var(--fontaccent1);
+}
+itext12 gc:nth-child(2) {
+  color: var(--fontaccent2);
+}
+itext12 gc:nth-child(3) {
+  color: var(--fontaccent3);
+}
+itext12 gc:nth-child(4) {
+  color: var(--fontaccent2);
+}
+itext12 gc:nth-child(5) {
+  color: var(--fontaccent1);
+}
+itext12 gc:nth-child(6) {
+  color: var(--fontaccent2);
+}
+itext12 gc:nth-child(7) {
+  color: var(--fontaccent3);
+}
+itext12 gc:nth-child(8) {
+  color: var(--fontaccent2);
+}
+itext12 gc:nth-child(9) {
+  color: var(--fontaccent1);
+}
+itext12 gc:nth-child(10) {
+  color: var(--fontaccent2);
+}
+itext12 gc img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext12 .messages {
+  order: 4;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -134,7 +198,7 @@ itext12 .messages p img {
   border-radius: inherit;
 }
 itext12 bottbar {
-  order: 4;
+  order: 5;
   display: flex;
   gap: 10px;
   place-content: center space-between;
