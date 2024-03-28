@@ -1,0 +1,186 @@
+itext12 {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev1));
+  width: 365px;
+  border-radius: 8px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  overflow: hidden;
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+itext12 bgmarshmallow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(var(--bgelev1), 0) 0%, rgba(var(--bgelev1), 1) 200px);
+}
+itext12 topper {
+  position: relative;
+  order: 1;
+  padding: 20px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(var(--bgelev6));
+  z-index: 3;
+}
+itext12 topper topleft {
+  display: flex;
+  gap: 10px;
+  place-content: center flex-start;
+  align-items: center;
+  color: var(--fontaccent4);
+}
+itext12 topper topleft span {
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itext12 topper topleft span::before {
+  content: "back to contacts";
+}
+itext12 topper topright {
+  display: flex;
+  gap: 10px;
+  place-content: center flex-end;
+  align-items: center;
+  color: var(--fontaccent1);
+}
+itext12 recipient {
+  position: relative;
+  order: 2;
+  padding: 30px;
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+}
+itext12 recipient::before {
+  content: "new message";
+  display: block;
+  font: 400 25px var(--font2);
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 15px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  color: rgba(var(--fontdim));
+}
+itext12 recipient span {
+  font: 600 16px var(--font1);
+  text-transform: uppercase;
+}
+itext12 .messages {
+  order: 3;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-end;
+  z-index: 3;
+  padding: 30px;
+  border-top: 1px solid rgba(var(--bgelev4));
+  text-align: justify;
+}
+itext12 .messages note { 
+  align-self: center;
+  font: 700 10px var(--font1);
+  color: rgba(var(--fontdim));
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+itext12 .messages p {
+  margin: 0;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); 
+  padding: 10px;
+  border-radius: 7px;
+  color: rgba(68, 68, 68);
+}
+itext12 .messages p:first-of-type {
+  border-top-right-radius: 0;
+}
+itext12 .messages b, itext12 .messages i {
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+itext12 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent4);
+}
+itext12 .messages a {
+  text-decoration: underline var(--fontaccent1);
+}
+itext12 .messages p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext12 bottbar {
+  order: 4;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  border-top: 1px solid rgba(var(--bgelev4));
+  padding: 15px;
+  z-index: 3;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+}
+itext12 bottbar gif {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .35);
+}
+itext12 bottbar gif:has(.mgicon) {
+  box-shadow: none;
+}
+itext12 bottbar gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext12 bottbar gif img[src].mgicon {
+  padding: 8px;
+  border-radius: 0px;
+}
+itext12 bottbar span {
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 8px;
+  text-align: right;
+}
+itext12 bottbar span i {
+  color: var(--fontaccent2);
+}
+itext12 bottbar span::after {
+  content: "type message here...";
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdimmer));
+}

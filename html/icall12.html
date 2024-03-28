@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/icall12.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<icall12><div class="actions">
+
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+
+</div><recipient><span>
+
+recipient here
+	
+</span></recipient><bottbar><gif>
+
+<img class="mgicon" src="https://64.media.tumblr.com/4d96b9774ff89eb97536a2616c6f28c7/c59f71ab037f6b9c-f4/s400x600/78a38d01fa1ec029bcbcc0d10254c106b65a7afd.gif">
+
+</gif><span><i class="fa-light fa-phone-xmark"></i></span></bottbar><topper><topleft><i class="fa-light fa-left-long"></i><span></span></topleft><topright><i class="fa-light fa-signal-bars"></i><i class="fa-light fa-wifi"></i><i class="fa-light fa-battery-full"></i></topright></topper><bgmarshmallow></bgmarshmallow></icall12>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>
