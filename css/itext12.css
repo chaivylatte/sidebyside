@@ -8,7 +8,7 @@ itext12 {
   background: rgba(var(--bgelev1));
   width: 365px;
   border-radius: 8px;
-  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
   overflow: hidden;
   font: 500 15px var(--font1);
   line-height: 1.5;
