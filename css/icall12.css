@@ -186,7 +186,7 @@ icall12 .actions p img {
 icall12 bottbar {
   order: 5;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   place-content: center space-between;
   align-items: center;
   border-top: 1px solid rgba(var(--bgelev4));
