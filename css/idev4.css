@@ -4,7 +4,7 @@ idev4 {
   background: rgba(var(--bgelev1));
   border-radius: 8px;
   border: 1px solid rgba(var(--border));
-  font: 500 13px var(--font1);
+  font: 500 15px var(--font1);
   line-height: 1.5;
   overflow: hidden;
   width: 600px;
