@@ -140,6 +140,7 @@ idev2 .devstuff.images-4 {
 idev2 .devstuff[class*=images] img {
   display: block;
   width: 100%;
+  height: auto;
   border: 10px solid rgba(var(--bgelev2));
   border-radius: 15px;
 }
