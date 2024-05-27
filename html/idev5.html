@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/idev5.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<idev5 class="mgcolor-1"><topper><ttopper><ttitle>
+
+title here
+
+</ttitle><subtitle>
+
+subtitle (or delete this text)
+
+</subtitle></ttopper><img class="mgicon" src></topper><devin><div class="devstuff">
+
+<iframe src="https://open.spotify.com/embed/playlist/SPOTIFYPLAYLISTCODEGOESHERE" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+</div></devin><bott></bott></idev5>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>

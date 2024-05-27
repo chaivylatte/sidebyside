@@ -1,0 +1,207 @@
+idev5 {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  width: 500px;
+  font: 400 15px var(--font1);
+  line-height: 1.5;
+  margin: auto;
+  background: rgba(var(--bgelev2));
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  overflow: hidden;
+  --mgbl3: rgba(var(--bgelev5));
+  --mgbl1: rgba(var(--bgelev3));
+}
+idev5.mgcolor-1 {
+  --mgbl3: var(--mgbgl3-1);
+  --mgbl1: var(--mgbgl1-1);
+  --mgfont: var(--fontaccent1);
+}
+idev5.mgcolor-2 {
+  --mgbl3: var(--mgbgl3-2);
+  --mgbl1: var(--mgbgl1-2);
+  --mgfont: var(--fontaccent2);
+}
+idev5.mgcolor-3 {
+  --mgbl3: var(--mgbgl3-3);
+  --mgbl1: var(--mgbgl1-3);
+  --mgfont: var(--fontaccent3);
+}
+idev5 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 30px;
+  order: 1;
+  padding: 50px;
+  background: var(--mgbl3);
+}
+idev5 topper img[src].mgicon { flex: none; width: 40px; height: 40px; }
+idev5 ttopper {
+  flex-grow: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-start;
+}
+idev5 ttitle {
+  font: 400 28px var(--font2);
+  padding-bottom: 7px;
+  border-bottom: 3px solid rgba(var(--bgelev1));
+}
+idev5 subtitle {
+  font: 700 13px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+idev5 devin {
+  order: 2;
+  padding: 50px;
+  background: var(--mgbl1);
+}
+idev5 .devstuff {
+  padding: 30px;
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+}
+idev5 .devstuff h1, idev5 .devstuff h2, idev5 .devstuff h3, idev5 .devstuff h4, idev5 .devstuff h5, idev5 .devstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  color: var(--mgfont);
+}
+idev5 .devstuff p {
+  margin: 0;
+  margin-top: 1em;
+  text-indent: 1em;
+}
+idev5 .devstuff p:first-child {
+  margin-top: 0;
+}
+idev5 .devstuff b, idev5 .devstuff i, idev5 .devstuff u, idev5 .devstuff a {
+  font-size: 17px;
+}
+idev5 .devstuff b {
+  color: var(--mgfont);
+}
+idev5 .devstuff i {
+  color: var(--mgfont);
+}
+idev5 .devstuff u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--mgfont);
+}
+idev5 .devstuff a {
+  text-decoration: underline;
+  color: var(--mgfont);
+}
+idev5 .devstuff del {
+  text-decoration: line-through var(--mgfont);
+}
+idev5 .devstuff mark {
+  color: rgba(var(--font));
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+idev5 .devstuff blockquote {
+  background: rgba(var(--bgelev3));
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+idev5 .devstuff q {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(var(--bgelev4));
+  padding-bottom: 15px;
+}
+idev5 .devstuff cite {
+  display: block;
+  place-content: center center;
+  align-items: center;
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 100%;
+  color: rgba(var(--fontdim));
+}
+idev5 .devstuff cite b { 
+  font-size: 12px;
+}
+idev5 .devstuff cite:before {
+  content: "-- ";
+}
+idev5 .devstuff ol, idev5 .devstuff ul {
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 5px;
+  list-style-position: inside;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+idev5 .devstuff ol {
+  list-style-type: none;
+}
+idev5 .devstuff li {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 5px;
+}
+idev5 .devstuff li a {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+}
+idev5 .devstuff[class*=images] {
+  display: grid;
+  grid-gap: 10px;
+  align-items: stretch;
+  background: none;
+  padding: 0;
+}
+idev5 .devstuff.images-1 {
+  grid-template-columns: 1fr;
+}
+idev5 .devstuff.images-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+idev5 .devstuff.images-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+idev5 .devstuff.images-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+idev5 .devstuff[class*=images] img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+idev5 .devstuff iframe {
+  border-radius: 5px;
+  display: block;
+}
+idev5 .devstuff:has(iframe) {
+  padding: 10px;
+}
+idev5 bott {
+  order: 3;
+  padding: 20px;
+  background: var(--mgbl3);
+}
