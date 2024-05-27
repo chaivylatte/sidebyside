@@ -1,0 +1,182 @@
+itracker4 {
+  display: block;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 8px;
+  border: 1px solid rgba(var(--border));
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  overflow: hidden;
+  width: 600px;
+}
+itracker4 topper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-start;
+  padding: 30px;
+  background: rgba(var(--bgelev3));
+}
+itracker4 topper:first-of-type {
+  border-bottom: 1px solid rgba(var(--border));
+}
+itracker4 topper:last-of-type {
+  border-top: 1px solid rgba(var(--border));
+  padding: 25px;
+}
+itracker4 ttitle {
+  display: inline-block;
+  font: 500 40px var(--font2);
+  text-transform: lowercase;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat; 
+  background-size: auto 5px; 
+  background-position: 0 100%; 
+  padding-bottom: 5px; 
+}
+itracker4 subtitle {
+  font: 700 10px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itracker4 ttitle:empty, itracker4 subtitle:empty {
+  display: none;
+}
+itracker4 img {
+  max-width: 100%;
+}
+itracker4 .trackerstuff {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background: rgba(var(--bgelev1));
+  padding: 50px;
+  text-align: justify;
+}
+itracker4 .fizztrackerwrap fizzyheadwr {
+  display: flex;
+  flex-direction: row-reverse;
+  place-content: center space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(var(--bgelev3));
+  border-bottom: 1px solid rgba(var(--border));
+}
+itracker4 .fizztrackerwrap fizzyheadwr.fizzythreads i::before {
+  color: rgba(var(--font));
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-sharp-regular);
+  content: "\f8e7";
+}
+itracker4 .fizztrackerwrap fizzyheadwr.fizzycomms i::before {
+  color: rgba(var(--font));
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-sharp-regular);
+  content: "\f3cf";
+}
+itracker4 .trackerstuff h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat; 
+  background-size: auto 5px; 
+  background-position: 0 100%; 
+  padding-bottom: 5px; 
+}
+itracker4 .fizztrackerwrap {
+  background: rgba(var(--bgelev2));
+  border-radius: 5px;
+  border: 1px solid rgba(var(--border));
+}
+itracker4 .tracker-item hr, itracker4 .tracker-item br {
+  display: none; 
+}
+itracker4 .fizzyelftrackersur {
+  max-height: 300px;
+  overflow: auto;
+}
+itracker4 .tracker-item {
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-bottom: 1px solid rgba(var(--border));
+}
+itracker4 .tracker-item:last-child {
+  border-bottom: 0;
+}
+itracker4 .tracker-item > b {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 10px;
+}
+itracker4 .tracker-item > b span {
+  order: 1;
+}
+itracker4 .tracker-item a {
+  order: 2;
+  display: block;
+  font: 400 20px var(--font2);
+  text-transform: lowercase;
+}
+itracker4 .tracker-item a:hover {
+  color: rgba(var(--fontdim));
+}
+itracker4 .tracker-item b i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  font-size: 15px!important;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-sharp-regular);
+}
+itracker4 .tracker-item b .status.caughtup i[class*="fa"]::before {
+  color: rgba(var(--fontdimmer), .3);
+  content: "\f4ad";
+}
+itracker4 .tracker-item b .status.myturn i[class*="fa"]::before {
+  color: var(--fontaccent2);
+  content: "\f4b0";
+}
+itracker4 .tracker-item .tracker-desc {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+  font: 700 11px var(--font1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+itracker4 .tracker-item .tracker-location, itracker4 .tracker-item .tracker-threaddesc {
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 5px;
+}
+itracker4 .tracker-item .tracker-lastpost b {
+  color: var(--fontaccent3);
+}
+itracker4 .tracker-item .tracker-location::before {
+  content: "location: ";
+  color: var(--fontaccent1);
+}
+itracker4 .tracker-item .tracker-threaddesc::before {
+  content: "description: ";
+  color: var(--fontaccent2);
+}
+itracker4 .tracker-lastpost {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 5px;
+}
