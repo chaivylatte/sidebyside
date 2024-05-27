@@ -135,6 +135,9 @@ itracker2 .tracker-item .tracker-location, itracker2 .tracker-item .tracker-thre
   padding: 15px;
   padding-top: 0;
 }
+itracker2 .tracker-item .tracker-lastpost b {
+  color: var(--fontaccent4);
+}
 itracker2 .tracker-item .tracker-location::before {
   content: "location: ";
   color: var(--fontaccent1);
