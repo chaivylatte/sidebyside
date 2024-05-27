@@ -3,7 +3,7 @@ idev5 {
   flex-direction: column;
   place-content: center flex-start;
   align-items: stretch;
-  width: 500px;
+  width: 550px;
   font: 400 15px var(--font1);
   line-height: 1.5;
   margin: auto;
