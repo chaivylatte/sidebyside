@@ -1,0 +1,197 @@
+itracker5 {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  width: 550px;
+  font: 400 15px var(--font1);
+  line-height: 1.5;
+  margin: auto;
+  background: rgba(var(--bgelev2));
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  overflow: hidden;
+  --mgbl3: rgba(var(--bgelev5));
+  --mgbl1: rgba(var(--bgelev3));
+}
+itracker5.mgcolor-1 {
+  --mgbl3: var(--mgbgl3-1);
+  --mgbl1: var(--mgbgl1-1);
+  --mgfont: var(--fontaccent1);
+}
+itracker5.mgcolor-2 {
+  --mgbl3: var(--mgbgl3-2);
+  --mgbl1: var(--mgbgl1-2);
+  --mgfont: var(--fontaccent2);
+}
+itracker5.mgcolor-3 {
+  --mgbl3: var(--mgbgl3-3);
+  --mgbl1: var(--mgbgl1-3);
+  --mgfont: var(--fontaccent3);
+}
+itracker5 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  gap: 30px;
+  order: 1;
+  padding: 50px;
+  background: var(--mgbl3);
+}
+itracker5 topper img[src].mgicon { flex: none; width: 40px; height: 40px; }
+itracker5 ttopper {
+  flex-grow: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-start;
+}
+itracker5 ttitle {
+  font: 400 28px var(--font2);
+  padding-bottom: 7px;
+  border-bottom: 3px solid rgba(var(--bgelev1));
+}
+itracker5 subtitle {
+  font: 700 13px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itracker5 subtitle:empty {
+  display: none;
+}
+itracker5 devin {
+  order: 2;
+  padding: 50px;
+  background: var(--mgbl1);
+}
+itracker5 .trackerstuff {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 30px;
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+}
+itracker5 .fizztrackerwrap {
+  border-radius: 5px;
+  overflow: hidden;
+}
+itracker5 .trackerstuff fizzyheadwr {
+  display: flex;
+  place-content: center space-between;
+  margin: 0;
+  background: var(--mgbl3);
+  padding: 20px;
+  letter-spacing: 0.5px;
+}
+itracker5 .fizztrackerwrap fizzyheadwr.fizzythreads i::before {
+  color: rgba(var(--bgelev1));
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f8e7";
+}
+itracker5 .fizztrackerwrap fizzyheadwr.fizzycomms i::before {
+  color: rgba(var(--bgelev1));
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f3cf";
+}
+itracker5 .trackerstuff fizzyheadwr h1 {
+  margin: 0;
+  font: 400 25px var(--font2);
+  font-size: inherit;
+  border-bottom: 2px solid rgba(var(--bgelev1));
+}
+itracker5 .tracker-item hr, itracker5 .tracker-item br {
+  display: none; 
+}
+itracker5 .fizzyelftrackersur {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background: var(--mgbl1);
+  padding: 15px;
+  max-height: 300px;
+  overflow: auto;
+}
+itracker5 .tracker-item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--mgbl3);
+}
+itracker5 .tracker-item > b {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 10px;
+}
+itracker5 .tracker-item > b span {
+  order: 1;
+}
+itracker5 .tracker-item a {
+  order: 2;
+  display: block;
+  font: 400 20px var(--font2);
+  text-transform: lowercase;
+}
+itracker5 .tracker-item a:hover {
+  color: rgba(var(--fontdim));
+}
+itracker5 .tracker-item b i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  font-size: 15px!important;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-sharp-regular);
+}
+itracker5 .tracker-item b .status.caughtup i[class*="fa"]::before {
+  color: rgba(var(--fontdim), .5);
+  content: "\f4ad";
+}
+itracker5 .tracker-item b .status.myturn i[class*="fa"]::before {
+  color: var(--mgfont);
+  content: "\f4b0";
+}
+itracker5 .tracker-item .tracker-desc {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+  font: 700 11px var(--font1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 5px;
+}
+itracker5 .tracker-item .tracker-location, itracker5 .tracker-item .tracker-threaddesc {
+
+}
+itracker5 .tracker-item .tracker-lastpost b {
+  color: var(--mgfont);
+}
+itracker5 .tracker-item .tracker-location::before {
+  content: "location: ";
+  color: var(--mgfont);
+}
+itracker5 .tracker-item .tracker-threaddesc::before {
+  content: "description: ";
+  color: var(--mgfont);
+}
+itracker5 .tracker-lastpost {
+  width: 100%;
+}
+itracker5 bott {
+  order: 3;
+  padding: 20px;
+  background: var(--mgbl3);
+}
