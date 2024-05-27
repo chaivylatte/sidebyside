@@ -1,0 +1,199 @@
+announcement-block {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  font: 400 16px var(--font1);
+  line-height: 1.5;
+  text-align: justify;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+announcement-top {
+  display: block;
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+  text-align: right;
+  color: rgba(var(--fontdimmer));
+}
+.announcement-content {
+}
+announcement-block sxs {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font: 500 40px var(--font2);
+}
+announcement-block sxs i {
+  font-size: 20px;
+  --fa-primary-color: rgba(var(--bgelev1)); --fa-secondary-color: var(--fontaccent1); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
+announcement-block sxs span {
+  background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 5px; background-position: 0 100%; padding-bottom: 10px;
+}
+.announcement-inner {
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.announcement-inner:first-of-type {
+  margin-top: 30px;
+}
+.announcement-inner::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient2));
+}
+.announcement-inner p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 20px;
+}
+.announcement-inner p:first-child {
+  margin-top: 0;
+}
+.announcement-inner b {
+  font-family: var(--font2); font-weight: 500; letter-spacing: 0.5px; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 0;
+}
+.announcement-inner i {
+  font-weight: 400; font-family: var(--font3); letter-spacing: -.25px; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 0px;
+}
+.announcement-inner u {
+  text-decoration: none; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 2px; background-position: 0 100%; padding-bottom: 1px;
+  font-weight: 500;
+}
+.announcement-inner a {
+  text-decoration: underline rgba(var(--font));
+  font-weight: 500;
+}
+.announcement-inner overflow {
+  max-height: 480px;
+}
+announcement-block .announcement-inner ul { padding-left:0; }
+announcement-block .announcement-inner ul b {
+  font-family: var(--font1);
+  font-weight: 700;
+}
+announcement-block .announcement-inner ul li {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  margin:5px;
+  font:700 12px var(--font1);
+  text-transform: uppercase;
+  background: rgba(var(--bgelev2));
+  padding:10px;
+  list-style-type: none;
+  border-radius:5px;
+}
+announcement-block .announcement-inner h1,
+announcement-block .announcement-inner h2,
+announcement-block .announcement-inner h3,
+announcement-block .announcement-inner h4,
+announcement-block .announcement-inner h5,
+announcement-block .announcement-inner h6 {
+  font-family:var(--font2); margin: 0; margin-top: 10px;
+}
+
+announcement-block .announcement-inner h1 span,
+announcement-block .announcement-inner h2 span,
+announcement-block .announcement-inner h3 span,
+announcement-block .announcement-inner h4 span,
+announcement-block .announcement-inner h5 span,
+announcement-block .announcement-inner h6 span {
+    background: linear-gradient(to left, var(--fontgradient));
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+}
+
+
+nanoslam {
+  display: block;
+  margin: auto;
+  width: 600px;
+  font: 400 16px var(--font1);
+  line-height: 1.5;
+  text-align: justify;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  border: 1px solid rgba(var(--border));
+}
+nanoslam date {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font: 500 40px var(--font2);
+  margin-bottom: 30px;
+}
+nanoslam date span {
+  background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 5px; background-position: 0 100%; padding-bottom: 10px;
+}
+nanoslam date i {
+  font-size: 20px;
+  color: var(--fontaccent1);
+}
+nanoslam .threadlist > span {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+}
+nanoslam .threadlist > span:first-of-type {
+  margin-top: 0;
+}
+nanoslam .threadlist h2 {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font: 500 20px var(--font2);
+}
+nanoslam .threadlist h2 span {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+nanoslam .threadlist span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+nanoslam .threadlist x b {
+  font-family: var(--font2); font-weight: 500; letter-spacing: 0.5px; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 0;
+  font-family: var(--font1);
+  font-weight: 700;
+}
+nanoslam .threadlist x {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  font:700 12px var(--font1);
+  text-transform: uppercase;
+  background: rgba(var(--bgelev2));
+  padding:10px;
+  list-style-type: none;
+  border-radius:5px;
+}
+nanoslam wc {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  margin-top: 30px;
+  font: 700 13px var(--font1);
+  text-transform: uppercase;
+  background: rgba(var(--bgelev3));
+  padding:15px;
+  list-style-type: none;
+  border-radius:5px;
+}
+nanoslam wc b {
+  font-family: var(--font2); font-weight: 500; letter-spacing: 0.5px; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 3px; background-position: 0 100%; padding-bottom: 5px;
+  font-family: var(--font1);
+  font-weight: 700;
+}

@@ -1,0 +1,152 @@
+itracker2 {
+  font: 500 15px var(--font1);
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 650px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+itracker2 theleft {
+  order: 1;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 40px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+  border-radius: inherit;
+}
+itracker2 .trackerstuff {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+itracker2 .trackerstuff h1, itracker2 .trackerstuff h2, itracker2 .trackerstuff h3, itracker2 .trackerstuff h4, itracker2 .trackerstuff h5, itracker2 .trackerstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  color: var(--fontaccent1);
+}
+itracker2 theright {
+  order: 2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center space-between;
+  align-items: center;
+  padding: 30px;
+}
+itracker2 theright i {
+  color: rgba(var(--bgelev1));
+  font-size: 15px;
+}
+itracker2 headwr {
+  writing-mode: vertical-lr;
+  font: 400 20px var(--font2);
+}
+itracker2 .fizztrackerwrap fizzyheadwr {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+itracker2 .fizztrackerwrap fizzyheadwr.fizzythreads i::before {
+  color: rgba(var(--font));
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f8e7";
+}
+itracker2 .fizztrackerwrap fizzyheadwr.fizzycomms i::before {
+  color: rgba(var(--font));
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f3cf";
+}
+itracker2 .fizzyelftrackersur {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(var(--border));
+  padding-bottom: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+itracker2 .tracker-item {
+  background: rgba(var(--bgelev2));
+  border-radius: 5px;
+}
+itracker2 .tracker-item hr, itracker2 .tracker-item br {
+  display: none; 
+}
+itracker2 .tracker-item > b {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 15px;
+}
+itracker2 .tracker-item > b span {
+  order: 2;
+}
+itracker2 .tracker-item a {
+  order: 1;
+  display: block;
+  font: 900 18px var(--font1);
+  text-transform: lowercase;
+  color: var(--fontaccent4);
+}
+itracker2 .tracker-item b i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  font-size: 15px!important;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+itracker2 .tracker-item b .status.caughtup i[class*="fa"]::before {
+  color: rgba(var(--fontdimmer), .3);
+  content: "\f4ad";
+}
+itracker2 .tracker-item b .status.myturn i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  content: "\f4b0";
+}
+itracker2 .tracker-item .tracker-desc {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+  font: 700 11px var(--font1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+itracker2 .tracker-item .tracker-location, itracker2 .tracker-item .tracker-threaddesc {
+  padding: 15px;
+  padding-top: 0;
+}
+itracker2 .tracker-item .tracker-location::before {
+  content: "location: ";
+  color: var(--fontaccent1);
+}
+itracker2 .tracker-item .tracker-threaddesc::before {
+  content: "description: ";
+  color: var(--fontaccent1);
+}
+itracker2 .tracker-lastpost {
+  width: 100%;
+  text-align: center;
+  background: rgba(var(--bgelev3));
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+}
