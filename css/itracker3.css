@@ -1,0 +1,161 @@
+itracker3 {
+  font: 400 14px var(--font1);
+  line-height: 1.5;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 30px;
+  border-radius: 20px;
+  width: 600px;
+  margin: auto;
+  border: 1px solid rgba(var(--bgelev1));
+  display: block;
+}
+itracker3 inner {
+  display: block;
+  background: rgba(var(--bgelev1));
+  border-radius: inherit;
+}
+itracker3 topper {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  padding: 25px;
+  line-height: 1;
+}
+itracker3 topper name {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+  text-decoration: underline rgba(var(--fontdim));
+  font: 400 30px var(--font2);
+}
+itracker3 lyr {
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+itracker3 inn {
+  display: block;
+  background: rgba(var(--bgelev2));
+  padding: 30px;
+  border-radius: inherit;
+}
+itracker3 .trackerstuff {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background: rgba(var(--bgelev1));
+  padding: 20px;
+  text-align: justify;
+  border-radius: inherit;
+}
+itracker3 .fizzyelftrackersur {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-bottom: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+itracker3 .tracker-item {
+  padding: 15px;
+  border-bottom: 1px solid rgba(var(--border));
+}
+itracker3 .tracker-item hr, itracker3 .tracker-item br {
+  display: none; 
+}
+itracker3 .tracker-item > b {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 10px;
+}
+itracker3 .tracker-item > b span {
+  order: 1;
+}
+itracker3 .tracker-item a {
+  order: 2;
+  display: block;
+  font: 700 18px var(--font1);
+  text-transform: lowercase;
+  color: var(--fontaccent2);
+}
+itracker3 .tracker-item a:hover {
+  color: rgba(var(--fontdim));
+}
+itracker3 .tracker-item b i[class*="fa"]::before {
+  color: var(--fontaccent1);
+  font-size: 15px!important;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+itracker3 .tracker-item b .status.caughtup i[class*="fa"]::before {
+  color: rgba(var(--fontdimmer), .3);
+  content: "\f4ad";
+}
+itracker3 .tracker-item b .status.myturn i[class*="fa"]::before {
+  color: var(--fontaccent4);
+  content: "\f4b0";
+}
+itracker3 .tracker-item .tracker-desc {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: center;
+  font: 700 11px var(--font1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+itracker3 .tracker-item .tracker-location, itracker3 .tracker-item .tracker-threaddesc {
+
+}
+itracker3 .tracker-item .tracker-lastpost b {
+  color: var(--fontaccent4);
+}
+itracker3 .tracker-item .tracker-location::before {
+  content: "location: ";
+  color: var(--fontaccent1);
+}
+itracker3 .tracker-item .tracker-threaddesc::before {
+  content: "description: ";
+  color: var(--fontaccent1);
+}
+itracker3 .tracker-lastpost {
+  width: 100%;
+  text-align: center;
+}
+itracker3 .fizztrackerwrap fizzyheadwr {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+itracker3 .fizztrackerwrap fizzyheadwr.fizzythreads i::before {
+  color: rgba(var(--font));
+  font-size: 15px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f8e7";
+}
+itracker3 .fizztrackerwrap fizzyheadwr.fizzycomms i::before {
+  color: rgba(var(--font));
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  content: "\f3cf";
+}
+itracker3 .trackerstuff h1, itracker3 .trackerstuff h2, itracker3 .trackerstuff h3, itracker3 .trackerstuff h4, itracker3 .trackerstuff h5, itracker3 .trackerstuff h6 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font2);
+  line-height: 100%;
+  color: var(--fontaccent1);
+  text-align: center;
+}

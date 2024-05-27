@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/itracker3.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+<itracker3><inner><topper><name>
+
+name here
+
+</name></topper><inn><div class="trackerstuff">
+
+	<div class="fizztrackerwrap"><fizzyheadwr class="fizzythreads"><h1>active threads</h1><i></i></fizzyheadwr><div class="fizzyelftrackersur" id="trackdiormoon"><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6182&amp;view=getlastpost">ˋˏ ༻ ti[m]e takes me to love</a></b>
+		<div class="tracker-desc">
+			<span class="tracker-location">globetrotting</span> <span class="tracker-threaddesc"> |  + mina / beau</span><br>
+			<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Jan 12 2024, 08:36 PM</span>
+		</div><hr></div></div></div>
+		<div class="fizztrackerwrap"><fizzyheadwr class="fizzycomms"><h1>active comms</h1><i></i></fizzyheadwr><div class="fizzyelftrackersur" id="altdiormoon"><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6222&amp;view=getlastpost">｡ ﾟ ꕤ ﾟ｡ out of the blue</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  + kelly / nico</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Today at 08:31 am</span>
+			</div><hr></div><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6197&amp;view=getlastpost">｡ ﾟ ꕤ ﾟ｡ ricochet</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  + sapphy / open</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Today at 08:26 am</span>
+			</div><hr></div><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6119&amp;view=getlastpost">｡ ﾟ ꕤ ﾟ｡ chocolate</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  + mina / logan</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Jan 13 2024, 06:33 PM</span>
+			</div><hr></div><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6118&amp;view=getlastpost">｡ ﾟ ꕤ ﾟ｡ dreams come true</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  + mina / lucas</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Jan 13 2024, 06:32 PM</span>
+			</div><hr></div><div class="tracker-item"><b><span class="status caughtup" aria-described-by="Caught Up"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6196&amp;view=getlastpost">｡ ﾟ ꕤ ﾟ｡ thrive</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  + mitzi / open</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> dior moon - Jan 12 2024, 06:04 PM</span>
+			</div><hr></div><div class="tracker-item"><b><span class="status myturn" aria-described-by="My Turn"><i class="fa-"></i></span> <a href="https://sideways.jcink.net/index.php?showtopic=6056&amp;view=getlastpost">going faster*ೃ༄</a></b>
+			<div class="tracker-desc">
+				<span class="tracker-location">messaging</span> <span class="tracker-threaddesc"> |  ivy | react</span><br>
+				<span class="tracker-lastpost"><b>Last Post:</b> parker shim - Jan 12 2024, 09:14 AM</span>
+			</div><hr></div></div></div>
+
+</div></inn><topper>
+
+<lyr>lyrics here or delete this</lyr>
+
+</topper></inner></itracker3>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>
