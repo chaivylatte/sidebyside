@@ -57,6 +57,9 @@ idev5 subtitle {
   text-transform: uppercase;
   color: rgba(var(--fontdim));
 }
+idev5 subtitle:empty {
+  display: none;
+}
 idev5 devin {
   order: 2;
   padding: 50px;
