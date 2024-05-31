@@ -152,13 +152,13 @@ iwildside1 pnoc span {
   font-weight: 700;
 }
 iwildside1 pnoc span:nth-child(1) {
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  background: var(--pastel1accent1);
 }
 iwildside1 pnoc span:nth-child(2) {
-  background: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
+  background: var(--pastel1accent2);
 }
 iwildside1 pnoc span:nth-child(3) {
-  background: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+  background: var(--pastel1accent3);
 }
 iwildside1 pnoc span:nth-child(1) i {
   color: var(--fontaccent1);

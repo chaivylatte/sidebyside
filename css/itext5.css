@@ -111,15 +111,15 @@ itext5 .messages p:last-child:before {
   background: var(--messagebg);
 }
 itext5 .messages p:nth-of-type(1n) {
-  --messagebg: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  --messagebg: var(--pastel1accent1);
   --messageaccent: var(--fontaccent1);
 }
 itext5 .messages p:nth-of-type(2n) {
-  --messagebg: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
+  --messagebg: var(--pastel1accent2);
   --messageaccent: var(--fontaccent2);
 }
 itext5 .messages p:nth-of-type(3n) {
-  --messagebg: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+  --messagebg: var(--pastel1accent3);
   --messageaccent: var(--fontaccent3);
 }
 itext5 .messages b, itext5 .messages i {

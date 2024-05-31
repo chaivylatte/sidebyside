@@ -46,7 +46,7 @@ ithread2 tagspace i[class*="fa-"] {
   display: flex;
   place-content: center center;
   align-items: center;
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  background: var(--pastel1accent1);
 }
 ithread2 tagname {
   font: 400 20px var(--font2);
@@ -93,5 +93,5 @@ ithread2 line {
   height: 8px;
   margin: 0 30px 30px;
   border-radius: 4px;
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  background: var(--pastel1accent1);
 }

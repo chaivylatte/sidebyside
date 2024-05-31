@@ -65,7 +65,7 @@ icall2 gif i[class*="fa"] {
   position: absolute;
   bottom: 0px;
   right: 10px;
-  background: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight3) + var(--darken)));
+  background: var(--pastel1accent3);
   width: 30px;
   height: 30px;
   font-size: 12px;
@@ -99,7 +99,7 @@ icall2 someicons {
   align-items: center;
 }
 icall2 someicons i[class*="fa"] {
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken)));
+  background: var(--pastel1accent1);
   width: 30px;
   height: 30px;
   font-size: 12px;

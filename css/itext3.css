@@ -7,7 +7,7 @@ itext3 {
   flex-direction: column;
   place-content: center flex-start;
   align-items: stretch;
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+  background: var(--pastel1accent1);
   width: 400px;
   min-height: 300px;
   padding: 25px;
@@ -68,7 +68,7 @@ itext3 gif {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)));
+  background: var(--pastel1accent4);
   padding: 5px;
 }
 itext3 gif img {

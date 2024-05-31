@@ -122,7 +122,7 @@ isideline3 fakecontrols {
 }
 isideline3 fakecontrols span {
   flex-grow: 1;
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--darken)));
+  background: var(--pastel1accent1);
   padding: 8px;
   border-radius: 5px;
   text-align: center;
@@ -169,11 +169,11 @@ isideline3 bigcontrols i[class*="fa"]:nth-child(3) {
 }
 isideline3.profile bigcontrols i[class*="fa"]:nth-child(5) {
   color: rgba(var(--bgelev1));
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--darken)));
+  background: var(--pastel1accent1);
 }
 isideline3.post bigcontrols i[class*="fa"]:nth-child(1) {
   color: rgba(var(--bgelev1));
-  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--darken)));
+  background: var(--pastel1accent1);
 }
 isideline3 picspace {
   display: grid;
@@ -203,7 +203,7 @@ isideline3 picbar i[class*="fa"] {
 }
 isideline3 picbar i[class*="fa"]:nth-child(1) {
   color: var(--fontaccent1);
-  border-color: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--darken)));
+  border-color: var(--pastel1accent1);
 }
 isideline3 postsur {
   display: flex;
