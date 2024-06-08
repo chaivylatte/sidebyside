@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/itext13.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+<itext13><div class="messages">
+
+<note>message read</note>
+<note>@[name] added to chat</note>
+<note>feel free to delete these unneeded notes!</note>
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+<p><img src="https://via.placeholder.com/600x200">
+
+</div><topper><gifblock><gifsur>
+	
+<img class="mgicon" src="https://64.media.tumblr.com/8c0bfa6b5c0b6e9c5089acf3d97d702d/a5d9f41174192cf9-22/s400x600/b013f49d4605b77dd843c04b0e5272c64aac6661.gif">
+
+</gifsur><recipient><span>
+
+recipient
+
+</span></recipient></gifblock>
+
+</ BEGIN GROUP CHAT SECTION - DELETE BEGINNING HERE IF NEEDED >
+<gcsur>
+
+<gc>FL</gc>
+<gc>FL</gc>
+<gc>FL</gc>
+<gc><img src="https://64.media.tumblr.com/4b8b98509119eec3fb5a7758b38666a2/764913df4338ce12-c2/s500x750/a569d0f1560d50daf9be2f48aca63e4d09912815.jpg"></gc>
+
+</gcsur>
+</ END GROUP CHAT SECTION - DELETE ENDING HERE IF NEEDED >
+
+<topbar><i class="fa-light fa-left-long"></i><dasright><i class="fa-light fa-signal-bars"></i><i class="fa-light fa-wifi"></i><i class="fa-light fa-battery-full"></i></dasright></topbar><lefticons><i class="fa-duotone fa-phone"></i><i class="fa-duotone fa-video"></i></lefticons><iconspacer></iconspacer><bigiconsur><i class="fa-duotone fa-comments"></i></bigiconsur><righticons><i class="fa-duotone fa-user"></i><i class="fa-duotone fa-gear"></i></righticons></topper><typeblock><div class="typing"><d></d><d></d><d></d></div></typeblock><bottbar><i class="fa-light fa-circle-plus"></i><span><i class="fa-solid fa-icons"></i><i class="fa-solid fa-microphone"></i></span><i class="fa-light fa-paper-plane-top"></i></bottbar></itext13>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>

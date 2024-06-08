@@ -1,0 +1,363 @@
+itext13 {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  margin: auto;
+  width: 370px;
+  font: 400 16px var(--font1);
+  line-height: 1.5;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgba(var(--shadow), .15);
+  overflow: hidden;
+  background: rgba(var(--bgelev1));
+}
+itext13 topper {
+  order: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  place-content: center center;
+  align-items: flex-end;
+  padding: 25px;
+  padding-bottom: 15px;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  z-index: 2;
+}
+itext13 topbar {
+  order: 1;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+itext13 dasright {
+  display: flex;
+  gap: 10px;
+  place-content: center flex-end;
+  align-items: center;
+}
+itext13 gifblock {
+  order: 3;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  place-content: center space-between;
+  align-items: center;
+}
+itext13 gifsur {
+  display: block;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  background: rgba(var(--bgelev1));
+  padding: 3px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(var(--shadow), .25);
+}
+itext13 gifsur img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext13 gifsur img.mgicon {
+  border-radius: 0;
+  padding: 10px;
+}
+itext13 recipient {
+  text-align: right;
+}
+itext13 recipient span {
+  font: 500 22px var(--font2);
+  line-height: 1.6;
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  padding-bottom: 3px;
+}
+itext13 gcsur {
+  order: 4;
+  display: flex;
+  gap: 5px;
+  place-content: center flex-end;
+  align-items: center;
+  width: 100%;
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+}
+itext13 gcsur gc {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  position: relative;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background: rgba(var(--bgelev1));
+  padding: 3px;
+  border-radius: 50%;
+  transition: margin-left 0.6s ease-in-out;
+  border: 1px solid rgba(var(--lightfont));
+}
+itext13 gc:nth-child(1) {
+  color: var(--fontaccent1);
+  background: var(--pastel1accent1);
+}
+itext13 gc:nth-child(2) {
+  color: var(--fontaccent2);
+  background: var(--pastel1accent2);
+}
+itext13 gc:nth-child(3) {
+  color: var(--fontaccent3);
+  background: var(--pastel1accent3);
+}
+itext13 gc:nth-child(4) {
+  color: var(--fontaccent2);
+  background: var(--pastel1accent2);
+}
+itext13 gc:nth-child(5) {
+  color: var(--fontaccent1);
+  background: var(--pastel1accent1);
+}
+itext13 gc:nth-child(6) {
+  color: var(--fontaccent2);
+  background: var(--pastel1accent2);
+}
+itext13 gc:nth-child(7) {
+  color: var(--fontaccent3);
+  background: var(--pastel1accent3);
+}
+itext13 gc:nth-child(8) {
+  color: var(--fontaccent2);
+  background: var(--pastel1accent2);
+}
+itext13 gc:nth-child(9) {
+  color: var(--fontaccent1);
+  background: var(--pastel1accent1);
+}
+itext13 gc:nth-child(10) {
+  color: var(--fontaccent2);
+  background: var(--pastel1accent2);
+}
+itext13 gcsur::before {
+  flex-grow: 1;
+  margin-left: 0;
+  content: "in chat:";
+  padding-right: 10px;
+}
+itext13 gcsur gc img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+itext13 gcsur:hover gc {
+  margin-left: 0;
+  transition: margin-left 0.6s ease-in-out;
+}
+itext13 lefticons {
+  flex-grow: 1;
+  order: 4;
+  display: flex;
+  gap: 10px;
+  place-content: center flex-end;
+  align-items: center;
+}
+itext13 righticons {
+  flex-grow: 1;
+  order: 6;
+  display: flex;
+  gap: 10px;
+  place-content: center flex-start;
+  align-items: center;
+}
+itext13 lefticons i.fa-duotone, itext13 righticons i.fa-duotone {
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+  width: calc(50% - 5px);
+  height: 30px;
+  font-size: 13px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  text-align: center;
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: rgba(var(--fontdimmer)); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
+itext13 lefticons i.fa-duotone:hover, itext13 righticons i.fa-duotone:hover {
+  --fa-secondary-color: var(--fontaccent4);
+}
+itext13 iconspacer {
+  order: 5;
+  display: block;
+  width: 45px;
+}
+itext13 bigiconsur {
+  position: absolute;
+  left: calc(50% - 33px);
+  bottom: 0px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 50% 50% 0 0 ;
+  background: rgba(var(--bgelev1));
+  font-size: 15px;
+  --fa-primary-color: rgba(var(--font)); --fa-secondary-color: var(--fontaccent1); --fa-primary-opacity: 1.0; --fa-secondary-opacity: 1.0;
+}
+itext13 bigiconsur::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  height: 34px;
+  width: 34px;
+  border-bottom-right-radius: 50%;
+  background: transparent;
+  box-shadow: 10px 0 0 0 rgba(var(--bgelev1));
+}
+itext13 bigiconsur::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  height: 34px;
+  width: 34px;
+  border-bottom-left-radius: 50%;
+  background: transparent;
+  box-shadow: 0 10px 0 0 rgba(var(--bgelev1));
+}
+itext13 .messages {
+  order: 2;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-end;
+  z-index: 3;
+  padding: 40px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+itext13 .messages note { 
+  align-self: center;
+  font: 700 10px var(--font1);
+  color: rgba(var(--fontdim));
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+itext13 .messages p {
+  margin: 0;
+  background: rgba(var(--bgelev2)) linear-gradient(to right, var(--pastelgradient3)); 
+  padding: 10px;
+  border-radius: 7px;
+  color: rgba(var(--darkfont));
+}
+itext13 .messages p:last-of-type {
+  border-bottom-right-radius: 0;
+}
+itext13 .messages b, itext13 .messages i {
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+itext13 .messages u {
+  font: 400 15px var(--font2);
+  text-decoration: underline var(--fontaccent4);
+}
+itext13 .messages a {
+  text-decoration: underline var(--fontaccent1);
+}
+itext13 .messages p img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+itext13 typeblock {
+  order: 4;
+  display: flex;
+  gap: 20px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+}
+itext13 .typing {
+  order: 1;
+  display: flex;
+  gap: 5px;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 10px 10px 10px 0;
+}
+itext13 .typing d {
+  display: block;
+  animation: itext13blink 1.5s infinite;
+  animation-fill-mode: both;
+  height: 10px;
+  width: 10px;
+  background: var(--fontaccent1);
+  border-radius: 50%;
+}
+itext13 .typing d:nth-child(2) {
+  animation-delay: .2s;
+  margin-left: 10px * 1.5;
+}
+itext13 .typing d:nth-child(3) {
+  animation-delay: .4s;
+  margin-left: 10px * 3;
+}
+@keyframes itext13blink {
+  0% {
+    opacity: .1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+itext13 bottbar {
+  order: 5;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  padding: 15px;
+  font-size: 15px;
+}
+itext13 bottbar span {
+  flex-grow: 1;
+  display: flex;
+  gap: 6px;
+  place-content: center space-between;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(var(--shadow), .1);
+}
+itext13 bottbar span::before {
+  flex-grow: 1;
+  content: "type message here";
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+itext13 bottbar span i {
+  color: var(--fontaccent1);
+  font-size: 12px;
+}

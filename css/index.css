@@ -383,6 +383,11 @@ gummybear, .gummybear, .group-95, .group-96, .allowtagcolors .mgroup-95, .allowt
 * { 
 --fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
 
+--pastel1accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--mglight1) + var(--lightness1) + var(--darken)));
+--pastel1accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--mglight1) + var(--lightness1) + var(--darken)));
+--pastel1accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--mglight2) + var(--lightness1) + var(--darken)));
+--pastel1accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--mglight3) + var(--lightness1) + var(--darken)));
+
 --mgbgl1-1: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--darken)));
 --mgbgl2-1: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness2) + var(--darken)));
 --mgbgl3-1: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness3) + var(--darken)));
