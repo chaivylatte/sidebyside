@@ -31,6 +31,7 @@ itext7 recspace {
   align-items: center;
 }
 itext7 recspace gif {
+  flex: none;
   width: 70px;
   height: 70px;
   border-radius: 50%;

@@ -31,6 +31,7 @@ icall7 recspace {
   align-items: center;
 }
 icall7 recspace gif {
+  flex: none;
   width: 70px;
   height: 70px;
   border-radius: 50%;
