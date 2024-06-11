@@ -124,6 +124,7 @@ idev2 .devstuff[class*=images] {
   display: grid;
   grid-gap: 15px;
   align-items: stretch;
+  height: auto;
 }
 idev2 .devstuff.images-1 {
   grid-template-columns: 1fr;

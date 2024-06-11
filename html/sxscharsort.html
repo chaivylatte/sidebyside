@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/sxscharsort.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mgchangerlist"></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<div class="sxscharsort marshmallow"><topper></topper><div class="writing"><b>character #:</b> which character is this for you?
+<b>face claim:</b> first lastname (stage name, if any)
+<b>proof of purchase:</b> <a>delete if not applicable</a>
+<b>fulfilled ads:</b><ul>
+<a>ad title</a> - for <a>name</a>
+<a>ad title</a> - for <a>name</a>
+<a>ad title</a> - for <a>name</a>
+</ul>
+<b>server intro fact:</b> this is for your character's server intro, and is completely optional. leaving this blank means opting out of a server intro!</div><div class="mgspace"><img class="mgicon" src=""><span></span></div></div>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script> 
+	$(function(){
+		$("#mgchangerlist").load("../js/mgchangerhtml.html"); 
+	});
+	</script> 
+</html>

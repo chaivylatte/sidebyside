@@ -1,0 +1,85 @@
+.sxscharsort {
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--border));
+  font: 400 16px var(--font1);
+  text-align: justify;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+.sxscharsort topper {
+  display: block;
+  width: 100%;
+  height: 25px;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-bottom: 1px solid rgba(var(--border));
+}
+.sxscharsort .writing {
+  padding: 50px;
+  padding-bottom: 20px;
+  white-space: pre-wrap;
+}
+.sxscharsort .writing ul {
+  display: block;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 5px;
+}
+.sxscharsort .writing ul ~ br {
+  display: none;
+}
+.sxscharsort .writing a {
+  background-image: linear-gradient(to right, var(--pastelgradient1)); background-repeat: no-repeat; background-size: 100% 2px; background-position: 0 100%; padding-bottom: 2px;
+}
+.sxscharsort .writing b {
+  display: inline-block;
+  background: rgba(var(--bgelev1)) linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  color: rgba(var(--darkfont));
+  padding: 8px; 
+  border-radius: 5px;
+  margin: 5px;
+  font: 700 11px var(--font1);
+  text-transform: uppercase;
+}
+.sxscharsort .mgspace {
+  position: relative;
+  display: flex;
+  place-content: center flex-end;
+  align-items: center;
+  bottom: -50px;
+  background: rgba(var(--bgelev3));
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  padding: 30px;
+  padding-bottom: 80px;
+  -webkit-transform: skewY(-1.75deg);
+  border-top: 1px solid rgba(var(--border));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+.sxscharsort .mgspace .mgicon {
+  width: 40px;
+  height: 40px;
+}
+.sxscharsort .mgspace span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-end;
+  -webkit-transform: skewY(1.75deg);
+}
+.sxscharsort .mgspace span::before {
+  display: block;
+  content: "sort me into";
+  font: 700 12px var(--font1);
+  text-transform: uppercase;
+  color: rgba(var(--fontdim));
+}
+.sxscharsort .mgspace span::after {
+  display: block;
+  content: var(--groupname);
+  font: 500 30px var(--font2); 
+  background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 3px; background-position: 0 100%; padding-bottom: 5px;
+}
