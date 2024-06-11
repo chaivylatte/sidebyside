@@ -20,6 +20,7 @@
   padding-bottom: 20px;
   white-space: pre-wrap;
 }
+.sxscharsort .writing a.user-tagged { color: rgba(var(--font)); font: 400 15px var(--font2); text-decoration: none; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 2px; background-position: 0 100%; padding-bottom: 3px; }
 .sxscharsort .writing ul {
   display: block;
   background: rgba(var(--bgelev2));
