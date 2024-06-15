@@ -31,6 +31,7 @@
   display: none;
 }
 .sxscharsort .writing a {
+  text-decoration: none;
   background-image: linear-gradient(to right, var(--pastelgradient1)); background-repeat: no-repeat; background-size: 100% 2px; background-position: 0 100%; padding-bottom: 2px;
 }
 .sxscharsort .writing b {

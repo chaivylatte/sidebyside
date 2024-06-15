@@ -1,5 +1,5 @@
 /****************************************
- Body Background & Text Style
+Body Background & Text Style
 *****************************************/
 @import url("https://use.typekit.net/yzg8yyi.css");
 html, body { margin: 0; padding: 0; box-sizing: border-box; } 
@@ -7,11 +7,16 @@ body { padding: 20px; }
 * { box-sizing: border-box; }
 form { display:inline; }
 
-:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --pastelpercent2: 20%; --darken: 0%; --blendmode: darken; --bgimage: url(https://i.postimg.cc/T1jM08tv/bglight.jpg); }
+:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --pastelpercent2: 20%; --desat: 0%; --darken: 0%; --linvert: 0% + ; --blendmode: darken; --bgimage: url(https://i.postimg.cc/T1jM08tv/bglight.jpg); }
 
-html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --pastelpercent2: 20%; --darken: -20%; --blendmode: exclusion; --bgimage: url(https://i.postimg.cc/2jnDrvr9/bgdark.jpg); }
+html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --pastelpercent2: 20%; --desat: -10%; --darken: -20%; --linvert: 100% - ; --blendmode: exclusion; --bgimage: url(https://i.postimg.cc/2jnDrvr9/bgdark.jpg); }
 
-body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: graphie; --font2: ohno-blazeface; --font3: graphie; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s; --sans: var(--font1); --display: var(--font2); --darkfont: 68, 68, 68; --lightfont: 245, 245, 245; }
+body { font-family: var(--font1), sans-serif; font-size: 13px; font-weight: 400; line-height: 1.3; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) var(--bgimage); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: graphie; --font2: ohno-blazeface; --font3: graphie; --lightness1: 90%; --lightness2: 65%; --lightness3: 77%; -webkit-transition: .3s ease-in-out 0s; transition: .3s ease-in-out 0s; --sans: var(--font1); --display: var(--font2); --darkfont: 68, 68, 68; --lightfont: 245, 245, 245;
+
+--satadjust1: 0%; --satadjust2: 31%; --satadjust3: -30%;
+--dullsat1: 20%;
+--lightadjust1: 0%; --lightadjust2: 25%; --lightadjust3: 12%;
+}
 
 *[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
 ::selection { background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken))); color: inherit; text-shadow: none; }
@@ -30,363 +35,577 @@ body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-hei
 .postactual { display: block; width: 841px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; font-size: 14px; line-height: 130%; text-align: left; }
 
 #theme-toggle {
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
- display: inline-block;
- z-index: 999;
+position: fixed;
+bottom: 5px;
+left: 5px;
+display: inline-block;
+z-index: 999;
 }
 #theme-toggle i {
-  display: block;
-  background: rgba(var(--bgelev2), 1);
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  font-size: 20px;
-  line-height: 100%;
-  color: var(--font);
+display: block;
+background: rgba(var(--bgelev2), 1);
+border-radius: 100%;
+width: 40px;
+height: 40px;
+padding: 10px;
+font-size: 20px;
+line-height: 100%;
+color: var(--font);
 }
 #mg-toggle {
-  z-index: 999;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  display: block;
-  width: auto;
-  height: 20px;
-  color: rgba(var(--font));
-  text-align: center!important;
-  letter-spacing: 0;
+z-index: 999;
+position: fixed;
+bottom: 5px;
+right: 5px;
+display: block;
+width: auto;
+height: 20px;
+color: rgba(var(--font));
+text-align: center!important;
+letter-spacing: 0;
 }
 
 img[src].mgicon { width: 100%; height: 100%; content: var(--mgicon); }
 
 a:link, a:visited, a:active {
- text-decoration: none;
- color: inherit;
+text-decoration: none;
+color: inherit;
 }
 a:hover {
- cursor: crosshair;
- color: inherit;
- text-decoration: none;
+cursor: crosshair;
+color: inherit;
+text-decoration: none;
 }
 
 /****************************************
-   Member Groups
+Member Groups
 *****************************************/
 
 .membergrouphereinalllowercase,
 .retired, .group-1, .allowtagcolors .mgroup-1,
 .inactive, .group-6, .allowtagcolors .mgroup-6,
 .banned, .group-5, .allowtagcolors .mgroup-5 {
- --mghue1: 0; --mgsat1: 0%; --mglight1: 0%;
- --mghue2: 0; --mgsat2: 0%; --mglight2: -10%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://i.postimg.cc/qv9thBHk/other2.png); --mgicon: url(https://i.postimg.cc/CLr2xnYN/05.004._retired.png); }
+--mghue1: 0; --mgsat1: 0%; --mglight1: 65%;
+--mghue2: 0; --mgsat2: 0%; --mglight2: 55%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://i.postimg.cc/qv9thBHk/other2.png); --mgicon: url(https://i.postimg.cc/CLr2xnYN/05.004._retired.png);
+--linvert: 0% + ;
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 .retired, .group-1, .allowtagcolors .mgroup-1 { --groupname: "retired"; }
 
 :root, .guests, .group-2, .allowtagcolors .mgroup-2 {
- --mghue1: 34; --mgsat1: 70%; --mglight1: 0%;
- --mghue2: 309; --mgsat2: 49%; --mglight2: 0%;
- --mghue3: 174; --mgsat3: 59%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "guests"; --mgbanner: url(https://i.postimg.cc/qv9thBHk/other2.png); --mgicon: url(https://i.postimg.cc/mgc5zZgG/05-003-guests.png); }
+--mghue1: 34; --mgsat1: 40%; --mglight1: 65%;
+--mghue2: 309; --mgsat2: 26%; --mglight2: 65%;
+--mghue3: 174; --mgsat3: 33%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "guests"; --mgbanner: url(https://i.postimg.cc/qv9thBHk/other2.png); --mgicon: url(https://i.postimg.cc/mgc5zZgG/05-003-guests.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 .members, .group-3, .allowtagcolors .mgroup-3 {
- --mghue1: 272; --mgsat1: 49%; --mglight1: 2%;
- --mghue2: 309; --mgsat2: 49%; --mglight2: 2%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "unsorted"; --mgbanner: url(https://i.postimg.cc/4xK7x7ML/other.png); --mgicon: url(https://i.postimg.cc/0yLHpgzK/05-002-unsorted.png); }
+--mghue1: 272; --mgsat1: 26%; --mglight1: 67%;
+--mghue2: 309; --mgsat2: 26%; --mglight2: 67%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "unsorted"; --mgbanner: url(https://i.postimg.cc/4xK7x7ML/other.png); --mgicon: url(https://i.postimg.cc/0yLHpgzK/05-002-unsorted.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 .staff, .group-4, .allowtagcolors .mgroup-4, .tshell.toptype-announcement.group- {
- --mghue1: 185; --mgsat1: 80%; --mglight1: 0%;
- --mghue2: 273; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: 21; --mgsat3: 79%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "staff"; --mgbanner: url(https://i.postimg.cc/bvkZQXq1/other3.png); --mgicon: url(https://i.postimg.cc/8CMX4yvK/05-001-staff.png); }
+--mghue1: 185; --mgsat1: 57%; --mglight1: 65%;
+--mghue2: 273; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: 21; --mgsat3: 56%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "staff"; --mgbanner: url(https://i.postimg.cc/bvkZQXq1/other3.png); --mgicon: url(https://i.postimg.cc/8CMX4yvK/05-001-staff.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 /****************************************
-   Standard Groups
+Standard Groups
 *****************************************/
-
 redvelvet, .redvelvet, .group-17, .group-18, .allowtagcolors .mgroup-17, .allowtagcolors .mgroup-18 {
- --mghue1: 7; --mgsat1: 90%; --mglight1: 0%;
- --mghue2: 343; --mgsat2: 90%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "red velvet"; --mgbanner: url(https://i.postimg.cc/BQbtmPqS/redvelvet.png); --mgicon: url(https://i.postimg.cc/3wQQ30Cq/01-001-red-velvet.png); }
+--mghue1: 7; --mgsat1: 67%; --mglight1: 65%;
+--mghue2: 343; --mgsat2: 67%; --mglight2: 60%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "red velvet"; --mgbanner: url(https://i.postimg.cc/BQbtmPqS/redvelvet.png); --mgicon: url(https://i.postimg.cc/3wQQ30Cq/01-001-red-velvet.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3);
+}
 
 chocolate, .chocolate, .group-7, .group-8, .allowtagcolors .mgroup-7, .allowtagcolors .mgroup-8 {
- --mghue1: 20; --mgsat1: 56%; --mglight1: -3%;
- --mghue2: 30; --mgsat2: 90%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "chocolate"; --mgbanner: url(https://i.postimg.cc/t4gdt4cW/chocolate.png); --mgicon: url(https://i.postimg.cc/Bb7G3hM5/01-002-chocolate.png); }
+--mghue1: 20; --mgsat1: 33%; --mglight1: 62%;
+--mghue2: 30; --mgsat2: 67%; --mglight2: 60%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "chocolate"; --mgbanner: url(https://i.postimg.cc/t4gdt4cW/chocolate.png); --mgicon: url(https://i.postimg.cc/Bb7G3hM5/01-002-chocolate.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 vanilla, .vanilla, .group-9, .group-10, .allowtagcolors .mgroup-9, .allowtagcolors .mgroup-10 {
- --mghue1: 22; --mgsat1: 85%; --mglight1: 0%;
- --mghue2: 46; --mgsat2: 85%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "vanilla"; --mgbanner: url(https://i.postimg.cc/mDV2wBJ1/vanilla.png); --mgicon: url(https://i.postimg.cc/g2ZP9HRR/01-002-vanilla.png); }
+--mghue1: 22; --mgsat1: 62%; --mglight1: 65%;
+--mghue2: 46; --mgsat2: 62%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "vanilla"; --mgbanner: url(https://i.postimg.cc/mDV2wBJ1/vanilla.png); --mgicon: url(https://i.postimg.cc/g2ZP9HRR/01-002-vanilla.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 coconut, .coconut, .group-37, .group-38, .allowtagcolors .mgroup-37, .allowtagcolors .mgroup-38 {
- --mghue1: 54; --mgsat1: 60%; --mglight1: 0%;
- --mghue2: 76; --mgsat2: 60%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "coconut"; --mgbanner: url(https://i.postimg.cc/jdt42XQ8/coconut.png); --mgicon: url(https://i.postimg.cc/k4nrbrHF/01-004-coconut.png); }
+--mghue1: 54; --mgsat1: 37%; --mglight1: 65%;
+--mghue2: 76; --mgsat2: 37%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "coconut"; --mgbanner: url(https://i.postimg.cc/jdt42XQ8/coconut.png); --mgicon: url(https://i.postimg.cc/k4nrbrHF/01-004-coconut.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 keylimepie, .keylimepie, .group-39, .group-40, .allowtagcolors .mgroup-39, .allowtagcolors .mgroup-40 {
- --mghue1: 95; --mgsat1: 60%; --mglight1: 0%;
- --mghue2: 125; --mgsat2: 60%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "key lime pie"; --mgbanner: url(https://i.postimg.cc/505FWhGf/keylimepie.png); --mgicon: url(https://i.postimg.cc/v80y5Bb1/01-005-key-lime-pie.png); }
+--mghue1: 95; --mgsat1: 37%; --mglight1: 65%;
+--mghue2: 125; --mgsat2: 37%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "key lime pie"; --mgbanner: url(https://i.postimg.cc/505FWhGf/keylimepie.png); --mgicon: url(https://i.postimg.cc/v80y5Bb1/01-005-key-lime-pie.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 matcha, .matcha, .group-41, .group-42, .allowtagcolors .mgroup-41, .allowtagcolors .mgroup-42 {
- --mghue1: 135; --mgsat1: 60%; --mglight1: 0%;
- --mghue2: 168; --mgsat2: 75%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "matcha"; --mgbanner: url(https://i.postimg.cc/FFZJWQ3Z/matcha.png); --mgicon: url(https://i.postimg.cc/pdQbrVsL/01-006-matcha.png); }
+--mghue1: 135; --mgsat1: 37%; --mglight1: 65%;
+--mghue2: 168; --mgsat2: 52%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "matcha"; --mgbanner: url(https://i.postimg.cc/FFZJWQ3Z/matcha.png); --mgicon: url(https://i.postimg.cc/pdQbrVsL/01-006-matcha.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 mint, .mint, .group-11, .group-12, .allowtagcolors .mgroup-11, .allowtagcolors .mgroup-12 {
- --mghue1: 177; --mgsat1: 75%; --mglight1: 0%;
- --mghue2: 208; --mgsat2: 67%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "mint"; --mgbanner: url(https://i.postimg.cc/G2RHKMpV/mint.png); --mgicon: url(https://i.postimg.cc/9FSjNn4C/01-007-mint.png); }
+--mghue1: 177; --mgsat1: 52%; --mglight1: 65%;
+--mghue2: 208; --mgsat2: 44%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "mint"; --mgbanner: url(https://i.postimg.cc/G2RHKMpV/mint.png); --mgicon: url(https://i.postimg.cc/9FSjNn4C/01-007-mint.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 bluemoon, .bluemoon, .group-43, .group-44, .allowtagcolors .mgroup-43, .allowtagcolors .mgroup-44 {
- --mghue1: 215; --mgsat1: 70%; --mglight1: 0%;
- --mghue2: 245; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue moon"; --mgbanner: url(https://i.postimg.cc/ZKSV3ZZx/bluemoon.png); --mgicon: url(https://i.postimg.cc/kXDmsmgT/01-008-blue-moon.png); }
+--mghue1: 215; --mgsat1: 47%; --mglight1: 65%;
+--mghue2: 245; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue moon"; --mgbanner: url(https://i.postimg.cc/ZKSV3ZZx/bluemoon.png); --mgicon: url(https://i.postimg.cc/kXDmsmgT/01-008-blue-moon.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 taropudding, .taropudding, .group-45, .group-46, .allowtagcolors .mgroup-45, .allowtagcolors .mgroup-46 {
- --mghue1: 255; --mgsat1: 69%; --mglight1: 0%;
- --mghue2: 295; --mgsat2: 70%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "taro pudding"; --mgbanner: url(https://i.postimg.cc/G2Bz9nNq/taropudding.png); --mgicon: url(https://i.postimg.cc/1tMk0Chx/01-009-taro-pudding.png); }
+--mghue1: 255; --mgsat1: 46%; --mglight1: 65%;
+--mghue2: 295; --mgsat2: 47%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "taro pudding"; --mgbanner: url(https://i.postimg.cc/G2Bz9nNq/taropudding.png); --mgicon: url(https://i.postimg.cc/1tMk0Chx/01-009-taro-pudding.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 pannacotta, .pannacotta, .group-47, .group-48, .allowtagcolors .mgroup-47, .allowtagcolors .mgroup-48 {
- --mghue1: 295; --mgsat1: 69%; --mglight1: 0%;
- --mghue2: 315; --mgsat2: 75%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "panna cotta"; --mgbanner: url(https://i.postimg.cc/1X54hfwK/pannacotta.png); --mgicon: url(https://i.postimg.cc/kMYrBpvK/01-010-panna-cotta.png); }
+--mghue1: 295; --mgsat1: 46%; --mglight1: 65%;
+--mghue2: 315; --mgsat2: 52%; --mglight2: 60%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "panna cotta"; --mgbanner: url(https://i.postimg.cc/1X54hfwK/pannacotta.png); --mgicon: url(https://i.postimg.cc/kMYrBpvK/01-010-panna-cotta.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 strawberry, .strawberry, .group-49, .group-50, .allowtagcolors .mgroup-49, .allowtagcolors .mgroup-50 {
- --mghue1: 320; --mgsat1: 75%; --mglight1: 0%;
- --mghue2: 340; --mgsat2: 75%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "strawberry"; --mgbanner: url(https://i.postimg.cc/vmrm4Wvz/strawberry.png); --mgicon: url(https://i.postimg.cc/BbVRkjnM/01-011-strawberry.png); }
+--mghue1: 320; --mgsat1: 52%; --mglight1: 65%;
+--mghue2: 340; --mgsat2: 52%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "strawberry"; --mgbanner: url(https://i.postimg.cc/vmrm4Wvz/strawberry.png); --mgicon: url(https://i.postimg.cc/BbVRkjnM/01-011-strawberry.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 /****************************************
-   Premium Groups
+Premium Groups
 *****************************************/
 
 pistachio, .pistachio, .group-19, .group-20, .allowtagcolors .mgroup-19, .allowtagcolors .mgroup-20 {
- --mghue1: 32; --mgsat1: 80%; --mglight1: 0%;
- --mghue2: 172; --mgsat2: 67%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pistachio"; --mgbanner: url(https://i.postimg.cc/c1Xr7BGk/pistachio.png); --mgicon: url(https://i.postimg.cc/C5zQGwsD/02-001-pistachio.png); }
+--mghue1: 32; --mgsat1: 57%; --mglight1: 65%;
+--mghue2: 172; --mgsat2: 44%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pistachio"; --mgbanner: url(https://i.postimg.cc/c1Xr7BGk/pistachio.png); --mgicon: url(https://i.postimg.cc/C5zQGwsD/02-001-pistachio.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 neapolitan, .neapolitan, .group-13, .group-14, .allowtagcolors .mgroup-13, .allowtagcolors .mgroup-14 {
- --mghue1: 341; --mgsat1: 95%; --mglight1: -2%;
- --mghue2: 225; --mgsat2: 81%; --mglight2: -2%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "neapolitan"; --mgbanner: url(https://i.postimg.cc/rFZRTChR/neapolitan.png); --mgicon: url(https://i.postimg.cc/HL9RHZLJ/02-002-neapolitan.png); }
+--mghue1: 341; --mgsat1: 72%; --mglight1: 63%;
+--mghue2: 225; --mgsat2: 58%; --mglight2: 63%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "neapolitan"; --mgbanner: url(https://i.postimg.cc/rFZRTChR/neapolitan.png); --mgicon: url(https://i.postimg.cc/HL9RHZLJ/02-002-neapolitan.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 cherry, .cherry, .group-15, .group-16, .allowtagcolors .mgroup-15, .allowtagcolors .mgroup-16 {
- --mghue1: 333; --mgsat1: 88%; --mglight1: 0%;
- --mghue2: 33; --mgsat2: 94%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cherry"; --mgbanner: url(https://i.postimg.cc/5yMqwqc2/cherry.png); --mgicon: url(https://i.postimg.cc/yxtrn2LG/02-003-cherry.png); }
+--mghue1: 333; --mgsat1: 65%; --mglight1: 65%;
+--mghue2: 33; --mgsat2: 71%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cherry"; --mgbanner: url(https://i.postimg.cc/5yMqwqc2/cherry.png); --mgicon: url(https://i.postimg.cc/yxtrn2LG/02-003-cherry.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 honeylavender, .honeylavender, .group-21, .group-22, .allowtagcolors .mgroup-21, .allowtagcolors .mgroup-22 {
- --mghue1: 33; --mgsat1: 80%; --mglight1: 0%;
- --mghue2: 263; --mgsat2: 65%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "honey lavender"; --mgbanner: url(https://i.postimg.cc/K8VTPrBh/honeylavender.png); --mgicon: url(https://i.postimg.cc/DwsRpykP/02-004-honey-lavender.png); }
+--mghue1: 33; --mgsat1: 57%; --mglight1: 65%;
+--mghue2: 263; --mgsat2: 42%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "honey lavender"; --mgbanner: url(https://i.postimg.cc/K8VTPrBh/honeylavender.png); --mgicon: url(https://i.postimg.cc/DwsRpykP/02-004-honey-lavender.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 bubblegum, .bubblegum, .group-23, .group-24, .allowtagcolors .mgroup-23, .allowtagcolors .mgroup-24 {
- --mghue1: 165; --mgsat1: 70%; --mglight1: 0%;
- --mghue2: 322; --mgsat2: 70%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "bubblegum"; --mgbanner: url(https://i.postimg.cc/VNdR1kBm/bubblegum.png); --mgicon: url(https://i.postimg.cc/VN8pxQzQ/02-005-bubblegum.png); }
+--mghue1: 165; --mgsat1: 47%; --mglight1: 65%;
+--mghue2: 322; --mgsat2: 47%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "bubblegum"; --mgbanner: url(https://i.postimg.cc/VNdR1kBm/bubblegum.png); --mgicon: url(https://i.postimg.cc/VN8pxQzQ/02-005-bubblegum.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 cottoncandy, .cottoncandy, .group-25, .group-26, .allowtagcolors .mgroup-25, .allowtagcolors .mgroup-26 {
- --mghue1: 280; --mgsat1: 71%; --mglight1: 0%;
- --mghue2: 209; --mgsat2: 71%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cotton candy"; --mgbanner: url(https://i.postimg.cc/63CC527J/cottoncandy.png); --mgicon: url(https://i.postimg.cc/DZfDzrWx/02-006-cotton-candy.png); }
+--mghue1: 280; --mgsat1: 48%; --mglight1: 65%;
+--mghue2: 209; --mgsat2: 48%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cotton candy"; --mgbanner: url(https://i.postimg.cc/63CC527J/cottoncandy.png); --mgicon: url(https://i.postimg.cc/DZfDzrWx/02-006-cotton-candy.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 creamsicle, .creamsicle, .group-27, .group-28, .allowtagcolors .mgroup-27, .allowtagcolors .mgroup-28 {
- --mghue1: 16; --mgsat1: 82%; --mglight1: 0%;
- --mghue2: 207; --mgsat2: 85%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "creamsicle"; --mgbanner: url(https://i.postimg.cc/br8kGybG/creamsicle.png); --mgicon: url(https://i.postimg.cc/RZQt48kx/02-007-creamsicle.png); }
+--mghue1: 16; --mgsat1: 59%; --mglight1: 65%;
+--mghue2: 207; --mgsat2: 62%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "creamsicle"; --mgbanner: url(https://i.postimg.cc/br8kGybG/creamsicle.png); --mgicon: url(https://i.postimg.cc/RZQt48kx/02-007-creamsicle.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 marshmallow, .marshmallow, .group-51, .group-52, .allowtagcolors .mgroup-51, .allowtagcolors .mgroup-52 {
- --mghue1: 340; --mgsat1: 90%; --mglight1: 0%;
- --mghue2: 180; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "marshmallow"; --mgbanner: url(https://i.postimg.cc/Kv83Cs5y/marshmallow.png); --mgicon: url(https://i.postimg.cc/pV672nPB/02-008-marshmallow.png); }
+--mghue1: 340; --mgsat1: 67%; --mglight1: 65%;
+--mghue2: 180; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "marshmallow"; --mgbanner: url(https://i.postimg.cc/Kv83Cs5y/marshmallow.png); --mgicon: url(https://i.postimg.cc/pV672nPB/02-008-marshmallow.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 peanutbuttercup, .peanutbuttercup, .group-53, .group-54, .allowtagcolors .mgroup-53, .allowtagcolors .mgroup-54 {
- --mghue1: 203; --mgsat1: 100%; --mglight1: 5%;
- --mghue2: 36; --mgsat2: 98%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "peanut butter cup"; --mgbanner: url(https://i.postimg.cc/sx6xVsJC/peanutbuttercup.png); --mgicon: url(https://i.postimg.cc/zXHQ3XBY/02-009-peanut-butter-cup.png); }
+--mghue1: 203; --mgsat1: 77%; --mglight1: 70%;
+--mghue2: 36; --mgsat2: 75%; --mglight2: 60%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "peanut butter cup"; --mgbanner: url(https://i.postimg.cc/sx6xVsJC/peanutbuttercup.png); --mgicon: url(https://i.postimg.cc/zXHQ3XBY/02-009-peanut-butter-cup.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 watermelon, .watermelon, .group-55, .group-56, .allowtagcolors .mgroup-55, .allowtagcolors .mgroup-56 {
- --mghue1: 69; --mgsat1: 59%; --mglight1: -5%;
- --mghue2: 342; --mgsat2: 100%; --mglight2: 5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "watermelon"; --mgbanner: url(https://i.postimg.cc/nrzVSNfR/watermelon.png); --mgicon: url(https://i.postimg.cc/SxWt7TCZ/02-010-watermelon.png); }
+--mghue1: 69; --mgsat1: 36%; --mglight1: 60%;
+--mghue2: 342; --mgsat2: 77%; --mglight2: 70%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "watermelon"; --mgbanner: url(https://i.postimg.cc/nrzVSNfR/watermelon.png); --mgicon: url(https://i.postimg.cc/SxWt7TCZ/02-010-watermelon.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 blueraspberry, .blueraspberry, .group-67, .group-68, .allowtagcolors .mgroup-67, .allowtagcolors .mgroup-68 {
- --mghue1: 173; --mgsat1: 75%; --mglight1: -10%;
- --mghue2: 266; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue raspberry"; --mgbanner: url(https://i.postimg.cc/6p6cj087/blueraspberry.png); --mgicon: url(https://i.postimg.cc/zfZxP9nm/02-011-blue-raspberry.png); }
+--mghue1: 173; --mgsat1: 52%; --mglight1: 55%;
+--mghue2: 266; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "blue raspberry"; --mgbanner: url(https://i.postimg.cc/6p6cj087/blueraspberry.png); --mgicon: url(https://i.postimg.cc/zfZxP9nm/02-011-blue-raspberry.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 jellydonut, .jellydonut, .group-69, .group-70, .allowtagcolors .mgroup-69, .allowtagcolors .mgroup-70 {
- --mghue1: 3; --mgsat1: 95%; --mglight1: 2%;
- --mghue2: 172; --mgsat2: 88%; --mglight2: -3%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "jelly donut"; --mgbanner: url(https://i.postimg.cc/brzSy6ck/jellydonut.png); --mgicon: url(https://i.postimg.cc/wBg4WXk9/02-012-jelly-donut.png); }
+--mghue1: 3; --mgsat1: 72%; --mglight1: 67%;
+--mghue2: 172; --mgsat2: 65%; --mglight2: 62%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "jelly donut"; --mgbanner: url(https://i.postimg.cc/brzSy6ck/jellydonut.png); --mgicon: url(https://i.postimg.cc/wBg4WXk9/02-012-jelly-donut.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 cookiemonster, .cookiemonster, .group-81, .group-82, .allowtagcolors .mgroup-81, .allowtagcolors .mgroup-82 {
- --mghue1: 191; --mgsat1: 80%; --mglight1: 0%;
- --mghue2: 136; --mgsat2: 69%; --mglight2: -5%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cookie monster"; --mgbanner: url(https://i.postimg.cc/CKBjX6SK/cookiemonster.png); --mgicon: url(https://i.postimg.cc/yxyghpFz/02-013-cookie-monster.png); }
+--mghue1: 191; --mgsat1: 57%; --mglight1: 65%;
+--mghue2: 136; --mgsat2: 46%; --mglight2: 60%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cookie monster"; --mgbanner: url(https://i.postimg.cc/CKBjX6SK/cookiemonster.png); --mgicon: url(https://i.postimg.cc/yxyghpFz/02-013-cookie-monster.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 pumpkinpie, .pumpkinpie, .group-83, .group-84, .allowtagcolors .mgroup-83, .allowtagcolors .mgroup-84 {
- --mghue1: 0; --mgsat1: 90%; --mglight1: -10%;
- --mghue2: 43; --mgsat2: 90%; --mglight2: -15%;
- --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pumpkin pie"; --mgbanner: url(https://i.postimg.cc/hGWj4CVv/pumpkingpie.png); --mgicon: url(https://i.postimg.cc/Jnh68Rgg/02-014-pumpkin-pie.png); }
+--mghue1: 0; --mgsat1: 67%; --mglight1: 55%;
+--mghue2: 43; --mgsat2: 67%; --mglight2: 50%;
+--mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pumpkin pie"; --mgbanner: url(https://i.postimg.cc/hGWj4CVv/pumpkingpie.png); --mgicon: url(https://i.postimg.cc/Jnh68Rgg/02-014-pumpkin-pie.png);
+--fontgradient: var(--twofontgradient);
+--pastelgradient1: var(--twopastelgradient1); 
+--pastelgradient2: var(--twopastelgradient2);
+--pastelgradient3: var(--twopastelgradient3); }
 
 /****************************************
-   Deluxe Groups
+Deluxe Groups
 *****************************************/
 
 bobatea, .bobatea, .group-57, .group-58, .allowtagcolors .mgroup-57, .allowtagcolors .mgroup-58 {
- --mghue1: 43; --mgsat1: 84%; --mglight1: 5%;
- --mghue2: 325; --mgsat2: 81%; --mglight2: 0%;
- --mghue3: 236; --mgsat3: 77%; --mglight3: -5%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "boba tea"; --mgbanner: url(https://i.postimg.cc/sD4K48gd/bobatea.png); --mgicon: url(https://i.postimg.cc/sg4CDD6D/03-001-boba-tea.png);
+--mghue1: 43; --mgsat1: 61%; --mglight1: 70%;
+--mghue2: 325; --mgsat2: 58%; --mglight2: 65%;
+--mghue3: 236; --mgsat3: 54%; --mglight3: 60%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "boba tea"; --mgbanner: url(https://i.postimg.cc/sD4K48gd/bobatea.png); --mgicon: url(https://i.postimg.cc/sg4CDD6D/03-001-boba-tea.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
-
 
 buttercake, .buttercake, .group-59, .group-60, .allowtagcolors .mgroup-59, .allowtagcolors .mgroup-60 {
- --mghue1: 348; --mgsat1: 79%; --mglight1: 0%;
- --mghue2: 175; --mgsat2: 76%; --mglight2: 0%;
- --mghue3: 250; --mgsat3: 79%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butter cake"; --mgbanner: url(https://i.postimg.cc/VvB94r1B/buttercake.png); --mgicon: url(https://i.postimg.cc/CKMTZTXC/03-002-butter-cake.png);
+--mghue1: 348; --mgsat1: 56%; --mglight1: 65%;
+--mghue2: 175; --mgsat2: 53%; --mglight2: 65%;
+--mghue3: 250; --mgsat3: 56%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butter cake"; --mgbanner: url(https://i.postimg.cc/VvB94r1B/buttercake.png); --mgicon: url(https://i.postimg.cc/CKMTZTXC/03-002-butter-cake.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
-
 
 caramellatte, .caramellatte, .group-61, .group-62, .allowtagcolors .mgroup-61, .allowtagcolors .mgroup-62 {
- --mghue1: 54; --mgsat1: 62%; --mglight1: 0%;
- --mghue2: 196; --mgsat2: 80%; --mglight2: -6%;
- --mghue3: 6; --mgsat3: 81%; --mglight3: -10%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "caramel latte"; --mgbanner: url(https://i.postimg.cc/v8WvGj9g/caramellatte.png); --mgicon: url(https://i.postimg.cc/XYb0bygz/03-003-caramel-latte.png);
+--mghue1: 54; --mgsat1: 39%; --mglight1: 65%;
+--mghue2: 196; --mgsat2: 57%; --mglight2: 59%;
+--mghue3: 6; --mgsat3: 58%; --mglight3: 55%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "caramel latte"; --mgbanner: url(https://i.postimg.cc/v8WvGj9g/caramellatte.png); --mgicon: url(https://i.postimg.cc/XYb0bygz/03-003-caramel-latte.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
-
 
 raspberrysorbet, .raspberrysorbet, .group-63, .group-64, .allowtagcolors .mgroup-63, .allowtagcolors .mgroup-64 {
- --mghue1: 320; --mgsat1: 70%; --mglight1: 0%;
- --mghue2: 197; --mgsat2: 70%; --mglight2: 0%;
- --mghue3: 106; --mgsat3: 55%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "raspberry sorbet"; --mgbanner: url(https://i.postimg.cc/NjrFch9Z/raspberrysorbet.png); --mgicon: url(https://i.postimg.cc/05hsV4Kx/03-004-raspberry-sorbet.png);
+--mghue1: 320; --mgsat1: 47%; --mglight1: 65%;
+--mghue2: 197; --mgsat2: 47%; --mglight2: 65%;
+--mghue3: 106; --mgsat3: 32%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "raspberry sorbet"; --mgbanner: url(https://i.postimg.cc/NjrFch9Z/raspberrysorbet.png); --mgicon: url(https://i.postimg.cc/05hsV4Kx/03-004-raspberry-sorbet.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
-
 butterscotch, .butterscotch, .group-65, .group-66, .allowtagcolors .mgroup-65, .allowtagcolors .mgroup-66 {
- --mghue1: 141; --mgsat1: 54%; --mglight1: 0%;
- --mghue2: 357; --mgsat2: 93%; --mglight2: 0%;
- --mghue3: 39; --mgsat3: 98%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butterscotch"; --mgbanner: url(https://i.postimg.cc/FRSVdCB6/butterscotch.png); --mgicon: url(https://i.postimg.cc/vH9dkv5n/03-005-butterscotch.png);
+--mghue1: 141; --mgsat1: 31%; --mglight1: 65%;
+--mghue2: 357; --mgsat2: 70%; --mglight2: 65%;
+--mghue3: 39; --mgsat3: 75%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butterscotch"; --mgbanner: url(https://i.postimg.cc/FRSVdCB6/butterscotch.png); --mgicon: url(https://i.postimg.cc/vH9dkv5n/03-005-butterscotch.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 pinacolada, .pinacolada, .group-71, .group-72, .allowtagcolors .mgroup-71, .allowtagcolors .mgroup-72 {
- --mghue1: 59; --mgsat1: 72%; --mglight1: 0%;
- --mghue2: 217; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: 181; --mgsat3: 78%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "pina colada"; --mgbanner: url(https://i.postimg.cc/rm9zPS0m/pinacolada.png); --mgicon: url(https://i.postimg.cc/ZqfkpszG/03-006-pina-colada.png);
+--mghue1: 59; --mgsat1: 49%; --mglight1: 65%;
+--mghue2: 217; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: 181; --mgsat3: 55%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "pina colada"; --mgbanner: url(https://i.postimg.cc/rm9zPS0m/pinacolada.png); --mgicon: url(https://i.postimg.cc/ZqfkpszG/03-006-pina-colada.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 honeycomb, .honeycomb, .group-73, .group-74, .allowtagcolors .mgroup-73, .allowtagcolors .mgroup-74 {
- --mghue1: 41; --mgsat1: 80%; --mglight1: -5%;
- --mghue2: 0; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: 228; --mgsat3: 71%; --mglight3: -10%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "honeycomb"; --mgbanner: url(https://i.postimg.cc/Dwms4YWc/honeycomb.png); --mgicon: url(https://i.postimg.cc/rmzBJG8K/03-007-honeycomb.png);
+--mghue1: 41; --mgsat1: 57%; --mglight1: 60%;
+--mghue2: 0; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: 228; --mgsat3: 48%; --mglight3: 55%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3);  --groupname: "honeycomb"; --mgbanner: url(https://i.postimg.cc/Dwms4YWc/honeycomb.png); --mgicon: url(https://i.postimg.cc/rmzBJG8K/03-007-honeycomb.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 laffytaffy, .laffytaffy, .group-75, .group-76, .allowtagcolors .mgroup-75, .allowtagcolors .mgroup-76 {
- --mghue1: 171; --mgsat1: 73%; --mglight1: 0%;
- --mghue2: 0; --mgsat2: 85%; --mglight2: 0%;
- --mghue3: 281; --mgsat3: 89%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "laffy taffy"; --mgbanner: url(https://i.postimg.cc/3wVbW3jR/laffytaffy2.png); --mgicon: url(https://i.postimg.cc/ZYWmFmRV/03-008-laffy-taffy.png);
+--mghue1: 171; --mgsat1: 50%; --mglight1: 65%;
+--mghue2: 0; --mgsat2: 62%; --mglight2: 65%;
+--mghue3: 281; --mgsat3: 66%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "laffy taffy"; --mgbanner: url(https://i.postimg.cc/3wVbW3jR/laffytaffy2.png); --mgicon: url(https://i.postimg.cc/ZYWmFmRV/03-008-laffy-taffy.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 frenchsilk, .frenchsilk, .group-85, .group-86, .allowtagcolors .mgroup-85, .allowtagcolors .mgroup-86 {
- --mghue1: 207; --mgsat1: 90%; --mglight1: 5%;
- --mghue2: 180; --mgsat2: 60%; --mglight2: 5%;
- --mghue3: 258; --mgsat3: 69%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "french silk"; --mgbanner: url(https://i.postimg.cc/jdxytjtm/frenchsilk.png); --mgicon: url(https://i.postimg.cc/MT4hrcTt/03-009-french-silk.png);
+--mghue1: 207; --mgsat1: 67%; --mglight1: 70%;
+--mghue2: 180; --mgsat2: 37%; --mglight2: 70%;
+--mghue3: 258; --mgsat3: 46%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "french silk"; --mgbanner: url(https://i.postimg.cc/jdxytjtm/frenchsilk.png); --mgicon: url(https://i.postimg.cc/MT4hrcTt/03-009-french-silk.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 boysonberry, .boysonberry, .group-87, .group-88, .allowtagcolors .mgroup-87, .allowtagcolors .mgroup-88 {
- --mghue1: 3; --mgsat1: 95%; --mglight1: 3%;
- --mghue2: 201; --mgsat2: 80%; --mglight2: 0%;
- --mghue3: 340; --mgsat3: 61%; --mglight3: -15%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "boysonberry"; --mgbanner: url(https://i.postimg.cc/8kWZjs8C/boysonberry.png); --mgicon: url(https://i.postimg.cc/brtKXzSP/03-010-boysonberry.png);
+--mghue1: 3; --mgsat1: 72%; --mglight1: 62%;
+--mghue2: 201; --mgsat2: 57%; --mglight2: 65%;
+--mghue3: 340; --mgsat3: 38%; --mglight3: 50%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "boysonberry"; --mgbanner: url(https://i.postimg.cc/8kWZjs8C/boysonberry.png); --mgicon: url(https://i.postimg.cc/brtKXzSP/03-010-boysonberry.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 honeydew, .honeydew, .group-89, .group-90, .allowtagcolors .mgroup-89, .allowtagcolors .mgroup-90 {
- --mghue1: 343; --mgsat1: 65%; --mglight1: 3%;
- --mghue2: 28; --mgsat2: 90%; --mglight2: 0%;
- --mghue3: 69; --mgsat3: 53%; --mglight3: -5%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "honeydew"; --mgbanner: url(https://i.postimg.cc/0Q1J3kVt/honeydew.pngg); --mgicon: url(https://i.postimg.cc/HW8G8tZN/03-011-honeydew.png);
+--mghue1: 343; --mgsat1: 42%; --mglight1: 68%;
+--mghue2: 28; --mgsat2: 67%; --mglight2: 65%;
+--mghue3: 69; --mgsat3: 30%; --mglight3: 60%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "honeydew"; --mgbanner: url(https://i.postimg.cc/0Q1J3kVt/honeydew.png); --mgicon: url(https://i.postimg.cc/HW8G8tZN/03-011-honeydew.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
 cookiedough, .cookiedough, .group-91, .group-92, .allowtagcolors .mgroup-91, .allowtagcolors .mgroup-92 {
- --mghue1: 35; --mgsat1: 60%; --mglight1: 5%;
- --mghue2: 14; --mgsat2: 60%; --mglight2: 0%;
- --mghue3: 174; --mgsat3: 69%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "cookie dough"; --mgbanner: url(https://i.postimg.cc/wjbXWdKP/cookiedough.png); --mgicon: url(https://i.postimg.cc/HWqqw7Fk/03-012-cookie-dough.png);
+--mghue1: 35; --mgsat1: 37%; --mglight1: 70%;
+--mghue2: 14; --mgsat2: 37%; --mglight2: 65%;
+--mghue3: 174; --mgsat3: 46%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "cookie dough"; --mgbanner: url(https://i.postimg.cc/wjbXWdKP/cookiedough.png); --mgicon: url(https://i.postimg.cc/HWqqw7Fk/03-012-cookie-dough.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3);
 }
 
-
 /****************************************
-   Exclusive Groups
+Exclusive Groups
 *****************************************/
 blackberryrose, .blackberryrose, .group-29, .group-30, .allowtagcolors .mgroup-29, .allowtagcolors .mgroup-30 {
- --mghue1: 318; --mgsat1: 89%; --mglight1: -3%;
- --mghue2: 23; --mgsat2: 62%; --mglight2: 0%;
- --mghue3: 244; --mgsat3: 79%; --mglight3: 2%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blackberry rose"; --mgbanner: url(https://i.postimg.cc/T18QtvbG/blackberryrose.png); --mgicon: url(https://i.postimg.cc/T3GBSvd8/04-001-blackberry-rose.png); }
+--mghue1: 318; --mgsat1: 66%; --mglight1: 62%;
+--mghue2: 23; --mgsat2: 39%; --mglight2: 65%;
+--mghue3: 244; --mgsat3: 56%; --mglight3: 67%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blackberry rose"; --mgbanner: url(https://i.postimg.cc/T18QtvbG/blackberryrose.png); --mgicon: url(https://i.postimg.cc/T3GBSvd8/04-001-blackberry-rose.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 birthdaycake, .birthdaycake, .group-31, .group-32, .allowtagcolors .mgroup-31, .allowtagcolors .mgroup-32 {
- --mghue1: 36; --mgsat1: 70%; --mglight1: 0%;
- --mghue2: 212; --mgsat2: 70%; --mglight2: 0%;
- --mghue3: 354; --mgsat3: 70%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "birthday cake"; --mgbanner: url(https://i.postimg.cc/JnHP3zGP/birthdaycake.png); --mgicon: url(https://i.postimg.cc/Y2WVCCjK/04-002-birthday-cake.png); }
+--mghue1: 36; --mgsat1: 47%; --mglight1: 65%;
+--mghue2: 212; --mgsat2: 47%; --mglight2: 65%;
+--mghue3: 354; --mgsat3: 47%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "birthday cake"; --mgbanner: url(https://i.postimg.cc/JnHP3zGP/birthdaycake.png); --mgicon: url(https://i.postimg.cc/Y2WVCCjK/04-002-birthday-cake.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 amarenacherry, .amarenacherry, .group-33, .group-34, .allowtagcolors .mgroup-33, .allowtagcolors .mgroup-34 {
- --mghue1: 130; --mgsat1: 65%; --mglight1: 0%;
- --mghue2: 263; --mgsat2: 60%; --mglight2: 0%;
- --mghue3: 48; --mgsat3: 58%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "amarena cherry"; --mgbanner: url(https://i.postimg.cc/0jpn3XGS/amarenacherry.png); --mgicon: url(https://i.postimg.cc/T39BvN1K/04-003-amarena-cherry.png); }
+--mghue1: 130; --mgsat1: 42%; --mglight1: 65%;
+--mghue2: 263; --mgsat2: 37%; --mglight2: 65%;
+--mghue3: 48; --mgsat3: 35%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "amarena cherry"; --mgbanner: url(https://i.postimg.cc/0jpn3XGS/amarenacherry.png); --mgicon: url(https://i.postimg.cc/T39BvN1K/04-003-amarena-cherry.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 blueberrychip, .blueberrychip, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagcolors .mgroup-36 {
- --mghue1: 188; --mgsat1: 75%; --mglight1: 0%;
- --mghue2: 28; --mgsat2: 55%; --mglight2: 2%;
- --mghue3: 224; --mgsat3: 80%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blueberry chip"; --mgbanner: url(https://i.postimg.cc/9Qxpv79L/blueberrychip.png); --mgicon: url(https://i.postimg.cc/fL3PXwKd/04-004-blueberry-chip.png); }
+--mghue1: 188; --mgsat1: 52%; --mglight1: 65%;
+--mghue2: 28; --mgsat2: 32%; --mglight2: 67%;
+--mghue3: 224; --mgsat3: 57%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "blueberry chip"; --mgbanner: url(https://i.postimg.cc/9Qxpv79L/blueberrychip.png); --mgicon: url(https://i.postimg.cc/fL3PXwKd/04-004-blueberry-chip.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 rainbowsherbet, .rainbowsherbet, .group-77, .group-78, .allowtagcolors .mgroup-77, .allowtagcolors .mgroup-78 {
- --mghue1: 350; --mgsat1: 77%; --mglight1: 3%;
- --mghue2: 40; --mgsat2: 81%; --mglight2: 0%;
- --mghue3: 180; --mgsat3: 80%; --mglight3: -2%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "rainbow sherbet"; --mgbanner: url(https://i.postimg.cc/YqP0Z291/rainbowsherbet.png); --mgicon: url(https://i.postimg.cc/pdc7p9Dx/04-005-rainbow-sherbet.png); }
+--mghue1: 350; --mgsat1: 54%; --mglight1: 68%;
+--mghue2: 40; --mgsat2: 58%; --mglight2: 65%;
+--mghue3: 180; --mgsat3: 57%; --mglight3: 63%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "rainbow sherbet"; --mgbanner: url(https://i.postimg.cc/YqP0Z291/rainbowsherbet.png); --mgicon: url(https://i.postimg.cc/pdc7p9Dx/04-005-rainbow-sherbet.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 sweetcream, .sweetcream, .group-79, .group-80, .allowtagcolors .mgroup-79, .allowtagcolors .mgroup-80 {
- --mghue1: 197; --mgsat1: 100%; --mglight1: 2%;
- --mghue2: 337; --mgsat2: 100%; --mglight2: 2%;
- --mghue3: 16; --mgsat3: 100%; --mglight3: 2%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "sweet cream"; --mgbanner: url(https://i.postimg.cc/76qZ0fsy/sweetcream.png); --mgicon: url(https://i.postimg.cc/sx706wbD/04-006-sweet-cream.png); }
+--mghue1: 197; --mgsat1: 77%; --mglight1: 67%;
+--mghue2: 337; --mgsat2: 77%; --mglight2: 67%;
+--mghue3: 16; --mgsat3: 77%; --mglight3: 67%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "sweet cream"; --mgbanner: url(https://i.postimg.cc/76qZ0fsy/sweetcream.png); --mgicon: url(https://i.postimg.cc/sx706wbD/04-006-sweet-cream.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 butterpecan, .butterpecan, .group-93, .group-94, .allowtagcolors .mgroup-93, .allowtagcolors .mgroup-94 {
- --mghue1: 13; --mgsat1: 95%; --mglight1: -5%;
- --mghue2: 248; --mgsat2: 60%; --mglight2: -10%;
- --mghue3: 173; --mgsat3: 80%; --mglight3: -10%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butter pecan"; --mgbanner: url(https://i.postimg.cc/jdcQ77MR/butterpecan.png); --mgicon: url(https://i.postimg.cc/W3QHwQWH/04-007-butter-pecan.png); }
+--mghue1: 13; --mgsat1: 72%; --mglight1: 60%;
+--mghue2: 248; --mgsat2: 37%; --mglight2: 55%;
+--mghue3: 173; --mgsat3: 57%; --mglight3: 55%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "butter pecan"; --mgbanner: url(https://i.postimg.cc/jdcQ77MR/butterpecan.png); --mgicon: url(https://i.postimg.cc/W3QHwQWH/04-007-butter-pecan.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 gummybear, .gummybear, .group-95, .group-96, .allowtagcolors .mgroup-95, .allowtagcolors .mgroup-96 {
- --mghue1: 7; --mgsat1: 89%; --mglight1: 0%;
- --mghue2: 148; --mgsat2: 59%; --mglight2: 0%;
- --mghue3: 199; --mgsat3: 70%; --mglight3: 0%;
- --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "gummy bear"; --mgbanner: url(https://i.postimg.cc/Kv0BzyYz/gummybear.png); --mgicon: url(https://i.postimg.cc/1z32m0VJ/04-008-gummy-bear.png); }
-
+--mghue1: 7; --mgsat1: 66%; --mglight1: 65%;
+--mghue2: 148; --mgsat2: 36%; --mglight2: 65%;
+--mghue3: 199; --mgsat3: 47%; --mglight3: 65%;
+--mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "gummy bear"; --mgbanner: url(https://i.postimg.cc/Kv0BzyYz/gummybear.png); --mgicon: url(https://i.postimg.cc/1z32m0VJ/04-008-gummy-bear.png);
+--fontgradient: var(--threefontgradient);
+--pastelgradient1: var(--threepastelgradient1); 
+--pastelgradient2: var(--threepastelgradient2);
+--pastelgradient3: var(--threepastelgradient3); }
 
 * { 
---fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
+--fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--mglight1) + var(--lightadjust1) + var(--darken)));
+--fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--mglight2) + var(--lightadjust1) + var(--darken))); 
+--fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust1) + var(--darken)));
+--fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust1) + var(--darken))); 
 
---pastel1accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--mglight1) + var(--lightness1) + var(--darken)));
---pastel1accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--mglight1) + var(--lightness1) + var(--darken)));
---pastel1accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--mglight2) + var(--lightness1) + var(--darken)));
---pastel1accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--mglight3) + var(--lightness1) + var(--darken)));
+--pastel1accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--mglight1) + var(--lightadjust2) + var(--darken)));
+--pastel1accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--mglight2) + var(--lightadjust2) + var(--darken)));
+--pastel1accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust2) + var(--darken)));
+--pastel1accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust2) + var(--darken)));
+
+--pastel2accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--mglight1) + var(--lightadjust3) + var(--darken)));
+--pastel2accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--mglight2) + var(--lightadjust3) + var(--darken)));
+--pastel2accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust3) + var(--darken)));
+--pastel2accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust3) + var(--darken)));
+
+--pastel3accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust3) + var(--desat)), calc(var(--mglight1) + var(--lightadjust2) + var(--darken)));
+--pastel3accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust3) + var(--desat)), calc(var(--mglight2) + var(--lightadjust2) + var(--darken)));
+--pastel3accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust3) + var(--desat)), calc(var(--mglight3) + var(--lightadjust2) + var(--darken)));
+--pastel3accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust3) + var(--desat)), calc(var(--mglight4) + var(--lightadjust2) + var(--darken)));
+
+--twofontgradient: var(--fontaccent1), var(--fontaccent2); 
+--twopastelgradient1: var(--pastel1accent1), var(--pastel1accent2);
+--twopastelgradient2: var(--pastel2accent1), var(--pastel2accent2);
+--twopastelgradient3: var(--pastel3accent1), var(--pastel3accent2);
+
+--threefontgradient: var(--fontaccent1), var(--fontaccent2), var(--fontaccent3); 
+--threepastelgradient1: var(--pastel1accent1), var(--pastel1accent2), var(--pastel1accent3);
+--threepastelgradient2: var(--pastel2accent1), var(--pastel2accent2), var(--pastel2accent3);
+--threepastelgradient3: var(--pastel3accent1), var(--pastel3accent2), var(--pastel3accent3);
 
 --mgbgl1-1: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--darken)));
 --mgbgl2-1: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness2) + var(--darken)));
@@ -397,22 +616,6 @@ gummybear, .gummybear, .group-95, .group-96, .allowtagcolors .mgroup-95, .allowt
 --mgbgl1-3: hsl(var(--mghue3), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--darken)));
 --mgbgl2-3: hsl(var(--mghue3), calc(var(--pastelpercent2)), calc(var(--lightness2) + var(--darken)));
 --mgbgl3-3: hsl(var(--mghue3), calc(var(--pastelpercent2)), calc(var(--lightness3) + var(--darken)));
-}
-.group-1, .group-3, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28,.group-37,.group-38,.group-39,.group-40,.group-41,.group-42,.group-43,.group-44,.group-45,.group-46,.group-47,.group-48,.group-49,.group-50,.group-51,.group-52,.group-53,.group-54,.group-55,.group-56, .group-67, .group-68, .group-69, .group-70,
-.membergrouphereinalllowercase,
-.retired, .members, .inactive, .redvelvet, .vanilla, .chocolate, .coconut, .keylimepie, .matcha, .mint, .bluemoon, .taropudding, .pannacotta, .neapolitan, .cherry, .strawberry, .pistachio, .honeylavender, .bubblegum, .cottoncandy, .creamsicle, .marshmallow, .peanutbuttercup, .watermelon, .blueraspberry, .jellydonut, .cookiemonster, .pumpkinpie  { 
---pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
---pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken)));
---pastelgradient3: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
---fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); 
-}
-.group-2, .group-4, .group-29, .group-30, .group-31, .group-32, .group-33, .group-34, .group-35, .group-36, .group-57, .group-58, .group-59, .group-60, .group-61, .group-62, .group-63, .group-64, .group-65, .group-66, .group-71, .group-72, .group-73, .group-74, .group-75, .group-76, .group-77, .group-78, .group-79, .group-80,
-.tshell.toptype-announcement.group-,
-.guests, .staff, .blackberryrose, .birthdaycake, .amarenacherry, .blueberrychip, .bobatea, .buttercake, .caramellatte, .raspberrysorbet, .butterscotch, .pinacolada, .honeycomb, .laffytaffy, .frenchsilk, .boysonberry, .honeydew, .cookiedough, .rainbowsherbet, .sweetcream, .butterpecan, .gummybear {
---pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
---pastelgradient2: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness3) + var(--mglight3) + var(--darken)));
---pastelgradient3: hsl(var(--mghue1), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--pastelpercent2)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
---fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
 }
 
 .allowtagcolors a.user-tagged { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); }
