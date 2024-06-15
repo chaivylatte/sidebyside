@@ -107,9 +107,9 @@ body {
   --satadjust1: 0%; --satadjust2: 31%; --satadjust3: -30%;
   --dullsat1: 20%;
   --lightadjust1: 0%; --lightadjust2: 25%; --lightadjust3: 12%; }
-:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --pastelpercent2: 20%; --desat: 0%; --darken: 0%; --linvert: 0% + ; --blendmode: darken; --bgimage: url(https://i.postimg.cc/T1jM08tv/bglight.jpg); }
+:root, html[data-theme="light"] { --border: 220, 220, 220; --font: 68, 68, 68; --fontdim: 95, 95, 95; --fontdimmer: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --truedark1: 51, 51, 51; --shadow: 119, 119, 119; --pastelpercent: -31%; --normalpercent: -23%; --pastelpercent2: 20%; --desat: 0%; --darken: 0%; --blendmode: darken; --bgimage: url(https://i.postimg.cc/T1jM08tv/bglight.jpg); }
 
-html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --pastelpercent2: 20%; --desat: -10%; --darken: -20%; --linvert: 100% - ; --blendmode: exclusion; --bgimage: url(https://i.postimg.cc/2jnDrvr9/bgdark.jpg); }
+html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --fontdimmer: 215, 215, 215; --bgpure: 19, 19, 19; --bgelev1: 60, 60, 60; --bgelev2: 52, 52, 52; --bgelev3: 44, 44, 44; --bgelev4: 36, 36, 36; --bgelev5: 28, 28, 28; --bgelev6: 20, 20, 20; --truedark1: 20, 20, 20; --shadow: 0, 0, 0; --pastelpercent: -41%; --normalpercent: -33%; --pastelpercent2: 20%; --desat: -10%; --darken: -20%; --blendmode: exclusion; --bgimage: url(https://i.postimg.cc/2jnDrvr9/bgdark.jpg); }
 
 /****************************************
    Member Groups
@@ -122,7 +122,6 @@ html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim
  --mghue1: 0; --mgsat1: 0%; --mglight1: 65%;
  --mghue2: 0; --mgsat2: 0%; --mglight2: 55%;
  --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mglight3: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://i.postimg.cc/qv9thBHk/other2.png); --mgicon: url(https://i.postimg.cc/CLr2xnYN/05.004._retired.png);
- --linvert: 0% + ;
  --fontgradient: var(--twofontgradient);
  --pastelgradient1: var(--twopastelgradient1); 
  --pastelgradient2: var(--twopastelgradient2);
@@ -616,20 +615,20 @@ blackberryrose, .blackberryrose, .group-29, .group-30, .allowtagcolors .mgroup-2
   --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust1) + var(--darken)));
   --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust1) + var(--darken))); 
 
-  --pastel1accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--linvert) var(--mglight1) + var(--lightadjust2) + var(--darken)));
-  --pastel1accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--linvert) var(--mglight2) + var(--lightadjust2) + var(--darken)));
-  --pastel1accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--linvert) var(--mglight3) + var(--lightadjust2) + var(--darken)));
-  --pastel1accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--linvert) var(--mglight4) + var(--lightadjust2) + var(--darken)));
+  --pastel1accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--mglight1) + var(--lightadjust2) + var(--darken)));
+  --pastel1accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--mglight2) + var(--lightadjust2) + var(--darken)));
+  --pastel1accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust2) + var(--darken)));
+  --pastel1accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust2) + var(--darken)));
 
   --pastel2accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust1) + var(--desat)), calc(var(--mglight1) + var(--lightadjust3) + var(--darken)));
   --pastel2accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust1) + var(--desat)), calc(var(--mglight2) + var(--lightadjust3) + var(--darken)));
   --pastel2accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust1) + var(--desat)), calc(var(--mglight3) + var(--lightadjust3) + var(--darken)));
   --pastel2accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust1) + var(--desat)), calc(var(--mglight4) + var(--lightadjust3) + var(--darken)));
 
-  --pastel3accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust3) + var(--desat)), calc(var(--linvert) var(--mglight1) + var(--lightadjust2) + var(--darken)));
-  --pastel3accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust3) + var(--desat)), calc(var(--linvert) var(--mglight2) + var(--lightadjust2) + var(--darken)));
-  --pastel3accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust3) + var(--desat)), calc(var(--linvert) var(--mglight3) + var(--lightadjust2) + var(--darken)));
-  --pastel3accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust3) + var(--desat)), calc(var(--linvert) var(--mglight4) + var(--lightadjust2) + var(--darken)));
+  --pastel3accent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--satadjust3) + var(--desat)), calc(var(--mglight1) + var(--lightadjust2) + var(--darken)));
+  --pastel3accent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--satadjust3) + var(--desat)), calc(var(--mglight2) + var(--lightadjust2) + var(--darken)));
+  --pastel3accent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--satadjust3) + var(--desat)), calc(var(--mglight3) + var(--lightadjust2) + var(--darken)));
+  --pastel3accent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--satadjust3) + var(--desat)), calc(var(--mglight4) + var(--lightadjust2) + var(--darken)));
 
   --twofontgradient: var(--fontaccent1), var(--fontaccent2); 
   --twopastelgradient1: var(--pastel1accent1), var(--pastel1accent2);
