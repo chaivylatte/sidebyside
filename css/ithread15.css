@@ -1,6 +1,7 @@
 ithread15 {
   position: relative;
   display: block;
+  margin: auto;
   width: 100%;
   background: rgba(var(--bgelev1));
   padding: 100px;
@@ -9,6 +10,9 @@ ithread15 {
   text-align: justify;
   line-height: 1.5;
   overflow: hidden;
+}
+ithread15.small {
+  width: 500px;
 }
 ithread15 line1 {
   position: absolute;
@@ -67,6 +71,7 @@ ithread15 tagspace {
   margin-top: 50px;
   padding-top: 50px;
   display: flex;
+  gap: 20px;
   place-content: center space-between;
   align-items: center;
   width: 100%;
@@ -87,4 +92,13 @@ ithread15 tagspace span {
   background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
   border-bottom: 3px solid rgba(var(--bgelev4));
   padding-bottom: 5px;
+  text-align: right;
+  width: fit-content;
+}
+ithread15.small tagspace img {
+  width: 50px;
+  height: 50px;
+}
+ithread15.small tagspace span {
+  font-size: 15px;
 }
