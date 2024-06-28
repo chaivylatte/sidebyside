@@ -1,7 +1,7 @@
 ithread11 {
   display: block;
   margin: auto;
-  font: 400 15px var(--font1);
+  font: inherit 15px var(--font1);
   line-height: 2;
   width: 540px;
   background: rgba(var(--bgelev1));
