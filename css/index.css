@@ -1,7 +1,27 @@
 /****************************************
 Body Background & Text Style
 *****************************************/
-@import url("https://use.typekit.net/yzg8yyi.css");
+@font-face {
+  font-family: "mikela";
+  src: url("https://files.jcink.net/uploads2/fvctorycodes/mikela.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mikela";
+  src: url("https://files.jcink.net/uploads2/fvctorycodes/mikela_light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mikela";
+  src: url("https://files.jcink.net/uploads2/fvctorycodes/mikela_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@import url("https://use.typekit.net/brc3rbd.css");
 html, body { margin: 0; padding: 0; box-sizing: border-box; } 
 body { padding: 20px; }
 * { box-sizing: border-box; }
