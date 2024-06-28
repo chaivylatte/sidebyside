@@ -1,5 +1,5 @@
 ithread2 {
-  font: 500 15px var(--font1);
+  font: inherit 15px var(--font1);
   line-height: 1.5;
   letter-spacing: 0.25px;
   display: flex;

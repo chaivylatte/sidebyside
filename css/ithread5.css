@@ -1,6 +1,6 @@
 ithread5 {
   display: block;
-  font: 400 13px var(--font1);
+  font: inherit 13px var(--font1);
   line-height: 1.5;
   letter-spacing: 0.25px;
   background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient2));

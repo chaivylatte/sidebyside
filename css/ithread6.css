@@ -1,6 +1,6 @@
 ithread6 {
   display: block;
-  font: 400 13px var(--font1);
+  font: inherit 13px var(--font1);
   line-height: 1.8;
   letter-spacing: 0.25px;
   width: 420px;

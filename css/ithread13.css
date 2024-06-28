@@ -1,5 +1,5 @@
 ithread13 {
-  font: 400 15px var(--font1);
+  font: inherit 15px var(--font1);
   line-height: 2;
   position: relative;
   display: flex;

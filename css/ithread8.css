@@ -2,7 +2,7 @@ ithread8 {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  font: 400 14px var(--font1);
+  font: inherit 14px var(--font1);
   line-height: 1.8;
   letter-spacing: 0.25px;
   width: 450px;
