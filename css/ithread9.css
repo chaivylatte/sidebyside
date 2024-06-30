@@ -2,7 +2,7 @@ ithread9 {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  font: inherit 13px var(--font1);
+  font: 300 13px var(--font1);
   line-height: 1.8;
   letter-spacing: 0.25px;
   width: 350px;
@@ -49,7 +49,7 @@ ithread9 .writing p:first-child {
   margin-top: 0;
 }
 ithread9 .writing b {
-  font: 600 13px var(--font1);
+  font: bolder 13px var(--font1);
   background-image: linear-gradient(to right, var(--pastelgradient1));
   background-repeat: no-repeat;
   background-size: 100% 2px;
