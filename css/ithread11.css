@@ -1,7 +1,7 @@
 ithread11 {
   display: block;
   margin: auto;
-  font: inherit 15px var(--font1);
+  font: 300 15px var(--font1);
   line-height: 2;
   width: 540px;
   background: rgba(var(--bgelev1));
@@ -100,7 +100,7 @@ ithread11 .writing p:first-child {
   margin-top: 0;
 }
 ithread11 .writing b {
-  font: 700 16px var(--font1);
+  font: bolder 16px var(--font1);
   background-image: linear-gradient(to right, var(--pastelgradient2));
   background-repeat: no-repeat;
   background-size: 100% 2px;
@@ -109,11 +109,11 @@ ithread11 .writing b {
 }
 ithread11 .writing i {
   color: var(--fontaccent1);
-  font: 600 16px var(--font1);
+  font: bolder 16px var(--font1);
   font-style: italic;
 }
 ithread11 .writing u {
-  font: 400 15px var(--font2);
+  font: 300 15px var(--font2);
   text-decoration: underline var(--fontaccent1);
 }
 ithread11 .writing a {
