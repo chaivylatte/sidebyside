@@ -172,7 +172,7 @@ itext12 .messages p {
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient3)); 
   padding: 10px;
   border-radius: 7px;
-  color: rgba(68, 68, 68);
+  color: rgba(var(--darkfont));
 }
 itext12 .messages p:first-of-type {
   border-top-right-radius: 0;
