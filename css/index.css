@@ -1,6 +1,7 @@
 /****************************************
 Body Background & Text Style
 *****************************************/
+@import url("https://use.typekit.net/brc3rbd.css");
 @font-face {
   font-family: "mikela";
   src: url("https://files.jcink.net/uploads2/fvctorycodes/mikela.woff") format("woff");
@@ -21,7 +22,6 @@ Body Background & Text Style
   font-weight: 700;
   font-style: normal;
 }
-@import url("https://use.typekit.net/brc3rbd.css");
 html, body { margin: 0; padding: 0; box-sizing: border-box; } 
 body { padding: 20px; }
 * { box-sizing: border-box; }
@@ -38,10 +38,6 @@ body { font-family: var(--font1), sans-serif; font-size: 15px; font-weight: 300;
 --satadjust1: 0%; --satadjust2: 31%; --satadjust3: -20%;
 --dullsat1: 20%;
 --lightadjust1: 0%; --lightadjust2: 25%; --lightadjust3: 12%; }
-:not(.postwr) b { font-family: var(--font2); font-weight: 500; letter-spacing: 0.5px; background-image: linear-gradient(to right, var(--pastelgradient1)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 0; }
-:not(.postwr) strong { font-weight: 700; }
-:not(.postwr) i:not(i[class*="fa"]) { font-weight: 600; font-family: var(--font3); letter-spacing: -.25px; background-image: linear-gradient(to right, var(--pastelgradient1)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 0px; }
-:not(.postwr) u { text-decoration: none; background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 2px; background-position: 0 100%; padding-bottom: 1px; }
 
 *[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
 ::selection { background: var(--pastel1accent1); color: inherit; text-shadow: none; -webkit-background-clip: border-box; -webkit-text-fill-color: currentcolor; }
