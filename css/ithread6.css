@@ -107,7 +107,7 @@ ithread6 .writing b {
   background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient1));
   padding: 2px 4px;
   border-radius: 2px;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bolder;
   color: rgba(var(--darkfont));
 }
