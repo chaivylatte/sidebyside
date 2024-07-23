@@ -12,7 +12,7 @@ ithread14 {
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
   overflow: hidden;
-  font: inherit 15px var(--font1);
+  font: 300 15px var(--font1);
   line-height: 1.5;
 }
 ithread14 topper {
@@ -101,7 +101,7 @@ ithread14 .writing p:first-child {
   margin-top: 0;
 }
 ithread14 .writing b {
-  font: 800 15px var(--font1);
+  font: bolder 15px var(--font1);
   letter-spacing: 0.5px;
   background-image: linear-gradient(to right, var(--pastelgradient2));
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ ithread14 .writing b {
   padding-bottom: 2px;
 }
 ithread14 .writing i {
-  font: 500 15px var(--font1);
+  font: bolder 15px var(--font1);
   letter-spacing: 0.5px;
   font-style: italic;
   background-image: linear-gradient(to right, var(--pastelgradient3));
@@ -120,7 +120,7 @@ ithread14 .writing i {
   padding-bottom: 2px;
 }
 ithread14 .writing u {
-  font: 400 14px var(--font2);
+  font: 300 15px var(--font2);
   letter-spacing: 0.5px;
   text-decoration: underline var(--fontaccent1);
 }
