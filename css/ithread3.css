@@ -1,5 +1,5 @@
 ithread3 {
-  font: inherit 15px var(--font1);
+  font: 300 15px var(--font1);
   line-height: 1.5;
   letter-spacing: 0.25px;
   background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
@@ -89,20 +89,21 @@ ithread3 .writing p {
   text-indent: 15px;
 }
 ithread3 .writing p:first-letter {
-  font: 400 15px var(--font2);
+  font: bolder 15px var(--font2);
   color: var(--fontaccent4);
 }
 ithread3 .writing b, ithread3 .writing i {
   font-size: 17px;
 }
 ithread3 .writing b {
+  font-weight: bolder;
   color: var(--fontaccent1);
 }
 ithread3 .writing i {
   color: var(--fontaccent4);
 }
 ithread3 .writing u {
-  font: 400 15px var(--font2);
+  font: 300 15px var(--font2);
   text-decoration: underline var(--fontaccent2);
 }
 ithread3 .writing a {
@@ -114,7 +115,7 @@ ithread3 tagspace {
   padding: 15px;
   border-radius: 15px;
   background: rgba(var(--bgelev2));
-  font: 400 20px var(--font2);
+  font: 300 20px var(--font2);
 }
 ithread3 tagspace span {
   display: inline-block;
