@@ -100,6 +100,8 @@ itext14 gcsur {
   flex-wrap: wrap;
   place-content: center center;
   align-items: center;
+  border-top: 1px solid rgba(var(--bgelev4));
+  padding-top: 15px;
 }
 itext14 gcsur:before {
   flex-grow: 1;
