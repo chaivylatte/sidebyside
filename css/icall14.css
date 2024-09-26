@@ -1,0 +1,234 @@
+icall14 {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  width: 400px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: var(--borderradius2);
+  font: 300 15px var(--font1);
+  line-height: 1.5;
+  overflow: hidden;
+  border: 1px solid rgba(var(--border));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15); 
+}
+icall14 topper {
+  order: 1;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: stretch;
+  background: rgba(var(--bgelev2));
+  padding: 30px;
+  border-bottom: 1px solid rgba(var(--border));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15); 
+}
+icall14 topicons {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(var(--fontdimmer));
+}
+icall14 topright {
+  display: flex;
+  gap: 10px;
+  place-content: center flex-end;
+  align-items: center;
+}
+icall14 gifrec {
+  order: 3;
+  display: flex;
+  gap: 30px;
+  place-content: center space-between;
+  align-items: center;
+}
+icall14 recspace {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: flex-end;
+  font: 300 35px var(--font2);
+}
+icall14 recspace::before {
+  content: "call connected with";
+  font: 600 10px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(var(--fontdimmer));
+  display: block;
+}
+icall14 recspace span {
+  background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 5px;
+}
+icall14 gif {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 5px;
+  background: rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15); 
+}
+icall14 gif.square {
+  border-radius: var(--borderradius2);
+}
+icall14 gif.circle {
+  border-radius: 50%;
+}
+icall14 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+icall14 gif img.mgicon {
+  border-radius: 0;
+  padding: 14px;
+}
+icall14 gcsur {
+  order: 4;
+  display: flex;
+  gap: 5px; 
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+}
+icall14 gcsur:before {
+  flex-grow: 1;
+  content: "in this call: ";
+  font: 600 10px var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(var(--fontdimmer));
+  display: block;
+}
+icall14 gcsur gc {
+  flex: none;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev2));
+  border: 3px solid rgba(var(--bgelev1));
+  font: 700 10px var(--font1);
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(var(--fontdimmer));
+}
+icall14 gcsur gc:nth-child(1) {
+  background: var(--pastel1accent1);
+}
+icall14 gcsur gc:nth-child(2) {
+  background: var(--pastel1accent2);
+}
+icall14 gcsur gc:nth-child(3) {
+  background: var(--pastel1accent3);
+}
+icall14 gcsur gc:nth-child(4) {
+  background: var(--pastel1accent2);
+}
+icall14 gcsur gc:nth-child(5) {
+  background: var(--pastel1accent1);
+}
+icall14 gcsur gc:nth-child(6) {
+  background: var(--pastel1accent2);
+}
+icall14 gcsur gc:nth-child(7) {
+  background: var(--pastel1accent3);
+}
+icall14 gcsur gc:nth-child(8) {
+  background: var(--pastel1accent2);
+}
+icall14 gcsur gc:nth-child(9) {
+  background: var(--pastel1accent1);
+}
+icall14 gcsur gc:nth-child(10) {
+  background: var(--pastel1accent2);
+}
+icall14 gcsur img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+icall14 .actions {
+  order: 2;
+  margin: 50px;
+  background: rgba(var(--bgelev2)); 
+  padding: 15px;
+  border-radius: var(--borderradius2);
+  text-align: justify;
+}
+icall14 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+icall14 .actions p:first-child {
+  margin-top: 0;
+}
+icall14 .actions b {
+  background-image: linear-gradient(to right, var(--pastelgradient2));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+icall14 .actions i {
+  letter-spacing: 0.5px;
+  background-image: linear-gradient(to right, var(--pastelgradient1)); 
+  background-repeat: no-repeat; 
+  background-size: 100% 1px; 
+  background-position: 0 100%; 
+  padding-bottom: 0px;
+}
+icall14 .actions u {
+  text-decoration: none; 
+  background-image: linear-gradient(to right, var(--pastelgradient2)); 
+  background-repeat: no-repeat; 
+  background-size: 100% 1px; 
+  background-position: 0 100%; 
+  padding-bottom: 1px;
+}
+icall14 .actions a {
+  text-decoration: underline var(--fontaccent1);
+}
+icall14 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: var(--borderradius2);
+}
+icall14 bottbar {
+  order: 6;
+  display: flex;
+  gap: 10px;
+  place-content: center space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-top: 1px solid rgba(var(--border));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15); 
+}
+icall14 bottbar i {
+  background: rgba(var(--bgelev1));
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  text-align: center;
+}
+icall14 bottbar i:last-child {
+  background: var(--pastel1accent1);
+}
