@@ -66,6 +66,7 @@ itext14 recspace span {
   background-image: linear-gradient(to right, var(--pastelgradient2)); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 5px;
 }
 itext14 gif {
+  position: relative;
   flex: none;
   display: flex;
   place-content: center center;
@@ -83,6 +84,14 @@ itext14 gif.square {
 itext14 gif.circle {
   border-radius: 50%;
 }
+itext14 gif.blob {
+  width: 100px;
+  height: 100px;
+  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00Ny40LC02Ny45QzU5LjksLTU2LjMsNjcuMiwtNDAuMyw3MS42LC0yNEM3NS45LC03LjcsNzcuMiw4LjksNzIuNywyMy45QzY4LjMsMzguOSw1OCw1Mi40LDQ1LDYyLjhDMzEuOSw3My4yLDE1LjksODAuNSwtMS40LDgyLjRDLTE4LjgsODQuMywtMzcuNSw4MC45LC01MC44LDcwLjZDLTY0LjEsNjAuMywtNzEuOSw0My4xLC03Ny42LDI1LjNDLTgzLjMsNy41LC04Ni45LC0xMC45LC04MSwtMjUuNEMtNzUuMSwtMzkuOSwtNTkuNywtNTAuNSwtNDQuNywtNjEuM0MtMjkuNiwtNzIuMSwtMTQuOCwtODMuMSwxLjQsLTg1QzE3LjUsLTg2LjgsMzUsLTc5LjYsNDcuNCwtNjcuOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00Ny40LC02Ny45QzU5LjksLTU2LjMsNjcuMiwtNDAuMyw3MS42LC0yNEM3NS45LC03LjcsNzcuMiw4LjksNzIuNywyMy45QzY4LjMsMzguOSw1OCw1Mi40LDQ1LDYyLjhDMzEuOSw3My4yLDE1LjksODAuNSwtMS40LDgyLjRDLTE4LjgsODQuMywtMzcuNSw4MC45LC01MC44LDcwLjZDLTY0LjEsNjAuMywtNzEuOSw0My4xLC03Ny42LDI1LjNDLTgzLjMsNy41LC04Ni45LC0xMC45LC04MSwtMjUuNEMtNzUuMSwtMzkuOSwtNTkuNywtNTAuNSwtNDQuNywtNjEuM0MtMjkuNiwtNzIuMSwtMTQuOCwtODMuMSwxLjQsLTg1QzE3LjUsLTg2LjgsMzUsLTc5LjYsNDcuNCwtNjcuOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
 itext14 gif img {
   display: block;
   width: 100%;
@@ -92,6 +101,19 @@ itext14 gif img {
 itext14 gif img.mgicon {
   border-radius: 0;
   padding: 14px;
+}
+itext14 gif.blob img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: inherit;
+  mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00Ny40LC02Ny45QzU5LjksLTU2LjMsNjcuMiwtNDAuMyw3MS42LC0yNEM3NS45LC03LjcsNzcuMiw4LjksNzIuNywyMy45QzY4LjMsMzguOSw1OCw1Mi40LDQ1LDYyLjhDMzEuOSw3My4yLDE1LjksODAuNSwtMS40LDgyLjRDLTE4LjgsODQuMywtMzcuNSw4MC45LC01MC44LDcwLjZDLTY0LjEsNjAuMywtNzEuOSw0My4xLC03Ny42LDI1LjNDLTgzLjMsNy41LC04Ni45LC0xMC45LC04MSwtMjUuNEMtNzUuMSwtMzkuOSwtNTkuNywtNTAuNSwtNDQuNywtNjEuM0MtMjkuNiwtNzIuMSwtMTQuOCwtODMuMSwxLjQsLTg1QzE3LjUsLTg2LjgsMzUsLTc5LjYsNDcuNCwtNjcuOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00Ny40LC02Ny45QzU5LjksLTU2LjMsNjcuMiwtNDAuMyw3MS42LC0yNEM3NS45LC03LjcsNzcuMiw4LjksNzIuNywyMy45QzY4LjMsMzguOSw1OCw1Mi40LDQ1LDYyLjhDMzEuOSw3My4yLDE1LjksODAuNSwtMS40LDgyLjRDLTE4LjgsODQuMywtMzcuNSw4MC45LC01MC44LDcwLjZDLTY0LjEsNjAuMywtNzEuOSw0My4xLC03Ny42LDI1LjNDLTgzLjMsNy41LC04Ni45LC0xMC45LC04MSwtMjUuNEMtNzUuMSwtMzkuOSwtNTkuNywtNTAuNSwtNDQuNywtNjEuM0MtMjkuNiwtNzIuMSwtMTQuOCwtODMuMSwxLjQsLTg1QzE3LjUsLTg2LjgsMzUsLTc5LjYsNDcuNCwtNjcuOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 itext14 gcsur {
   order: 4;
