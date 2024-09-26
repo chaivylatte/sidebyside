@@ -115,6 +115,13 @@ icall14 gif.blob img {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+icall14 gif.blob img.mgicon {
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border-radius: 0;
+}
 icall14 gcsur {
   order: 4;
   display: flex;
