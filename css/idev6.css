@@ -217,6 +217,3 @@ idev6 .devstuff iframe {
   border-radius: var(--borderradius2);
   display: block;
 }
-idev6 .devstuff:has(iframe) {
-  padding: 10px;
-}
