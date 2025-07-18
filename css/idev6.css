@@ -12,6 +12,7 @@ idev6 {
   position: relative;
   z-index: 1;
   box-shadow: 0 0 10px 0 rgba(var(--shadow), .05);
+  border: 1px solid rgba(var(--border));
 }
 idev6 topper {
   width: 100%;
