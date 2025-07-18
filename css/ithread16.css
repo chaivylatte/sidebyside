@@ -1,0 +1,121 @@
+ithread16 {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  background: rgba(var(--bgelev1));
+  padding: 100px;
+  border-radius: var(--borderradius2);
+  font: inherit 16px var(--font1);
+  text-align: justify;
+  line-height: 2;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .05);
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  place-content: center center; 
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+ithread16 gif {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border: 1px solid rgba(var(--fontdimmer));
+  display: block;
+  border-radius: var(--borderradius2);
+  position: relative;
+}
+ithread16 gif:before {
+  content:"";
+  position: absolute;
+  inset: -15px;
+  transform: translate(0px,0px);
+  z-index: -1;
+  background: rgba(var(--bgelev1)) linear-gradient(to top, var(--pastelgradient2));
+  filter: blur(30px);
+}
+ithread16 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: inherit;
+  border: 1px solid rgba(var(--fontdimmer));
+}
+ithread16 gif img[src].mgicon {
+  width: 70px;
+  height: 70px;
+  aspect-ratio: none;
+  padding: 15px;
+  background: rgba(var(--bgelev1), .6);
+}
+ithread16 lline { display: block; width: 100%; margin: 0 auto; display: flex; gap: 20px; place-content: center space-between; align-items: center; }
+ithread16 lline::before, ithread16 lline::after { content: ""; display: block; flex-grow: 1; height: 1px; background: rgba(var(--fontdimmer)); }
+ithread16 lline i { font-size: 20px; color: rgba(var(--fontdimmer)); }
+ithread16 .writing {
+  width: 100%;
+}
+ithread16 .writing p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 20px;
+}
+ithread16 .writing p:first-child {
+  margin-top: 0;
+}
+ithread16 .writing b {
+  font: 600 15px var(--font3);
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 0px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px var(--fontaccent1);
+}
+ithread16 .writing i {
+  font: 400 15px var(--font3);
+  font-style: italic;
+  letter-spacing: -0.5px;
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 0px;
+  text-shadow: 0 0 10px var(--fontaccent2);
+}
+ithread16 .writing u {
+  font: 400 15px var(--font3);
+  text-decoration: none;
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  padding-bottom: 0px;
+  text-shadow: 0 0 10px var(--fontaccent3);
+}
+ithread16 .writing a {
+  font: 400 15px var(--font3);
+  text-decoration: underline;
+}
+ithread16 .writing overflow {
+  max-height: 400px;
+}
+ithread16 tagspace {
+  position: relative;
+  display: block;
+  font: 400 18px var(--font3);
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+ithread16 tagspace:before {
+  content:"";
+  position: absolute;
+  inset: -5px;
+  transform: translate(0px,0px);
+  z-index: -1;
+  background: rgba(var(--bgelev1)) linear-gradient(to right, var(--pastelgradient2));
+  filter: blur(30px);
+}
