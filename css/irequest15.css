@@ -1,0 +1,160 @@
+irequest15 {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  margin: 0 auto;
+  width: 650px;
+  border: 1px solid rgba(var(--border));
+  border-radius: var(--borderradius2);
+  overflow: hidden;
+  font: 300 15px var(--font1);
+  line-height: 2;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+irequest15 topper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  border-right: 1px solid rgba(var(--border));
+}
+irequest15 topper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--mgbanner);
+  filter: grayscale(100%);
+  background-blend-mode: var(--blendmode);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+irequest15 topper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--bgelev1)) linear-gradient(to top right, var(--pastelgradient3)); background-blend-mode: var(--blendmode);
+  position: absolute;
+  opacity: .95;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+irequest15 topper gif {
+  flex: none;
+  position: relative;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  border-radius: var(--borderradius2);
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+irequest15 topper gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+irequest15 topper gif img[src].mgicon {
+  padding: 5px;
+  border-radius: 0px;
+  border: none;
+  background: none;
+}
+irequest15 topper gif:has(img[src].mgicon) {
+  border-radius: 0px;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+irequest15 ttitle {
+  z-index: 2;
+
+  writing-mode: sideways-lr;
+  font: 300 45px var(--font2);
+  border-right: 2px solid rgba(var(--bgelev4));
+  text-align: right;
+}
+irequest15 ttitle:first-letter {
+  color: var(--fontaccent1);
+}
+irequest15 inner {
+  display: block;
+  background: rgba(var(--bgelev2));
+  padding: 80px;
+}
+irequest15 .writing {
+  background: rgba(var(--bgelev1));
+  padding: 30px;
+  border: 1px solid rgba(var(--border));
+  border-radius: 0 0 var(--borderradius2) var(--borderradius2);
+  text-align: justify;
+}
+irequest15 .writing overflow {
+  max-height: 500px;
+}
+irequest15 .writing p {
+  margin: 0;
+  margin-top: 20px;
+  text-indent: 20px;
+}
+irequest15 .writing p:first-child {
+  margin-top: 0;
+}
+irequest15 .writing b {
+  position: relative;
+  font: 600 15px var(--font3);
+  text-shadow: 0 0 10px var(--fontaccent1);
+}
+irequest15 .writing i {
+  font: 400 15px var(--font3);
+  text-shadow: 0 0 10px var(--fontaccent2);
+  font-style: italic;
+  letter-spacing: -0.5px;
+}
+irequest15 .writing u {
+  font: 400 15px var(--font3);
+  text-shadow: 0 0 10px var(--fontaccent3);
+  text-decoration: underline rgba(var(--fontdimmer));
+}
+irequest15 .writing a {
+  text-decoration: underline var(--fontaccent1);
+}
+irequest15 reqabt {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center stretch;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: rgba(var(--bgelev3));
+  border: 1px solid rgba(var(--border));
+  border-bottom: 0;
+  border-radius: var(--borderradius2) var(--borderradius2) 0 0;
+}
+irequest15 reqabt span {
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: var(--borderradius2);
+  font: 600 10px var(--font3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgba(var(--fontdim));
+}
